@@ -1,0 +1,60 @@
+//
+//  XiCalendar.swift
+//  iCalendarKit
+//
+//  Created by roy on 2019/7/3.
+//
+
+import Foundation
+
+public final class XiCalendar: ComponentProtocol {
+    public var component: BridgeComponentType
+    public var parent: ComponentProtocol?
+    public var firstChild: ComponentProtocol?
+    public var lastChild: ComponentProtocol?
+    public var leftBrother: ComponentProtocol?
+    public var rightBtother: ComponentProtocol?
+    
+    public init(_ component: BridgeComponentType) {
+        self.component = component
+    }
+    
+    public convenience init(withContent content: String) throws {
+        let formatedContent = content.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard !formatedContent.isEmpty else {
+            throw InitialError.emptyContent
+        }
+        
+        guard let calender = try ComponentBridgeManager.parse(formatedContent) else {
+            throw InitialError.parseFailure
+        }
+
+        self.init(calender)
+        configure()
+    }
+    
+    public convenience init(url: URL) throws {
+        guard let content = try? String(contentsOf: url, encoding: .utf8) else { throw InitialError.incorrectUrl }
+        
+        try self.init(withContent: content)
+    }
+    
+    public convenience init(filePath path: String) throws {
+        let url = URL(fileURLWithPath: path)
+        try self.init(url: url)
+    }
+    
+    public func configureProperties() {
+        
+    }
+}
+
+extension XiCalendar {
+    public enum InitialError: Error {
+        case incorrectPath
+        case incorrectUrl
+        case emptyContent
+        case parseFailure
+    }
+}

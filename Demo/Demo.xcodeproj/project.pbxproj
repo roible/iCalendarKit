@@ -1,0 +1,2229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B078EDBA22D4C22F002F7F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDB922D4C22F002F7F4F /* AppDelegate.swift */; };
+		B078EDBC22D4C22F002F7F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDBB22D4C22F002F7F4F /* ViewController.swift */; };
+		B078EDBF22D4C22F002F7F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078EDBD22D4C22F002F7F4F /* Main.storyboard */; };
+		B078EDC122D4C231002F7F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B078EDC022D4C231002F7F4F /* Assets.xcassets */; };
+		B078EDC422D4C231002F7F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078EDC222D4C231002F7F4F /* LaunchScreen.storyboard */; };
+		B078EDD022D4C36B002F7F4F /* iCalendarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */; };
+		B078EDD222D4C379002F7F4F /* iCalendarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B078EDDA22D4C3D8002F7F4F /* calendar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD522D4C3D8002F7F4F /* calendar.ics */; };
+		B078EDDB22D4C3D8002F7F4F /* basic.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD622D4C3D8002F7F4F /* basic.ics */; };
+		B078EDDC22D4C3D8002F7F4F /* university-formatted.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD722D4C3D8002F7F4F /* university-formatted.ics */; };
+		B078EDDD22D4C3D8002F7F4F /* totalTimeZone.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD822D4C3D8002F7F4F /* totalTimeZone.ics */; };
+		B078EDDE22D4C3D8002F7F4F /* university.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD922D4C3D8002F7F4F /* university.ics */; };
+		B078EF9A22D4C3FE002F7F4F /* Mauritius.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE122D4C3FC002F7F4F /* Mauritius.ics */; };
+		B078EF9B22D4C3FE002F7F4F /* Maldives.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE222D4C3FC002F7F4F /* Maldives.ics */; };
+		B078EF9C22D4C3FE002F7F4F /* Mayotte.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE322D4C3FC002F7F4F /* Mayotte.ics */; };
+		B078EF9D22D4C3FE002F7F4F /* Kerguelen.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE422D4C3FC002F7F4F /* Kerguelen.ics */; };
+		B078EF9E22D4C3FE002F7F4F /* Mahe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE522D4C3FC002F7F4F /* Mahe.ics */; };
+		B078EF9F22D4C3FE002F7F4F /* Christmas.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE622D4C3FC002F7F4F /* Christmas.ics */; };
+		B078EFA022D4C3FE002F7F4F /* Cocos.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE722D4C3FC002F7F4F /* Cocos.ics */; };
+		B078EFA122D4C3FE002F7F4F /* Chagos.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE822D4C3FC002F7F4F /* Chagos.ics */; };
+		B078EFA222D4C3FE002F7F4F /* Comoro.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE922D4C3FC002F7F4F /* Comoro.ics */; };
+		B078EFA322D4C3FE002F7F4F /* Reunion.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDEA22D4C3FC002F7F4F /* Reunion.ics */; };
+		B078EFA422D4C3FE002F7F4F /* Antananarivo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDEB22D4C3FC002F7F4F /* Antananarivo.ics */; };
+		B078EFA522D4C3FE002F7F4F /* Madeira.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDED22D4C3FC002F7F4F /* Madeira.ics */; };
+		B078EFA622D4C3FE002F7F4F /* Canary.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDEE22D4C3FC002F7F4F /* Canary.ics */; };
+		B078EFA722D4C3FE002F7F4F /* Reykjavik.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDEF22D4C3FC002F7F4F /* Reykjavik.ics */; };
+		B078EFA822D4C3FE002F7F4F /* South_Georgia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF022D4C3FC002F7F4F /* South_Georgia.ics */; };
+		B078EFA922D4C3FE002F7F4F /* Stanley.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF122D4C3FC002F7F4F /* Stanley.ics */; };
+		B078EFAA22D4C3FE002F7F4F /* Azores.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF222D4C3FC002F7F4F /* Azores.ics */; };
+		B078EFAB22D4C3FE002F7F4F /* Jan_Mayen.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF322D4C3FC002F7F4F /* Jan_Mayen.ics */; };
+		B078EFAC22D4C3FE002F7F4F /* Faroe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF422D4C3FC002F7F4F /* Faroe.ics */; };
+		B078EFAD22D4C3FE002F7F4F /* Cape_Verde.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF522D4C3FC002F7F4F /* Cape_Verde.ics */; };
+		B078EFAE22D4C3FE002F7F4F /* St_Helena.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF622D4C3FC002F7F4F /* St_Helena.ics */; };
+		B078EFAF22D4C3FE002F7F4F /* Bermuda.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF722D4C3FC002F7F4F /* Bermuda.ics */; };
+		B078EFB022D4C3FE002F7F4F /* zones.tab in Resources */ = {isa = PBXBuildFile; fileRef = B078EDF822D4C3FC002F7F4F /* zones.tab */; };
+		B078EFB122D4C3FE002F7F4F /* Pohnpei.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDFA22D4C3FC002F7F4F /* Pohnpei.ics */; };
+		B078EFB222D4C3FE002F7F4F /* Tongatapu.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDFB22D4C3FC002F7F4F /* Tongatapu.ics */; };
+		B078EFB322D4C3FE002F7F4F /* Efate.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDFC22D4C3FC002F7F4F /* Efate.ics */; };
+		B078EFB422D4C3FE002F7F4F /* Guadalcanal.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDFD22D4C3FC002F7F4F /* Guadalcanal.ics */; };
+		B078EFB522D4C3FE002F7F4F /* Majuro.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDFE22D4C3FC002F7F4F /* Majuro.ics */; };
+		B078EFB622D4C3FE002F7F4F /* Fakaofo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDFF22D4C3FC002F7F4F /* Fakaofo.ics */; };
+		B078EFB722D4C3FE002F7F4F /* Galapagos.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0022D4C3FC002F7F4F /* Galapagos.ics */; };
+		B078EFB822D4C3FE002F7F4F /* Bougainville.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0122D4C3FC002F7F4F /* Bougainville.ics */; };
+		B078EFB922D4C3FE002F7F4F /* Honolulu.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0222D4C3FC002F7F4F /* Honolulu.ics */; };
+		B078EFBA22D4C3FE002F7F4F /* Midway.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0322D4C3FC002F7F4F /* Midway.ics */; };
+		B078EFBB22D4C3FE002F7F4F /* Palau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0422D4C3FC002F7F4F /* Palau.ics */; };
+		B078EFBC22D4C3FE002F7F4F /* Gambier.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0522D4C3FC002F7F4F /* Gambier.ics */; };
+		B078EFBD22D4C3FE002F7F4F /* Nauru.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0622D4C3FC002F7F4F /* Nauru.ics */; };
+		B078EFBE22D4C3FE002F7F4F /* Rarotonga.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0722D4C3FC002F7F4F /* Rarotonga.ics */; };
+		B078EFBF22D4C3FE002F7F4F /* Easter.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0822D4C3FC002F7F4F /* Easter.ics */; };
+		B078EFC022D4C3FE002F7F4F /* Kiritimati.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0922D4C3FC002F7F4F /* Kiritimati.ics */; };
+		B078EFC122D4C3FE002F7F4F /* Truk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0A22D4C3FC002F7F4F /* Truk.ics */; };
+		B078EFC222D4C3FE002F7F4F /* Fiji.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0B22D4C3FC002F7F4F /* Fiji.ics */; };
+		B078EFC322D4C3FE002F7F4F /* Tahiti.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0C22D4C3FC002F7F4F /* Tahiti.ics */; };
+		B078EFC422D4C3FE002F7F4F /* Norfolk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0D22D4C3FC002F7F4F /* Norfolk.ics */; };
+		B078EFC522D4C3FE002F7F4F /* Funafuti.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0E22D4C3FC002F7F4F /* Funafuti.ics */; };
+		B078EFC622D4C3FE002F7F4F /* Marquesas.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE0F22D4C3FC002F7F4F /* Marquesas.ics */; };
+		B078EFC722D4C3FE002F7F4F /* Wake.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1022D4C3FC002F7F4F /* Wake.ics */; };
+		B078EFC822D4C3FE002F7F4F /* Chatham.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1122D4C3FC002F7F4F /* Chatham.ics */; };
+		B078EFC922D4C3FE002F7F4F /* Noumea.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1222D4C3FC002F7F4F /* Noumea.ics */; };
+		B078EFCA22D4C3FE002F7F4F /* Apia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1322D4C3FC002F7F4F /* Apia.ics */; };
+		B078EFCB22D4C3FE002F7F4F /* Enderbury.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1422D4C3FC002F7F4F /* Enderbury.ics */; };
+		B078EFCC22D4C3FE002F7F4F /* Kosrae.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1522D4C3FC002F7F4F /* Kosrae.ics */; };
+		B078EFCD22D4C3FE002F7F4F /* Niue.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1622D4C3FC002F7F4F /* Niue.ics */; };
+		B078EFCE22D4C3FE002F7F4F /* Pitcairn.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1722D4C3FC002F7F4F /* Pitcairn.ics */; };
+		B078EFCF22D4C3FE002F7F4F /* Tarawa.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1822D4C3FC002F7F4F /* Tarawa.ics */; };
+		B078EFD022D4C3FE002F7F4F /* Pago_Pago.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1922D4C3FC002F7F4F /* Pago_Pago.ics */; };
+		B078EFD122D4C3FE002F7F4F /* Saipan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1A22D4C3FC002F7F4F /* Saipan.ics */; };
+		B078EFD222D4C3FE002F7F4F /* Johnston.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1B22D4C3FC002F7F4F /* Johnston.ics */; };
+		B078EFD322D4C3FE002F7F4F /* Wallis.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1C22D4C3FC002F7F4F /* Wallis.ics */; };
+		B078EFD422D4C3FE002F7F4F /* Port_Moresby.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1D22D4C3FC002F7F4F /* Port_Moresby.ics */; };
+		B078EFD522D4C3FE002F7F4F /* Auckland.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1E22D4C3FC002F7F4F /* Auckland.ics */; };
+		B078EFD622D4C3FE002F7F4F /* Guam.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE1F22D4C3FC002F7F4F /* Guam.ics */; };
+		B078EFD722D4C3FE002F7F4F /* Ponape.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2022D4C3FC002F7F4F /* Ponape.ics */; };
+		B078EFD822D4C3FE002F7F4F /* Chuuk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2122D4C3FC002F7F4F /* Chuuk.ics */; };
+		B078EFD922D4C3FE002F7F4F /* Kwajalein.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2222D4C3FC002F7F4F /* Kwajalein.ics */; };
+		B078EFDA22D4C3FE002F7F4F /* Longyearbyen.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2422D4C3FC002F7F4F /* Longyearbyen.ics */; };
+		B078EFDB22D4C3FE002F7F4F /* Asuncion.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2622D4C3FC002F7F4F /* Asuncion.ics */; };
+		B078EFDC22D4C3FE002F7F4F /* Metlakatla.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2722D4C3FC002F7F4F /* Metlakatla.ics */; };
+		B078EFDD22D4C3FE002F7F4F /* Cayenne.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2822D4C3FC002F7F4F /* Cayenne.ics */; };
+		B078EFDE22D4C3FE002F7F4F /* Pangnirtung.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2922D4C3FC002F7F4F /* Pangnirtung.ics */; };
+		B078EFDF22D4C3FE002F7F4F /* Menominee.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2A22D4C3FC002F7F4F /* Menominee.ics */; };
+		B078EFE022D4C3FE002F7F4F /* St_Thomas.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2B22D4C3FC002F7F4F /* St_Thomas.ics */; };
+		B078EFE122D4C3FE002F7F4F /* Juneau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2C22D4C3FC002F7F4F /* Juneau.ics */; };
+		B078EFE222D4C3FE002F7F4F /* Cayman.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2D22D4C3FC002F7F4F /* Cayman.ics */; };
+		B078EFE322D4C3FE002F7F4F /* Blanc-Sablon.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2E22D4C3FC002F7F4F /* Blanc-Sablon.ics */; };
+		B078EFE422D4C3FE002F7F4F /* Fortaleza.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE2F22D4C3FC002F7F4F /* Fortaleza.ics */; };
+		B078EFE522D4C3FE002F7F4F /* St_Kitts.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3022D4C3FC002F7F4F /* St_Kitts.ics */; };
+		B078EFE622D4C3FE002F7F4F /* Guyana.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3122D4C3FC002F7F4F /* Guyana.ics */; };
+		B078EFE722D4C3FE002F7F4F /* Goose_Bay.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3222D4C3FC002F7F4F /* Goose_Bay.ics */; };
+		B078EFE822D4C3FE002F7F4F /* Araguaina.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3322D4C3FC002F7F4F /* Araguaina.ics */; };
+		B078EFE922D4C3FE002F7F4F /* Dawson_Creek.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3422D4C3FC002F7F4F /* Dawson_Creek.ics */; };
+		B078EFEA22D4C3FE002F7F4F /* Anguilla.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3522D4C3FC002F7F4F /* Anguilla.ics */; };
+		B078EFEB22D4C3FE002F7F4F /* Boa_Vista.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3622D4C3FC002F7F4F /* Boa_Vista.ics */; };
+		B078EFEC22D4C3FE002F7F4F /* Eirunepe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3722D4C3FC002F7F4F /* Eirunepe.ics */; };
+		B078EFED22D4C3FE002F7F4F /* Inuvik.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3822D4C3FC002F7F4F /* Inuvik.ics */; };
+		B078EFEE22D4C3FE002F7F4F /* Marigot.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3922D4C3FC002F7F4F /* Marigot.ics */; };
+		B078EFEF22D4C3FE002F7F4F /* Anchorage.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3A22D4C3FC002F7F4F /* Anchorage.ics */; };
+		B078EFF022D4C3FE002F7F4F /* Dominica.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3B22D4C3FC002F7F4F /* Dominica.ics */; };
+		B078EFF122D4C3FE002F7F4F /* Bogota.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3C22D4C3FC002F7F4F /* Bogota.ics */; };
+		B078EFF222D4C3FE002F7F4F /* Danmarkshavn.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3D22D4C3FC002F7F4F /* Danmarkshavn.ics */; };
+		B078EFF322D4C3FE002F7F4F /* Rainy_River.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3E22D4C3FC002F7F4F /* Rainy_River.ics */; };
+		B078EFF422D4C3FE002F7F4F /* Vancouver.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE3F22D4C3FC002F7F4F /* Vancouver.ics */; };
+		B078EFF522D4C3FE002F7F4F /* Lower_Princes.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4022D4C3FC002F7F4F /* Lower_Princes.ics */; };
+		B078EFF622D4C3FE002F7F4F /* Kralendijk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4122D4C3FC002F7F4F /* Kralendijk.ics */; };
+		B078EFF722D4C3FE002F7F4F /* Martinique.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4222D4C3FC002F7F4F /* Martinique.ics */; };
+		B078EFF822D4C3FE002F7F4F /* Mexico_City.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4322D4C3FC002F7F4F /* Mexico_City.ics */; };
+		B078EFF922D4C3FE002F7F4F /* Bahia_Banderas.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4422D4C3FC002F7F4F /* Bahia_Banderas.ics */; };
+		B078EFFA22D4C3FE002F7F4F /* Ojinaga.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4522D4C3FC002F7F4F /* Ojinaga.ics */; };
+		B078EFFB22D4C3FE002F7F4F /* Denver.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4622D4C3FC002F7F4F /* Denver.ics */; };
+		B078EFFC22D4C3FE002F7F4F /* Miquelon.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4722D4C3FC002F7F4F /* Miquelon.ics */; };
+		B078EFFD22D4C3FE002F7F4F /* Havana.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4822D4C3FC002F7F4F /* Havana.ics */; };
+		B078EFFE22D4C3FE002F7F4F /* Puerto_Rico.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4922D4C3FC002F7F4F /* Puerto_Rico.ics */; };
+		B078EFFF22D4C3FE002F7F4F /* Barbados.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4A22D4C3FC002F7F4F /* Barbados.ics */; };
+		B078F00022D4C3FE002F7F4F /* Toronto.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4B22D4C3FC002F7F4F /* Toronto.ics */; };
+		B078F00122D4C3FE002F7F4F /* Regina.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4C22D4C3FC002F7F4F /* Regina.ics */; };
+		B078F00222D4C3FE002F7F4F /* Godthab.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4D22D4C3FC002F7F4F /* Godthab.ics */; };
+		B078F00322D4C3FE002F7F4F /* Resolute.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4E22D4C3FC002F7F4F /* Resolute.ics */; };
+		B078F00422D4C3FE002F7F4F /* Santa_Isabel.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE4F22D4C3FC002F7F4F /* Santa_Isabel.ics */; };
+		B078F00522D4C3FE002F7F4F /* Santo_Domingo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5022D4C3FC002F7F4F /* Santo_Domingo.ics */; };
+		B078F00622D4C3FE002F7F4F /* Caracas.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5122D4C3FD002F7F4F /* Caracas.ics */; };
+		B078F00722D4C3FE002F7F4F /* Paramaribo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5222D4C3FD002F7F4F /* Paramaribo.ics */; };
+		B078F00822D4C3FE002F7F4F /* Knox.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5422D4C3FD002F7F4F /* Knox.ics */; };
+		B078F00922D4C3FE002F7F4F /* Indianapolis.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5522D4C3FD002F7F4F /* Indianapolis.ics */; };
+		B078F00A22D4C3FE002F7F4F /* Vevay.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5622D4C3FD002F7F4F /* Vevay.ics */; };
+		B078F00B22D4C3FE002F7F4F /* Winamac.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5722D4C3FD002F7F4F /* Winamac.ics */; };
+		B078F00C22D4C3FE002F7F4F /* Tell_City.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5822D4C3FD002F7F4F /* Tell_City.ics */; };
+		B078F00D22D4C3FE002F7F4F /* Petersburg.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5922D4C3FD002F7F4F /* Petersburg.ics */; };
+		B078F00E22D4C3FE002F7F4F /* Vincennes.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5A22D4C3FD002F7F4F /* Vincennes.ics */; };
+		B078F00F22D4C3FE002F7F4F /* Marengo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5B22D4C3FD002F7F4F /* Marengo.ics */; };
+		B078F01022D4C3FE002F7F4F /* Port_of_Spain.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5C22D4C3FD002F7F4F /* Port_of_Spain.ics */; };
+		B078F01122D4C3FE002F7F4F /* Tijuana.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5D22D4C3FD002F7F4F /* Tijuana.ics */; };
+		B078F01222D4C3FE002F7F4F /* Belize.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5E22D4C3FD002F7F4F /* Belize.ics */; };
+		B078F01322D4C3FE002F7F4F /* Tortola.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE5F22D4C3FD002F7F4F /* Tortola.ics */; };
+		B078F01422D4C3FE002F7F4F /* La_Rioja.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6122D4C3FD002F7F4F /* La_Rioja.ics */; };
+		B078F01522D4C3FE002F7F4F /* Tucuman.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6222D4C3FD002F7F4F /* Tucuman.ics */; };
+		B078F01622D4C3FE002F7F4F /* Jujuy.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6322D4C3FD002F7F4F /* Jujuy.ics */; };
+		B078F01722D4C3FE002F7F4F /* Salta.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6422D4C3FD002F7F4F /* Salta.ics */; };
+		B078F01822D4C3FE002F7F4F /* Buenos_Aires.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6522D4C3FD002F7F4F /* Buenos_Aires.ics */; };
+		B078F01922D4C3FE002F7F4F /* Cordoba.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6622D4C3FD002F7F4F /* Cordoba.ics */; };
+		B078F01A22D4C3FE002F7F4F /* Catamarca.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6722D4C3FD002F7F4F /* Catamarca.ics */; };
+		B078F01B22D4C3FE002F7F4F /* San_Juan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6822D4C3FD002F7F4F /* San_Juan.ics */; };
+		B078F01C22D4C3FE002F7F4F /* San_Luis.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6922D4C3FD002F7F4F /* San_Luis.ics */; };
+		B078F01D22D4C3FE002F7F4F /* Mendoza.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6A22D4C3FD002F7F4F /* Mendoza.ics */; };
+		B078F01E22D4C3FE002F7F4F /* Rio_Gallegos.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6B22D4C3FD002F7F4F /* Rio_Gallegos.ics */; };
+		B078F01F22D4C3FE002F7F4F /* Ushuaia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6C22D4C3FD002F7F4F /* Ushuaia.ics */; };
+		B078F02022D4C3FE002F7F4F /* Bahia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6D22D4C3FD002F7F4F /* Bahia.ics */; };
+		B078F02122D4C3FE002F7F4F /* Shiprock.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6E22D4C3FD002F7F4F /* Shiprock.ics */; };
+		B078F02222D4C3FE002F7F4F /* Phoenix.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE6F22D4C3FD002F7F4F /* Phoenix.ics */; };
+		B078F02322D4C3FE002F7F4F /* Thule.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7022D4C3FD002F7F4F /* Thule.ics */; };
+		B078F02422D4C3FE002F7F4F /* Sitka.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7122D4C3FD002F7F4F /* Sitka.ics */; };
+		B078F02522D4C3FE002F7F4F /* Manaus.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7222D4C3FD002F7F4F /* Manaus.ics */; };
+		B078F02622D4C3FE002F7F4F /* Whitehorse.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7322D4C3FD002F7F4F /* Whitehorse.ics */; };
+		B078F02722D4C3FE002F7F4F /* Adak.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7422D4C3FD002F7F4F /* Adak.ics */; };
+		B078F02822D4C3FE002F7F4F /* Costa_Rica.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7522D4C3FD002F7F4F /* Costa_Rica.ics */; };
+		B078F02922D4C3FE002F7F4F /* Cancun.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7622D4C3FD002F7F4F /* Cancun.ics */; };
+		B078F02A22D4C3FE002F7F4F /* Port-au-Prince.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7722D4C3FD002F7F4F /* Port-au-Prince.ics */; };
+		B078F02B22D4C3FE002F7F4F /* Lima.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7822D4C3FD002F7F4F /* Lima.ics */; };
+		B078F02C22D4C3FE002F7F4F /* Jamaica.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7922D4C3FD002F7F4F /* Jamaica.ics */; };
+		B078F02D22D4C3FE002F7F4F /* Recife.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7A22D4C3FD002F7F4F /* Recife.ics */; };
+		B078F02E22D4C3FE002F7F4F /* Noronha.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7B22D4C3FD002F7F4F /* Noronha.ics */; };
+		B078F02F22D4C3FE002F7F4F /* Moncton.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7C22D4C3FD002F7F4F /* Moncton.ics */; };
+		B078F03022D4C3FE002F7F4F /* Santiago.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7D22D4C3FD002F7F4F /* Santiago.ics */; };
+		B078F03122D4C3FE002F7F4F /* Winnipeg.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7E22D4C3FD002F7F4F /* Winnipeg.ics */; };
+		B078F03222D4C3FE002F7F4F /* Guatemala.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE7F22D4C3FD002F7F4F /* Guatemala.ics */; };
+		B078F03322D4C3FE002F7F4F /* Montreal.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8022D4C3FD002F7F4F /* Montreal.ics */; };
+		B078F03422D4C3FE002F7F4F /* Swift_Current.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8122D4C3FD002F7F4F /* Swift_Current.ics */; };
+		B078F03522D4C3FE002F7F4F /* El_Salvador.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8222D4C3FD002F7F4F /* El_Salvador.ics */; };
+		B078F03622D4C3FE002F7F4F /* Montevideo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8322D4C3FD002F7F4F /* Montevideo.ics */; };
+		B078F03722D4C3FE002F7F4F /* Nome.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8422D4C3FD002F7F4F /* Nome.ics */; };
+		B078F03822D4C3FE002F7F4F /* Tegucigalpa.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8522D4C3FD002F7F4F /* Tegucigalpa.ics */; };
+		B078F03922D4C3FE002F7F4F /* Matamoros.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8622D4C3FD002F7F4F /* Matamoros.ics */; };
+		B078F03A22D4C3FE002F7F4F /* Managua.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8722D4C3FD002F7F4F /* Managua.ics */; };
+		B078F03B22D4C3FE002F7F4F /* Hermosillo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8822D4C3FD002F7F4F /* Hermosillo.ics */; };
+		B078F03C22D4C3FE002F7F4F /* Guayaquil.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8922D4C3FD002F7F4F /* Guayaquil.ics */; };
+		B078F03D22D4C3FE002F7F4F /* Curacao.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8A22D4C3FD002F7F4F /* Curacao.ics */; };
+		B078F03E22D4C3FE002F7F4F /* Aruba.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8B22D4C3FD002F7F4F /* Aruba.ics */; };
+		B078F03F22D4C3FE002F7F4F /* Monterrey.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8C22D4C3FD002F7F4F /* Monterrey.ics */; };
+		B078F04022D4C3FE002F7F4F /* Maceio.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8D22D4C3FD002F7F4F /* Maceio.ics */; };
+		B078F04122D4C3FE002F7F4F /* New_York.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8E22D4C3FD002F7F4F /* New_York.ics */; };
+		B078F04222D4C3FE002F7F4F /* Scoresbysund.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE8F22D4C3FD002F7F4F /* Scoresbysund.ics */; };
+		B078F04322D4C3FE002F7F4F /* Guadeloupe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9022D4C3FD002F7F4F /* Guadeloupe.ics */; };
+		B078F04422D4C3FE002F7F4F /* Louisville.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9222D4C3FD002F7F4F /* Louisville.ics */; };
+		B078F04522D4C3FE002F7F4F /* Monticello.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9322D4C3FD002F7F4F /* Monticello.ics */; };
+		B078F04622D4C3FE002F7F4F /* Center.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9522D4C3FD002F7F4F /* Center.ics */; };
+		B078F04722D4C3FE002F7F4F /* New_Salem.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9622D4C3FD002F7F4F /* New_Salem.ics */; };
+		B078F04822D4C3FE002F7F4F /* Beulah.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9722D4C3FD002F7F4F /* Beulah.ics */; };
+		B078F04922D4C3FE002F7F4F /* Cuiaba.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9822D4C3FD002F7F4F /* Cuiaba.ics */; };
+		B078F04A22D4C3FE002F7F4F /* St_Vincent.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9922D4C3FD002F7F4F /* St_Vincent.ics */; };
+		B078F04B22D4C3FE002F7F4F /* Campo_Grande.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9A22D4C3FD002F7F4F /* Campo_Grande.ics */; };
+		B078F04C22D4C3FE002F7F4F /* Merida.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9B22D4C3FD002F7F4F /* Merida.ics */; };
+		B078F04D22D4C3FE002F7F4F /* Mazatlan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9C22D4C3FD002F7F4F /* Mazatlan.ics */; };
+		B078F04E22D4C3FE002F7F4F /* St_Lucia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9D22D4C3FD002F7F4F /* St_Lucia.ics */; };
+		B078F04F22D4C3FE002F7F4F /* Nassau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9E22D4C3FD002F7F4F /* Nassau.ics */; };
+		B078F05022D4C3FE002F7F4F /* Edmonton.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EE9F22D4C3FD002F7F4F /* Edmonton.ics */; };
+		B078F05122D4C3FE002F7F4F /* Yellowknife.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA022D4C3FD002F7F4F /* Yellowknife.ics */; };
+		B078F05222D4C3FE002F7F4F /* Halifax.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA122D4C3FD002F7F4F /* Halifax.ics */; };
+		B078F05322D4C3FE002F7F4F /* Nipigon.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA222D4C3FD002F7F4F /* Nipigon.ics */; };
+		B078F05422D4C3FE002F7F4F /* Creston.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA322D4C3FD002F7F4F /* Creston.ics */; };
+		B078F05522D4C3FE002F7F4F /* Chicago.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA422D4C3FD002F7F4F /* Chicago.ics */; };
+		B078F05622D4C3FE002F7F4F /* Los_Angeles.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA522D4C3FD002F7F4F /* Los_Angeles.ics */; };
+		B078F05722D4C3FE002F7F4F /* Thunder_Bay.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA622D4C3FD002F7F4F /* Thunder_Bay.ics */; };
+		B078F05822D4C3FE002F7F4F /* Glace_Bay.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA722D4C3FD002F7F4F /* Glace_Bay.ics */; };
+		B078F05922D4C3FE002F7F4F /* Detroit.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA822D4C3FD002F7F4F /* Detroit.ics */; };
+		B078F05A22D4C3FE002F7F4F /* Atikokan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEA922D4C3FD002F7F4F /* Atikokan.ics */; };
+		B078F05B22D4C3FE002F7F4F /* Belem.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEAA22D4C3FD002F7F4F /* Belem.ics */; };
+		B078F05C22D4C3FE002F7F4F /* Boise.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEAB22D4C3FD002F7F4F /* Boise.ics */; };
+		B078F05D22D4C3FE002F7F4F /* La_Paz.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEAC22D4C3FD002F7F4F /* La_Paz.ics */; };
+		B078F05E22D4C3FE002F7F4F /* Iqaluit.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEAD22D4C3FD002F7F4F /* Iqaluit.ics */; };
+		B078F05F22D4C3FE002F7F4F /* Grand_Turk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEAE22D4C3FD002F7F4F /* Grand_Turk.ics */; };
+		B078F06022D4C3FE002F7F4F /* Santarem.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEAF22D4C3FD002F7F4F /* Santarem.ics */; };
+		B078F06122D4C3FE002F7F4F /* Dawson.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB022D4C3FD002F7F4F /* Dawson.ics */; };
+		B078F06222D4C3FE002F7F4F /* Antigua.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB122D4C3FD002F7F4F /* Antigua.ics */; };
+		B078F06322D4C3FE002F7F4F /* Cambridge_Bay.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB222D4C3FD002F7F4F /* Cambridge_Bay.ics */; };
+		B078F06422D4C3FE002F7F4F /* Panama.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB322D4C3FD002F7F4F /* Panama.ics */; };
+		B078F06522D4C3FE002F7F4F /* St_Barthelemy.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB422D4C3FD002F7F4F /* St_Barthelemy.ics */; };
+		B078F06622D4C3FE002F7F4F /* Montserrat.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB522D4C3FD002F7F4F /* Montserrat.ics */; };
+		B078F06722D4C3FE002F7F4F /* Rio_Branco.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB622D4C3FD002F7F4F /* Rio_Branco.ics */; };
+		B078F06822D4C3FE002F7F4F /* Grenada.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB722D4C3FD002F7F4F /* Grenada.ics */; };
+		B078F06922D4C3FE002F7F4F /* Porto_Velho.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB822D4C3FD002F7F4F /* Porto_Velho.ics */; };
+		B078F06A22D4C3FE002F7F4F /* St_Johns.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEB922D4C3FD002F7F4F /* St_Johns.ics */; };
+		B078F06B22D4C3FE002F7F4F /* Rankin_Inlet.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEBA22D4C3FD002F7F4F /* Rankin_Inlet.ics */; };
+		B078F06C22D4C3FE002F7F4F /* Chihuahua.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEBB22D4C3FD002F7F4F /* Chihuahua.ics */; };
+		B078F06D22D4C3FE002F7F4F /* Yakutat.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEBC22D4C3FD002F7F4F /* Yakutat.ics */; };
+		B078F06E22D4C3FE002F7F4F /* Sao_Paulo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEBD22D4C3FD002F7F4F /* Sao_Paulo.ics */; };
+		B078F06F22D4C3FE002F7F4F /* Sydney.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEBF22D4C3FD002F7F4F /* Sydney.ics */; };
+		B078F07022D4C3FE002F7F4F /* Broken_Hill.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC022D4C3FD002F7F4F /* Broken_Hill.ics */; };
+		B078F07122D4C3FE002F7F4F /* Hobart.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC122D4C3FD002F7F4F /* Hobart.ics */; };
+		B078F07222D4C3FE002F7F4F /* Darwin.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC222D4C3FD002F7F4F /* Darwin.ics */; };
+		B078F07322D4C3FE002F7F4F /* Perth.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC322D4C3FD002F7F4F /* Perth.ics */; };
+		B078F07422D4C3FE002F7F4F /* Adelaide.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC422D4C3FD002F7F4F /* Adelaide.ics */; };
+		B078F07522D4C3FE002F7F4F /* Currie.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC522D4C3FD002F7F4F /* Currie.ics */; };
+		B078F07622D4C3FE002F7F4F /* Lindeman.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC622D4C3FD002F7F4F /* Lindeman.ics */; };
+		B078F07722D4C3FE002F7F4F /* Lord_Howe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC722D4C3FD002F7F4F /* Lord_Howe.ics */; };
+		B078F07822D4C3FE002F7F4F /* Brisbane.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC822D4C3FD002F7F4F /* Brisbane.ics */; };
+		B078F07922D4C3FE002F7F4F /* Eucla.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEC922D4C3FD002F7F4F /* Eucla.ics */; };
+		B078F07A22D4C3FE002F7F4F /* Melbourne.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EECA22D4C3FD002F7F4F /* Melbourne.ics */; };
+		B078F07B22D4C3FE002F7F4F /* Tokyo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EECC22D4C3FD002F7F4F /* Tokyo.ics */; };
+		B078F07C22D4C3FE002F7F4F /* Qatar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EECD22D4C3FD002F7F4F /* Qatar.ics */; };
+		B078F07D22D4C3FE002F7F4F /* Ashgabat.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EECE22D4C3FD002F7F4F /* Ashgabat.ics */; };
+		B078F07E22D4C3FE002F7F4F /* Colombo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EECF22D4C3FD002F7F4F /* Colombo.ics */; };
+		B078F07F22D4C3FE002F7F4F /* Dili.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED022D4C3FD002F7F4F /* Dili.ics */; };
+		B078F08022D4C3FE002F7F4F /* Novosibirsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED122D4C3FD002F7F4F /* Novosibirsk.ics */; };
+		B078F08122D4C3FE002F7F4F /* Choibalsan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED222D4C3FD002F7F4F /* Choibalsan.ics */; };
+		B078F08222D4C3FE002F7F4F /* Hovd.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED322D4C3FD002F7F4F /* Hovd.ics */; };
+		B078F08322D4C3FE002F7F4F /* Magadan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED422D4C3FD002F7F4F /* Magadan.ics */; };
+		B078F08422D4C3FE002F7F4F /* Kuwait.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED522D4C3FD002F7F4F /* Kuwait.ics */; };
+		B078F08522D4C3FE002F7F4F /* Vientiane.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED622D4C3FD002F7F4F /* Vientiane.ics */; };
+		B078F08622D4C3FE002F7F4F /* Bahrain.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED722D4C3FD002F7F4F /* Bahrain.ics */; };
+		B078F08722D4C3FE002F7F4F /* Damascus.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED822D4C3FD002F7F4F /* Damascus.ics */; };
+		B078F08822D4C3FE002F7F4F /* Vladivostok.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EED922D4C3FD002F7F4F /* Vladivostok.ics */; };
+		B078F08922D4C3FE002F7F4F /* Tbilisi.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEDA22D4C3FD002F7F4F /* Tbilisi.ics */; };
+		B078F08A22D4C3FE002F7F4F /* Amman.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEDB22D4C3FD002F7F4F /* Amman.ics */; };
+		B078F08B22D4C3FE002F7F4F /* Ho_Chi_Minh.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEDC22D4C3FD002F7F4F /* Ho_Chi_Minh.ics */; };
+		B078F08C22D4C3FE002F7F4F /* Pyongyang.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEDD22D4C3FD002F7F4F /* Pyongyang.ics */; };
+		B078F08D22D4C3FE002F7F4F /* Baku.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEDE22D4C3FD002F7F4F /* Baku.ics */; };
+		B078F08E22D4C3FE002F7F4F /* Tashkent.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEDF22D4C3FD002F7F4F /* Tashkent.ics */; };
+		B078F08F22D4C3FE002F7F4F /* Yerevan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE022D4C3FD002F7F4F /* Yerevan.ics */; };
+		B078F09022D4C3FE002F7F4F /* Kamchatka.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE122D4C3FD002F7F4F /* Kamchatka.ics */; };
+		B078F09122D4C3FE002F7F4F /* Sakhalin.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE222D4C3FD002F7F4F /* Sakhalin.ics */; };
+		B078F09222D4C3FE002F7F4F /* Rangoon.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE322D4C3FD002F7F4F /* Rangoon.ics */; };
+		B078F09322D4C3FE002F7F4F /* Singapore.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE422D4C3FD002F7F4F /* Singapore.ics */; };
+		B078F09422D4C3FE002F7F4F /* Gaza.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE522D4C3FD002F7F4F /* Gaza.ics */; };
+		B078F09522D4C3FE002F7F4F /* Beirut.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE622D4C3FD002F7F4F /* Beirut.ics */; };
+		B078F09622D4C3FE002F7F4F /* Yakutsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE722D4C3FD002F7F4F /* Yakutsk.ics */; };
+		B078F09722D4C3FE002F7F4F /* Dubai.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE822D4C3FD002F7F4F /* Dubai.ics */; };
+		B078F09822D4C3FE002F7F4F /* Srednekolymsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEE922D4C3FD002F7F4F /* Srednekolymsk.ics */; };
+		B078F09922D4C3FE002F7F4F /* Kathmandu.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEEA22D4C3FD002F7F4F /* Kathmandu.ics */; };
+		B078F09A22D4C3FE002F7F4F /* Kashgar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEEB22D4C3FD002F7F4F /* Kashgar.ics */; };
+		B078F09B22D4C3FE002F7F4F /* Brunei.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEEC22D4C3FD002F7F4F /* Brunei.ics */; };
+		B078F09C22D4C3FE002F7F4F /* Anadyr.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEED22D4C3FD002F7F4F /* Anadyr.ics */; };
+		B078F09D22D4C3FE002F7F4F /* Dushanbe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEEE22D4C3FD002F7F4F /* Dushanbe.ics */; };
+		B078F09E22D4C3FE002F7F4F /* Taipei.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEEF22D4C3FD002F7F4F /* Taipei.ics */; };
+		B078F09F22D4C3FE002F7F4F /* Kolkata.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF022D4C3FD002F7F4F /* Kolkata.ics */; };
+		B078F0A022D4C3FE002F7F4F /* Makassar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF122D4C3FD002F7F4F /* Makassar.ics */; };
+		B078F0A122D4C3FE002F7F4F /* Jerusalem.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF222D4C3FD002F7F4F /* Jerusalem.ics */; };
+		B078F0A222D4C3FE002F7F4F /* Dhaka.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF322D4C3FD002F7F4F /* Dhaka.ics */; };
+		B078F0A322D4C3FE002F7F4F /* Istanbul.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF422D4C3FD002F7F4F /* Istanbul.ics */; };
+		B078F0A422D4C3FE002F7F4F /* Chita.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF522D4C3FD002F7F4F /* Chita.ics */; };
+		B078F0A522D4C3FE002F7F4F /* Calcutta.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF622D4C3FD002F7F4F /* Calcutta.ics */; };
+		B078F0A622D4C3FE002F7F4F /* Shanghai.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF722D4C3FD002F7F4F /* Shanghai.ics */; };
+		B078F0A722D4C3FE002F7F4F /* Katmandu.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF822D4C3FD002F7F4F /* Katmandu.ics */; };
+		B078F0A822D4C3FE002F7F4F /* Kuching.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEF922D4C3FD002F7F4F /* Kuching.ics */; };
+		B078F0A922D4C3FE002F7F4F /* Hebron.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEFA22D4C3FD002F7F4F /* Hebron.ics */; };
+		B078F0AA22D4C3FE002F7F4F /* Saigon.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEFB22D4C3FD002F7F4F /* Saigon.ics */; };
+		B078F0AB22D4C3FE002F7F4F /* Krasnoyarsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEFC22D4C3FD002F7F4F /* Krasnoyarsk.ics */; };
+		B078F0AC22D4C3FE002F7F4F /* Tehran.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEFD22D4C3FD002F7F4F /* Tehran.ics */; };
+		B078F0AD22D4C3FE002F7F4F /* Pontianak.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEFE22D4C3FD002F7F4F /* Pontianak.ics */; };
+		B078F0AE22D4C3FE002F7F4F /* Samarkand.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EEFF22D4C3FD002F7F4F /* Samarkand.ics */; };
+		B078F0AF22D4C3FE002F7F4F /* Ulaanbaatar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0022D4C3FD002F7F4F /* Ulaanbaatar.ics */; };
+		B078F0B022D4C3FE002F7F4F /* Almaty.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0122D4C3FD002F7F4F /* Almaty.ics */; };
+		B078F0B122D4C3FE002F7F4F /* Baghdad.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0222D4C3FD002F7F4F /* Baghdad.ics */; };
+		B078F0B222D4C3FE002F7F4F /* Hong_Kong.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0322D4C3FD002F7F4F /* Hong_Kong.ics */; };
+		B078F0B322D4C3FE002F7F4F /* Manila.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0422D4C3FD002F7F4F /* Manila.ics */; };
+		B078F0B422D4C3FE002F7F4F /* Thimphu.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0522D4C3FD002F7F4F /* Thimphu.ics */; };
+		B078F0B522D4C3FE002F7F4F /* Bangkok.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0622D4C3FD002F7F4F /* Bangkok.ics */; };
+		B078F0B622D4C3FE002F7F4F /* Riyadh.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0722D4C3FD002F7F4F /* Riyadh.ics */; };
+		B078F0B722D4C3FE002F7F4F /* Phnom_Penh.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0822D4C3FD002F7F4F /* Phnom_Penh.ics */; };
+		B078F0B822D4C3FE002F7F4F /* Khandyga.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0922D4C3FD002F7F4F /* Khandyga.ics */; };
+		B078F0B922D4C3FE002F7F4F /* Aqtau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0A22D4C3FD002F7F4F /* Aqtau.ics */; };
+		B078F0BA22D4C3FE002F7F4F /* Urumqi.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0B22D4C3FD002F7F4F /* Urumqi.ics */; };
+		B078F0BB22D4C3FE002F7F4F /* Omsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0C22D4C3FD002F7F4F /* Omsk.ics */; };
+		B078F0BC22D4C3FE002F7F4F /* Muscat.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0D22D4C3FD002F7F4F /* Muscat.ics */; };
+		B078F0BD22D4C3FE002F7F4F /* Jayapura.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0E22D4C3FD002F7F4F /* Jayapura.ics */; };
+		B078F0BE22D4C3FE002F7F4F /* Ust-Nera.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF0F22D4C3FD002F7F4F /* Ust-Nera.ics */; };
+		B078F0BF22D4C3FE002F7F4F /* Macau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1022D4C3FD002F7F4F /* Macau.ics */; };
+		B078F0C022D4C3FE002F7F4F /* Bishkek.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1122D4C3FD002F7F4F /* Bishkek.ics */; };
+		B078F0C122D4C3FE002F7F4F /* Novokuznetsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1222D4C3FD002F7F4F /* Novokuznetsk.ics */; };
+		B078F0C222D4C3FE002F7F4F /* Oral.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1322D4C3FD002F7F4F /* Oral.ics */; };
+		B078F0C322D4C3FE002F7F4F /* Yekaterinburg.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1422D4C3FD002F7F4F /* Yekaterinburg.ics */; };
+		B078F0C422D4C3FE002F7F4F /* Aden.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1522D4C3FD002F7F4F /* Aden.ics */; };
+		B078F0C522D4C3FE002F7F4F /* Harbin.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1622D4C3FD002F7F4F /* Harbin.ics */; };
+		B078F0C622D4C3FE002F7F4F /* Jakarta.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1722D4C3FD002F7F4F /* Jakarta.ics */; };
+		B078F0C722D4C3FE002F7F4F /* Karachi.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1822D4C3FD002F7F4F /* Karachi.ics */; };
+		B078F0C822D4C3FE002F7F4F /* Kabul.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1922D4C3FD002F7F4F /* Kabul.ics */; };
+		B078F0C922D4C3FE002F7F4F /* Chongqing.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1A22D4C3FD002F7F4F /* Chongqing.ics */; };
+		B078F0CA22D4C3FE002F7F4F /* Aqtobe.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1B22D4C3FD002F7F4F /* Aqtobe.ics */; };
+		B078F0CB22D4C3FE002F7F4F /* Kuala_Lumpur.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1C22D4C3FD002F7F4F /* Kuala_Lumpur.ics */; };
+		B078F0CC22D4C3FE002F7F4F /* Irkutsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1D22D4C3FD002F7F4F /* Irkutsk.ics */; };
+		B078F0CD22D4C3FE002F7F4F /* Seoul.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1E22D4C3FD002F7F4F /* Seoul.ics */; };
+		B078F0CE22D4C3FE002F7F4F /* Qyzylorda.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF1F22D4C3FD002F7F4F /* Qyzylorda.ics */; };
+		B078F0CF22D4C3FE002F7F4F /* Vostok.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2122D4C3FD002F7F4F /* Vostok.ics */; };
+		B078F0D022D4C3FE002F7F4F /* Rothera.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2222D4C3FD002F7F4F /* Rothera.ics */; };
+		B078F0D122D4C3FE002F7F4F /* Mawson.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2322D4C3FD002F7F4F /* Mawson.ics */; };
+		B078F0D222D4C3FE002F7F4F /* DumontDUrville.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2422D4C3FD002F7F4F /* DumontDUrville.ics */; };
+		B078F0D322D4C3FE002F7F4F /* Macquarie.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2522D4C3FD002F7F4F /* Macquarie.ics */; };
+		B078F0D422D4C3FE002F7F4F /* Palmer.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2622D4C3FD002F7F4F /* Palmer.ics */; };
+		B078F0D522D4C3FE002F7F4F /* Davis.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2722D4C3FD002F7F4F /* Davis.ics */; };
+		B078F0D622D4C3FE002F7F4F /* Casey.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2822D4C3FD002F7F4F /* Casey.ics */; };
+		B078F0D722D4C3FE002F7F4F /* Syowa.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2922D4C3FD002F7F4F /* Syowa.ics */; };
+		B078F0D822D4C3FE002F7F4F /* McMurdo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2A22D4C3FD002F7F4F /* McMurdo.ics */; };
+		B078F0D922D4C3FE002F7F4F /* Troll.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2B22D4C3FD002F7F4F /* Troll.ics */; };
+		B078F0DA22D4C3FE002F7F4F /* Busingen.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2D22D4C3FD002F7F4F /* Busingen.ics */; };
+		B078F0DB22D4C3FE002F7F4F /* Bratislava.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2E22D4C3FD002F7F4F /* Bratislava.ics */; };
+		B078F0DC22D4C3FE002F7F4F /* Kaliningrad.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF2F22D4C3FD002F7F4F /* Kaliningrad.ics */; };
+		B078F0DD22D4C3FE002F7F4F /* Skopje.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3022D4C3FD002F7F4F /* Skopje.ics */; };
+		B078F0DE22D4C3FE002F7F4F /* Mariehamn.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3122D4C3FD002F7F4F /* Mariehamn.ics */; };
+		B078F0DF22D4C3FE002F7F4F /* Amsterdam.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3222D4C3FD002F7F4F /* Amsterdam.ics */; };
+		B078F0E022D4C3FE002F7F4F /* Sarajevo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3322D4C3FD002F7F4F /* Sarajevo.ics */; };
+		B078F0E122D4C3FE002F7F4F /* Dublin.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3422D4C3FD002F7F4F /* Dublin.ics */; };
+		B078F0E222D4C3FE002F7F4F /* Nicosia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3522D4C3FD002F7F4F /* Nicosia.ics */; };
+		B078F0E322D4C3FE002F7F4F /* Ljubljana.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3622D4C3FD002F7F4F /* Ljubljana.ics */; };
+		B078F0E422D4C3FE002F7F4F /* Simferopol.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3722D4C3FD002F7F4F /* Simferopol.ics */; };
+		B078F0E522D4C3FE002F7F4F /* Vienna.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3822D4C3FD002F7F4F /* Vienna.ics */; };
+		B078F0E622D4C3FE002F7F4F /* San_Marino.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3922D4C3FD002F7F4F /* San_Marino.ics */; };
+		B078F0E722D4C3FE002F7F4F /* Luxembourg.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3A22D4C3FD002F7F4F /* Luxembourg.ics */; };
+		B078F0E822D4C3FE002F7F4F /* Brussels.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3B22D4C3FD002F7F4F /* Brussels.ics */; };
+		B078F0E922D4C3FE002F7F4F /* Chisinau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3C22D4C3FD002F7F4F /* Chisinau.ics */; };
+		B078F0EA22D4C3FE002F7F4F /* Zaporozhye.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3D22D4C3FD002F7F4F /* Zaporozhye.ics */; };
+		B078F0EB22D4C3FE002F7F4F /* Vatican.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3E22D4C3FD002F7F4F /* Vatican.ics */; };
+		B078F0EC22D4C3FE002F7F4F /* Madrid.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF3F22D4C3FD002F7F4F /* Madrid.ics */; };
+		B078F0ED22D4C3FE002F7F4F /* Jersey.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4022D4C3FD002F7F4F /* Jersey.ics */; };
+		B078F0EE22D4C3FE002F7F4F /* Zagreb.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4122D4C3FD002F7F4F /* Zagreb.ics */; };
+		B078F0EF22D4C3FE002F7F4F /* Warsaw.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4222D4C3FD002F7F4F /* Warsaw.ics */; };
+		B078F0F022D4C3FE002F7F4F /* Malta.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4322D4C3FD002F7F4F /* Malta.ics */; };
+		B078F0F122D4C3FE002F7F4F /* Volgograd.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4422D4C3FD002F7F4F /* Volgograd.ics */; };
+		B078F0F222D4C3FE002F7F4F /* Sofia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4522D4C3FD002F7F4F /* Sofia.ics */; };
+		B078F0F322D4C3FE002F7F4F /* Zurich.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4622D4C3FD002F7F4F /* Zurich.ics */; };
+		B078F0F422D4C3FE002F7F4F /* Paris.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4722D4C3FD002F7F4F /* Paris.ics */; };
+		B078F0F522D4C3FE002F7F4F /* Guernsey.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4822D4C3FD002F7F4F /* Guernsey.ics */; };
+		B078F0F622D4C3FE002F7F4F /* Riga.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4922D4C3FD002F7F4F /* Riga.ics */; };
+		B078F0F722D4C3FE002F7F4F /* Uzhgorod.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4A22D4C3FD002F7F4F /* Uzhgorod.ics */; };
+		B078F0F822D4C3FE002F7F4F /* Minsk.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4B22D4C3FD002F7F4F /* Minsk.ics */; };
+		B078F0F922D4C3FE002F7F4F /* Podgorica.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4C22D4C3FD002F7F4F /* Podgorica.ics */; };
+		B078F0FA22D4C3FE002F7F4F /* Oslo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4D22D4C3FD002F7F4F /* Oslo.ics */; };
+		B078F0FB22D4C3FE002F7F4F /* Isle_of_Man.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4E22D4C3FD002F7F4F /* Isle_of_Man.ics */; };
+		B078F0FC22D4C3FE002F7F4F /* Helsinki.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF4F22D4C3FD002F7F4F /* Helsinki.ics */; };
+		B078F0FD22D4C3FE002F7F4F /* London.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5022D4C3FD002F7F4F /* London.ics */; };
+		B078F0FE22D4C3FE002F7F4F /* Tirane.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5122D4C3FD002F7F4F /* Tirane.ics */; };
+		B078F0FF22D4C3FE002F7F4F /* Athens.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5222D4C3FD002F7F4F /* Athens.ics */; };
+		B078F10022D4C3FE002F7F4F /* Samara.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5322D4C3FD002F7F4F /* Samara.ics */; };
+		B078F10122D4C3FE002F7F4F /* Kiev.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5422D4C3FD002F7F4F /* Kiev.ics */; };
+		B078F10222D4C3FE002F7F4F /* Rome.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5522D4C3FD002F7F4F /* Rome.ics */; };
+		B078F10322D4C3FE002F7F4F /* Andorra.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5622D4C3FD002F7F4F /* Andorra.ics */; };
+		B078F10422D4C3FE002F7F4F /* Vilnius.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5722D4C3FD002F7F4F /* Vilnius.ics */; };
+		B078F10522D4C3FE002F7F4F /* Bucharest.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5822D4C3FD002F7F4F /* Bucharest.ics */; };
+		B078F10622D4C3FE002F7F4F /* Moscow.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5922D4C3FD002F7F4F /* Moscow.ics */; };
+		B078F10722D4C3FE002F7F4F /* Stockholm.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5A22D4C3FD002F7F4F /* Stockholm.ics */; };
+		B078F10822D4C3FE002F7F4F /* Prague.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5B22D4C3FD002F7F4F /* Prague.ics */; };
+		B078F10922D4C3FE002F7F4F /* Gibraltar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5C22D4C3FD002F7F4F /* Gibraltar.ics */; };
+		B078F10A22D4C3FE002F7F4F /* Berlin.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5D22D4C3FD002F7F4F /* Berlin.ics */; };
+		B078F10B22D4C3FE002F7F4F /* Tallinn.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5E22D4C3FD002F7F4F /* Tallinn.ics */; };
+		B078F10C22D4C3FE002F7F4F /* Monaco.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF5F22D4C3FD002F7F4F /* Monaco.ics */; };
+		B078F10D22D4C3FE002F7F4F /* Lisbon.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6022D4C3FD002F7F4F /* Lisbon.ics */; };
+		B078F10E22D4C3FE002F7F4F /* Vaduz.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6122D4C3FD002F7F4F /* Vaduz.ics */; };
+		B078F10F22D4C3FE002F7F4F /* Budapest.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6222D4C3FD002F7F4F /* Budapest.ics */; };
+		B078F11022D4C3FE002F7F4F /* Belgrade.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6322D4C3FD002F7F4F /* Belgrade.ics */; };
+		B078F11122D4C3FE002F7F4F /* Copenhagen.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6422D4C3FD002F7F4F /* Copenhagen.ics */; };
+		B078F11222D4C3FE002F7F4F /* Kampala.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6622D4C3FD002F7F4F /* Kampala.ics */; };
+		B078F11322D4C3FE002F7F4F /* Freetown.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6722D4C3FD002F7F4F /* Freetown.ics */; };
+		B078F11422D4C3FE002F7F4F /* Kigali.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6822D4C3FD002F7F4F /* Kigali.ics */; };
+		B078F11522D4C3FE002F7F4F /* Tunis.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6922D4C3FD002F7F4F /* Tunis.ics */; };
+		B078F11622D4C3FE002F7F4F /* Mogadishu.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6A22D4C3FD002F7F4F /* Mogadishu.ics */; };
+		B078F11722D4C3FE002F7F4F /* Gaborone.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6B22D4C3FD002F7F4F /* Gaborone.ics */; };
+		B078F11822D4C3FE002F7F4F /* Cairo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6C22D4C3FD002F7F4F /* Cairo.ics */; };
+		B078F11922D4C3FE002F7F4F /* Lagos.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6D22D4C3FD002F7F4F /* Lagos.ics */; };
+		B078F11A22D4C3FE002F7F4F /* Dakar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6E22D4C3FD002F7F4F /* Dakar.ics */; };
+		B078F11B22D4C3FE002F7F4F /* Juba.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF6F22D4C3FD002F7F4F /* Juba.ics */; };
+		B078F11C22D4C3FE002F7F4F /* Lubumbashi.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7022D4C3FD002F7F4F /* Lubumbashi.ics */; };
+		B078F11D22D4C3FE002F7F4F /* Ndjamena.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7122D4C3FD002F7F4F /* Ndjamena.ics */; };
+		B078F11E22D4C3FE002F7F4F /* Accra.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7222D4C3FD002F7F4F /* Accra.ics */; };
+		B078F11F22D4C3FE002F7F4F /* Addis_Ababa.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7322D4C3FD002F7F4F /* Addis_Ababa.ics */; };
+		B078F12022D4C3FE002F7F4F /* Malabo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7422D4C3FD002F7F4F /* Malabo.ics */; };
+		B078F12122D4C3FE002F7F4F /* Abidjan.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7522D4C3FD002F7F4F /* Abidjan.ics */; };
+		B078F12222D4C3FE002F7F4F /* Bangui.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7622D4C3FE002F7F4F /* Bangui.ics */; };
+		B078F12322D4C3FE002F7F4F /* Asmara.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7722D4C3FE002F7F4F /* Asmara.ics */; };
+		B078F12422D4C3FE002F7F4F /* Kinshasa.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7822D4C3FE002F7F4F /* Kinshasa.ics */; };
+		B078F12522D4C3FE002F7F4F /* Porto-Novo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7922D4C3FE002F7F4F /* Porto-Novo.ics */; };
+		B078F12622D4C3FE002F7F4F /* Maputo.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7A22D4C3FE002F7F4F /* Maputo.ics */; };
+		B078F12722D4C3FE002F7F4F /* Monrovia.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7B22D4C3FE002F7F4F /* Monrovia.ics */; };
+		B078F12822D4C3FE002F7F4F /* Windhoek.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7C22D4C3FE002F7F4F /* Windhoek.ics */; };
+		B078F12922D4C3FE002F7F4F /* Djibouti.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7D22D4C3FE002F7F4F /* Djibouti.ics */; };
+		B078F12A22D4C3FE002F7F4F /* Ceuta.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7E22D4C3FE002F7F4F /* Ceuta.ics */; };
+		B078F12B22D4C3FE002F7F4F /* Lome.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF7F22D4C3FE002F7F4F /* Lome.ics */; };
+		B078F12C22D4C3FE002F7F4F /* Sao_Tome.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8022D4C3FE002F7F4F /* Sao_Tome.ics */; };
+		B078F12D22D4C3FE002F7F4F /* Harare.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8122D4C3FE002F7F4F /* Harare.ics */; };
+		B078F12E22D4C3FE002F7F4F /* Bamako.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8222D4C3FE002F7F4F /* Bamako.ics */; };
+		B078F12F22D4C3FE002F7F4F /* Ouagadougou.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8322D4C3FE002F7F4F /* Ouagadougou.ics */; };
+		B078F13022D4C3FE002F7F4F /* Algiers.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8422D4C3FE002F7F4F /* Algiers.ics */; };
+		B078F13122D4C3FE002F7F4F /* Conakry.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8522D4C3FE002F7F4F /* Conakry.ics */; };
+		B078F13222D4C3FE002F7F4F /* Blantyre.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8622D4C3FE002F7F4F /* Blantyre.ics */; };
+		B078F13322D4C3FE002F7F4F /* Mbabane.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8722D4C3FE002F7F4F /* Mbabane.ics */; };
+		B078F13422D4C3FE002F7F4F /* Niamey.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8822D4C3FE002F7F4F /* Niamey.ics */; };
+		B078F13522D4C3FE002F7F4F /* Casablanca.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8922D4C3FE002F7F4F /* Casablanca.ics */; };
+		B078F13622D4C3FE002F7F4F /* Brazzaville.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8A22D4C3FE002F7F4F /* Brazzaville.ics */; };
+		B078F13722D4C3FE002F7F4F /* Tripoli.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8B22D4C3FE002F7F4F /* Tripoli.ics */; };
+		B078F13822D4C3FE002F7F4F /* Douala.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8C22D4C3FE002F7F4F /* Douala.ics */; };
+		B078F13922D4C3FE002F7F4F /* Bujumbura.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8D22D4C3FE002F7F4F /* Bujumbura.ics */; };
+		B078F13A22D4C3FE002F7F4F /* El_Aaiun.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8E22D4C3FE002F7F4F /* El_Aaiun.ics */; };
+		B078F13B22D4C3FE002F7F4F /* Dar_es_Salaam.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF8F22D4C3FE002F7F4F /* Dar_es_Salaam.ics */; };
+		B078F13C22D4C3FE002F7F4F /* Johannesburg.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9022D4C3FE002F7F4F /* Johannesburg.ics */; };
+		B078F13D22D4C3FE002F7F4F /* Nouakchott.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9122D4C3FE002F7F4F /* Nouakchott.ics */; };
+		B078F13E22D4C3FE002F7F4F /* Bissau.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9222D4C3FE002F7F4F /* Bissau.ics */; };
+		B078F13F22D4C3FE002F7F4F /* Banjul.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9322D4C3FE002F7F4F /* Banjul.ics */; };
+		B078F14022D4C3FE002F7F4F /* Nairobi.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9422D4C3FE002F7F4F /* Nairobi.ics */; };
+		B078F14122D4C3FE002F7F4F /* Lusaka.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9522D4C3FE002F7F4F /* Lusaka.ics */; };
+		B078F14222D4C3FE002F7F4F /* Maseru.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9622D4C3FE002F7F4F /* Maseru.ics */; };
+		B078F14322D4C3FE002F7F4F /* Luanda.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9722D4C3FE002F7F4F /* Luanda.ics */; };
+		B078F14422D4C3FE002F7F4F /* Libreville.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9822D4C3FE002F7F4F /* Libreville.ics */; };
+		B078F14522D4C3FE002F7F4F /* Khartoum.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EF9922D4C3FE002F7F4F /* Khartoum.ics */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B078EDD322D4C379002F7F4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B078EDD222D4C379002F7F4F /* iCalendarKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B078EDB622D4C22F002F7F4F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B078EDB922D4C22F002F7F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B078EDBB22D4C22F002F7F4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B078EDBE22D4C22F002F7F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B078EDC022D4C231002F7F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B078EDC322D4C231002F7F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B078EDC522D4C231002F7F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iCalendarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B078EDD522D4C3D8002F7F4F /* calendar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.ics; sourceTree = "<group>"; };
+		B078EDD622D4C3D8002F7F4F /* basic.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.ics; sourceTree = "<group>"; };
+		B078EDD722D4C3D8002F7F4F /* university-formatted.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "university-formatted.ics"; sourceTree = "<group>"; };
+		B078EDD822D4C3D8002F7F4F /* totalTimeZone.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = totalTimeZone.ics; sourceTree = "<group>"; };
+		B078EDD922D4C3D8002F7F4F /* university.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = university.ics; sourceTree = "<group>"; };
+		B078EDE122D4C3FC002F7F4F /* Mauritius.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mauritius.ics; sourceTree = "<group>"; };
+		B078EDE222D4C3FC002F7F4F /* Maldives.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maldives.ics; sourceTree = "<group>"; };
+		B078EDE322D4C3FC002F7F4F /* Mayotte.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mayotte.ics; sourceTree = "<group>"; };
+		B078EDE422D4C3FC002F7F4F /* Kerguelen.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kerguelen.ics; sourceTree = "<group>"; };
+		B078EDE522D4C3FC002F7F4F /* Mahe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mahe.ics; sourceTree = "<group>"; };
+		B078EDE622D4C3FC002F7F4F /* Christmas.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Christmas.ics; sourceTree = "<group>"; };
+		B078EDE722D4C3FC002F7F4F /* Cocos.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cocos.ics; sourceTree = "<group>"; };
+		B078EDE822D4C3FC002F7F4F /* Chagos.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chagos.ics; sourceTree = "<group>"; };
+		B078EDE922D4C3FC002F7F4F /* Comoro.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Comoro.ics; sourceTree = "<group>"; };
+		B078EDEA22D4C3FC002F7F4F /* Reunion.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Reunion.ics; sourceTree = "<group>"; };
+		B078EDEB22D4C3FC002F7F4F /* Antananarivo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Antananarivo.ics; sourceTree = "<group>"; };
+		B078EDED22D4C3FC002F7F4F /* Madeira.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Madeira.ics; sourceTree = "<group>"; };
+		B078EDEE22D4C3FC002F7F4F /* Canary.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Canary.ics; sourceTree = "<group>"; };
+		B078EDEF22D4C3FC002F7F4F /* Reykjavik.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Reykjavik.ics; sourceTree = "<group>"; };
+		B078EDF022D4C3FC002F7F4F /* South_Georgia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = South_Georgia.ics; sourceTree = "<group>"; };
+		B078EDF122D4C3FC002F7F4F /* Stanley.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stanley.ics; sourceTree = "<group>"; };
+		B078EDF222D4C3FC002F7F4F /* Azores.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Azores.ics; sourceTree = "<group>"; };
+		B078EDF322D4C3FC002F7F4F /* Jan_Mayen.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jan_Mayen.ics; sourceTree = "<group>"; };
+		B078EDF422D4C3FC002F7F4F /* Faroe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Faroe.ics; sourceTree = "<group>"; };
+		B078EDF522D4C3FC002F7F4F /* Cape_Verde.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cape_Verde.ics; sourceTree = "<group>"; };
+		B078EDF622D4C3FC002F7F4F /* St_Helena.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Helena.ics; sourceTree = "<group>"; };
+		B078EDF722D4C3FC002F7F4F /* Bermuda.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bermuda.ics; sourceTree = "<group>"; };
+		B078EDF822D4C3FC002F7F4F /* zones.tab */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zones.tab; sourceTree = "<group>"; };
+		B078EDFA22D4C3FC002F7F4F /* Pohnpei.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pohnpei.ics; sourceTree = "<group>"; };
+		B078EDFB22D4C3FC002F7F4F /* Tongatapu.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tongatapu.ics; sourceTree = "<group>"; };
+		B078EDFC22D4C3FC002F7F4F /* Efate.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Efate.ics; sourceTree = "<group>"; };
+		B078EDFD22D4C3FC002F7F4F /* Guadalcanal.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guadalcanal.ics; sourceTree = "<group>"; };
+		B078EDFE22D4C3FC002F7F4F /* Majuro.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Majuro.ics; sourceTree = "<group>"; };
+		B078EDFF22D4C3FC002F7F4F /* Fakaofo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fakaofo.ics; sourceTree = "<group>"; };
+		B078EE0022D4C3FC002F7F4F /* Galapagos.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Galapagos.ics; sourceTree = "<group>"; };
+		B078EE0122D4C3FC002F7F4F /* Bougainville.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bougainville.ics; sourceTree = "<group>"; };
+		B078EE0222D4C3FC002F7F4F /* Honolulu.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Honolulu.ics; sourceTree = "<group>"; };
+		B078EE0322D4C3FC002F7F4F /* Midway.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Midway.ics; sourceTree = "<group>"; };
+		B078EE0422D4C3FC002F7F4F /* Palau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Palau.ics; sourceTree = "<group>"; };
+		B078EE0522D4C3FC002F7F4F /* Gambier.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gambier.ics; sourceTree = "<group>"; };
+		B078EE0622D4C3FC002F7F4F /* Nauru.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nauru.ics; sourceTree = "<group>"; };
+		B078EE0722D4C3FC002F7F4F /* Rarotonga.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rarotonga.ics; sourceTree = "<group>"; };
+		B078EE0822D4C3FC002F7F4F /* Easter.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Easter.ics; sourceTree = "<group>"; };
+		B078EE0922D4C3FC002F7F4F /* Kiritimati.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kiritimati.ics; sourceTree = "<group>"; };
+		B078EE0A22D4C3FC002F7F4F /* Truk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Truk.ics; sourceTree = "<group>"; };
+		B078EE0B22D4C3FC002F7F4F /* Fiji.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fiji.ics; sourceTree = "<group>"; };
+		B078EE0C22D4C3FC002F7F4F /* Tahiti.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tahiti.ics; sourceTree = "<group>"; };
+		B078EE0D22D4C3FC002F7F4F /* Norfolk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Norfolk.ics; sourceTree = "<group>"; };
+		B078EE0E22D4C3FC002F7F4F /* Funafuti.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Funafuti.ics; sourceTree = "<group>"; };
+		B078EE0F22D4C3FC002F7F4F /* Marquesas.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Marquesas.ics; sourceTree = "<group>"; };
+		B078EE1022D4C3FC002F7F4F /* Wake.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wake.ics; sourceTree = "<group>"; };
+		B078EE1122D4C3FC002F7F4F /* Chatham.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chatham.ics; sourceTree = "<group>"; };
+		B078EE1222D4C3FC002F7F4F /* Noumea.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Noumea.ics; sourceTree = "<group>"; };
+		B078EE1322D4C3FC002F7F4F /* Apia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apia.ics; sourceTree = "<group>"; };
+		B078EE1422D4C3FC002F7F4F /* Enderbury.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Enderbury.ics; sourceTree = "<group>"; };
+		B078EE1522D4C3FC002F7F4F /* Kosrae.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kosrae.ics; sourceTree = "<group>"; };
+		B078EE1622D4C3FC002F7F4F /* Niue.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Niue.ics; sourceTree = "<group>"; };
+		B078EE1722D4C3FC002F7F4F /* Pitcairn.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pitcairn.ics; sourceTree = "<group>"; };
+		B078EE1822D4C3FC002F7F4F /* Tarawa.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tarawa.ics; sourceTree = "<group>"; };
+		B078EE1922D4C3FC002F7F4F /* Pago_Pago.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pago_Pago.ics; sourceTree = "<group>"; };
+		B078EE1A22D4C3FC002F7F4F /* Saipan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Saipan.ics; sourceTree = "<group>"; };
+		B078EE1B22D4C3FC002F7F4F /* Johnston.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Johnston.ics; sourceTree = "<group>"; };
+		B078EE1C22D4C3FC002F7F4F /* Wallis.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wallis.ics; sourceTree = "<group>"; };
+		B078EE1D22D4C3FC002F7F4F /* Port_Moresby.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Port_Moresby.ics; sourceTree = "<group>"; };
+		B078EE1E22D4C3FC002F7F4F /* Auckland.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Auckland.ics; sourceTree = "<group>"; };
+		B078EE1F22D4C3FC002F7F4F /* Guam.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guam.ics; sourceTree = "<group>"; };
+		B078EE2022D4C3FC002F7F4F /* Ponape.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ponape.ics; sourceTree = "<group>"; };
+		B078EE2122D4C3FC002F7F4F /* Chuuk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chuuk.ics; sourceTree = "<group>"; };
+		B078EE2222D4C3FC002F7F4F /* Kwajalein.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kwajalein.ics; sourceTree = "<group>"; };
+		B078EE2422D4C3FC002F7F4F /* Longyearbyen.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Longyearbyen.ics; sourceTree = "<group>"; };
+		B078EE2622D4C3FC002F7F4F /* Asuncion.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Asuncion.ics; sourceTree = "<group>"; };
+		B078EE2722D4C3FC002F7F4F /* Metlakatla.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Metlakatla.ics; sourceTree = "<group>"; };
+		B078EE2822D4C3FC002F7F4F /* Cayenne.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cayenne.ics; sourceTree = "<group>"; };
+		B078EE2922D4C3FC002F7F4F /* Pangnirtung.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pangnirtung.ics; sourceTree = "<group>"; };
+		B078EE2A22D4C3FC002F7F4F /* Menominee.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Menominee.ics; sourceTree = "<group>"; };
+		B078EE2B22D4C3FC002F7F4F /* St_Thomas.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Thomas.ics; sourceTree = "<group>"; };
+		B078EE2C22D4C3FC002F7F4F /* Juneau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Juneau.ics; sourceTree = "<group>"; };
+		B078EE2D22D4C3FC002F7F4F /* Cayman.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cayman.ics; sourceTree = "<group>"; };
+		B078EE2E22D4C3FC002F7F4F /* Blanc-Sablon.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Blanc-Sablon.ics"; sourceTree = "<group>"; };
+		B078EE2F22D4C3FC002F7F4F /* Fortaleza.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fortaleza.ics; sourceTree = "<group>"; };
+		B078EE3022D4C3FC002F7F4F /* St_Kitts.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Kitts.ics; sourceTree = "<group>"; };
+		B078EE3122D4C3FC002F7F4F /* Guyana.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guyana.ics; sourceTree = "<group>"; };
+		B078EE3222D4C3FC002F7F4F /* Goose_Bay.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Goose_Bay.ics; sourceTree = "<group>"; };
+		B078EE3322D4C3FC002F7F4F /* Araguaina.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Araguaina.ics; sourceTree = "<group>"; };
+		B078EE3422D4C3FC002F7F4F /* Dawson_Creek.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dawson_Creek.ics; sourceTree = "<group>"; };
+		B078EE3522D4C3FC002F7F4F /* Anguilla.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Anguilla.ics; sourceTree = "<group>"; };
+		B078EE3622D4C3FC002F7F4F /* Boa_Vista.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Boa_Vista.ics; sourceTree = "<group>"; };
+		B078EE3722D4C3FC002F7F4F /* Eirunepe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eirunepe.ics; sourceTree = "<group>"; };
+		B078EE3822D4C3FC002F7F4F /* Inuvik.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Inuvik.ics; sourceTree = "<group>"; };
+		B078EE3922D4C3FC002F7F4F /* Marigot.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Marigot.ics; sourceTree = "<group>"; };
+		B078EE3A22D4C3FC002F7F4F /* Anchorage.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Anchorage.ics; sourceTree = "<group>"; };
+		B078EE3B22D4C3FC002F7F4F /* Dominica.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dominica.ics; sourceTree = "<group>"; };
+		B078EE3C22D4C3FC002F7F4F /* Bogota.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bogota.ics; sourceTree = "<group>"; };
+		B078EE3D22D4C3FC002F7F4F /* Danmarkshavn.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Danmarkshavn.ics; sourceTree = "<group>"; };
+		B078EE3E22D4C3FC002F7F4F /* Rainy_River.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rainy_River.ics; sourceTree = "<group>"; };
+		B078EE3F22D4C3FC002F7F4F /* Vancouver.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vancouver.ics; sourceTree = "<group>"; };
+		B078EE4022D4C3FC002F7F4F /* Lower_Princes.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lower_Princes.ics; sourceTree = "<group>"; };
+		B078EE4122D4C3FC002F7F4F /* Kralendijk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kralendijk.ics; sourceTree = "<group>"; };
+		B078EE4222D4C3FC002F7F4F /* Martinique.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Martinique.ics; sourceTree = "<group>"; };
+		B078EE4322D4C3FC002F7F4F /* Mexico_City.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mexico_City.ics; sourceTree = "<group>"; };
+		B078EE4422D4C3FC002F7F4F /* Bahia_Banderas.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bahia_Banderas.ics; sourceTree = "<group>"; };
+		B078EE4522D4C3FC002F7F4F /* Ojinaga.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ojinaga.ics; sourceTree = "<group>"; };
+		B078EE4622D4C3FC002F7F4F /* Denver.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Denver.ics; sourceTree = "<group>"; };
+		B078EE4722D4C3FC002F7F4F /* Miquelon.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Miquelon.ics; sourceTree = "<group>"; };
+		B078EE4822D4C3FC002F7F4F /* Havana.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Havana.ics; sourceTree = "<group>"; };
+		B078EE4922D4C3FC002F7F4F /* Puerto_Rico.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Puerto_Rico.ics; sourceTree = "<group>"; };
+		B078EE4A22D4C3FC002F7F4F /* Barbados.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Barbados.ics; sourceTree = "<group>"; };
+		B078EE4B22D4C3FC002F7F4F /* Toronto.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Toronto.ics; sourceTree = "<group>"; };
+		B078EE4C22D4C3FC002F7F4F /* Regina.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Regina.ics; sourceTree = "<group>"; };
+		B078EE4D22D4C3FC002F7F4F /* Godthab.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Godthab.ics; sourceTree = "<group>"; };
+		B078EE4E22D4C3FC002F7F4F /* Resolute.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Resolute.ics; sourceTree = "<group>"; };
+		B078EE4F22D4C3FC002F7F4F /* Santa_Isabel.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Santa_Isabel.ics; sourceTree = "<group>"; };
+		B078EE5022D4C3FC002F7F4F /* Santo_Domingo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Santo_Domingo.ics; sourceTree = "<group>"; };
+		B078EE5122D4C3FD002F7F4F /* Caracas.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Caracas.ics; sourceTree = "<group>"; };
+		B078EE5222D4C3FD002F7F4F /* Paramaribo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Paramaribo.ics; sourceTree = "<group>"; };
+		B078EE5422D4C3FD002F7F4F /* Knox.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Knox.ics; sourceTree = "<group>"; };
+		B078EE5522D4C3FD002F7F4F /* Indianapolis.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Indianapolis.ics; sourceTree = "<group>"; };
+		B078EE5622D4C3FD002F7F4F /* Vevay.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vevay.ics; sourceTree = "<group>"; };
+		B078EE5722D4C3FD002F7F4F /* Winamac.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Winamac.ics; sourceTree = "<group>"; };
+		B078EE5822D4C3FD002F7F4F /* Tell_City.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tell_City.ics; sourceTree = "<group>"; };
+		B078EE5922D4C3FD002F7F4F /* Petersburg.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Petersburg.ics; sourceTree = "<group>"; };
+		B078EE5A22D4C3FD002F7F4F /* Vincennes.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vincennes.ics; sourceTree = "<group>"; };
+		B078EE5B22D4C3FD002F7F4F /* Marengo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Marengo.ics; sourceTree = "<group>"; };
+		B078EE5C22D4C3FD002F7F4F /* Port_of_Spain.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Port_of_Spain.ics; sourceTree = "<group>"; };
+		B078EE5D22D4C3FD002F7F4F /* Tijuana.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tijuana.ics; sourceTree = "<group>"; };
+		B078EE5E22D4C3FD002F7F4F /* Belize.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Belize.ics; sourceTree = "<group>"; };
+		B078EE5F22D4C3FD002F7F4F /* Tortola.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tortola.ics; sourceTree = "<group>"; };
+		B078EE6122D4C3FD002F7F4F /* La_Rioja.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = La_Rioja.ics; sourceTree = "<group>"; };
+		B078EE6222D4C3FD002F7F4F /* Tucuman.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tucuman.ics; sourceTree = "<group>"; };
+		B078EE6322D4C3FD002F7F4F /* Jujuy.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jujuy.ics; sourceTree = "<group>"; };
+		B078EE6422D4C3FD002F7F4F /* Salta.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Salta.ics; sourceTree = "<group>"; };
+		B078EE6522D4C3FD002F7F4F /* Buenos_Aires.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Buenos_Aires.ics; sourceTree = "<group>"; };
+		B078EE6622D4C3FD002F7F4F /* Cordoba.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cordoba.ics; sourceTree = "<group>"; };
+		B078EE6722D4C3FD002F7F4F /* Catamarca.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Catamarca.ics; sourceTree = "<group>"; };
+		B078EE6822D4C3FD002F7F4F /* San_Juan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = San_Juan.ics; sourceTree = "<group>"; };
+		B078EE6922D4C3FD002F7F4F /* San_Luis.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = San_Luis.ics; sourceTree = "<group>"; };
+		B078EE6A22D4C3FD002F7F4F /* Mendoza.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mendoza.ics; sourceTree = "<group>"; };
+		B078EE6B22D4C3FD002F7F4F /* Rio_Gallegos.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rio_Gallegos.ics; sourceTree = "<group>"; };
+		B078EE6C22D4C3FD002F7F4F /* Ushuaia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ushuaia.ics; sourceTree = "<group>"; };
+		B078EE6D22D4C3FD002F7F4F /* Bahia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bahia.ics; sourceTree = "<group>"; };
+		B078EE6E22D4C3FD002F7F4F /* Shiprock.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shiprock.ics; sourceTree = "<group>"; };
+		B078EE6F22D4C3FD002F7F4F /* Phoenix.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phoenix.ics; sourceTree = "<group>"; };
+		B078EE7022D4C3FD002F7F4F /* Thule.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thule.ics; sourceTree = "<group>"; };
+		B078EE7122D4C3FD002F7F4F /* Sitka.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sitka.ics; sourceTree = "<group>"; };
+		B078EE7222D4C3FD002F7F4F /* Manaus.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manaus.ics; sourceTree = "<group>"; };
+		B078EE7322D4C3FD002F7F4F /* Whitehorse.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Whitehorse.ics; sourceTree = "<group>"; };
+		B078EE7422D4C3FD002F7F4F /* Adak.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adak.ics; sourceTree = "<group>"; };
+		B078EE7522D4C3FD002F7F4F /* Costa_Rica.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Costa_Rica.ics; sourceTree = "<group>"; };
+		B078EE7622D4C3FD002F7F4F /* Cancun.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cancun.ics; sourceTree = "<group>"; };
+		B078EE7722D4C3FD002F7F4F /* Port-au-Prince.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Port-au-Prince.ics"; sourceTree = "<group>"; };
+		B078EE7822D4C3FD002F7F4F /* Lima.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lima.ics; sourceTree = "<group>"; };
+		B078EE7922D4C3FD002F7F4F /* Jamaica.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jamaica.ics; sourceTree = "<group>"; };
+		B078EE7A22D4C3FD002F7F4F /* Recife.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Recife.ics; sourceTree = "<group>"; };
+		B078EE7B22D4C3FD002F7F4F /* Noronha.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Noronha.ics; sourceTree = "<group>"; };
+		B078EE7C22D4C3FD002F7F4F /* Moncton.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Moncton.ics; sourceTree = "<group>"; };
+		B078EE7D22D4C3FD002F7F4F /* Santiago.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Santiago.ics; sourceTree = "<group>"; };
+		B078EE7E22D4C3FD002F7F4F /* Winnipeg.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Winnipeg.ics; sourceTree = "<group>"; };
+		B078EE7F22D4C3FD002F7F4F /* Guatemala.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guatemala.ics; sourceTree = "<group>"; };
+		B078EE8022D4C3FD002F7F4F /* Montreal.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Montreal.ics; sourceTree = "<group>"; };
+		B078EE8122D4C3FD002F7F4F /* Swift_Current.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift_Current.ics; sourceTree = "<group>"; };
+		B078EE8222D4C3FD002F7F4F /* El_Salvador.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = El_Salvador.ics; sourceTree = "<group>"; };
+		B078EE8322D4C3FD002F7F4F /* Montevideo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Montevideo.ics; sourceTree = "<group>"; };
+		B078EE8422D4C3FD002F7F4F /* Nome.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nome.ics; sourceTree = "<group>"; };
+		B078EE8522D4C3FD002F7F4F /* Tegucigalpa.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tegucigalpa.ics; sourceTree = "<group>"; };
+		B078EE8622D4C3FD002F7F4F /* Matamoros.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matamoros.ics; sourceTree = "<group>"; };
+		B078EE8722D4C3FD002F7F4F /* Managua.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Managua.ics; sourceTree = "<group>"; };
+		B078EE8822D4C3FD002F7F4F /* Hermosillo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hermosillo.ics; sourceTree = "<group>"; };
+		B078EE8922D4C3FD002F7F4F /* Guayaquil.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guayaquil.ics; sourceTree = "<group>"; };
+		B078EE8A22D4C3FD002F7F4F /* Curacao.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Curacao.ics; sourceTree = "<group>"; };
+		B078EE8B22D4C3FD002F7F4F /* Aruba.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aruba.ics; sourceTree = "<group>"; };
+		B078EE8C22D4C3FD002F7F4F /* Monterrey.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monterrey.ics; sourceTree = "<group>"; };
+		B078EE8D22D4C3FD002F7F4F /* Maceio.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maceio.ics; sourceTree = "<group>"; };
+		B078EE8E22D4C3FD002F7F4F /* New_York.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = New_York.ics; sourceTree = "<group>"; };
+		B078EE8F22D4C3FD002F7F4F /* Scoresbysund.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Scoresbysund.ics; sourceTree = "<group>"; };
+		B078EE9022D4C3FD002F7F4F /* Guadeloupe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guadeloupe.ics; sourceTree = "<group>"; };
+		B078EE9222D4C3FD002F7F4F /* Louisville.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Louisville.ics; sourceTree = "<group>"; };
+		B078EE9322D4C3FD002F7F4F /* Monticello.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monticello.ics; sourceTree = "<group>"; };
+		B078EE9522D4C3FD002F7F4F /* Center.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Center.ics; sourceTree = "<group>"; };
+		B078EE9622D4C3FD002F7F4F /* New_Salem.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = New_Salem.ics; sourceTree = "<group>"; };
+		B078EE9722D4C3FD002F7F4F /* Beulah.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Beulah.ics; sourceTree = "<group>"; };
+		B078EE9822D4C3FD002F7F4F /* Cuiaba.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cuiaba.ics; sourceTree = "<group>"; };
+		B078EE9922D4C3FD002F7F4F /* St_Vincent.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Vincent.ics; sourceTree = "<group>"; };
+		B078EE9A22D4C3FD002F7F4F /* Campo_Grande.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Campo_Grande.ics; sourceTree = "<group>"; };
+		B078EE9B22D4C3FD002F7F4F /* Merida.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Merida.ics; sourceTree = "<group>"; };
+		B078EE9C22D4C3FD002F7F4F /* Mazatlan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mazatlan.ics; sourceTree = "<group>"; };
+		B078EE9D22D4C3FD002F7F4F /* St_Lucia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Lucia.ics; sourceTree = "<group>"; };
+		B078EE9E22D4C3FD002F7F4F /* Nassau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nassau.ics; sourceTree = "<group>"; };
+		B078EE9F22D4C3FD002F7F4F /* Edmonton.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Edmonton.ics; sourceTree = "<group>"; };
+		B078EEA022D4C3FD002F7F4F /* Yellowknife.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yellowknife.ics; sourceTree = "<group>"; };
+		B078EEA122D4C3FD002F7F4F /* Halifax.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Halifax.ics; sourceTree = "<group>"; };
+		B078EEA222D4C3FD002F7F4F /* Nipigon.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nipigon.ics; sourceTree = "<group>"; };
+		B078EEA322D4C3FD002F7F4F /* Creston.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Creston.ics; sourceTree = "<group>"; };
+		B078EEA422D4C3FD002F7F4F /* Chicago.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chicago.ics; sourceTree = "<group>"; };
+		B078EEA522D4C3FD002F7F4F /* Los_Angeles.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Los_Angeles.ics; sourceTree = "<group>"; };
+		B078EEA622D4C3FD002F7F4F /* Thunder_Bay.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thunder_Bay.ics; sourceTree = "<group>"; };
+		B078EEA722D4C3FD002F7F4F /* Glace_Bay.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Glace_Bay.ics; sourceTree = "<group>"; };
+		B078EEA822D4C3FD002F7F4F /* Detroit.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Detroit.ics; sourceTree = "<group>"; };
+		B078EEA922D4C3FD002F7F4F /* Atikokan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atikokan.ics; sourceTree = "<group>"; };
+		B078EEAA22D4C3FD002F7F4F /* Belem.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Belem.ics; sourceTree = "<group>"; };
+		B078EEAB22D4C3FD002F7F4F /* Boise.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Boise.ics; sourceTree = "<group>"; };
+		B078EEAC22D4C3FD002F7F4F /* La_Paz.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = La_Paz.ics; sourceTree = "<group>"; };
+		B078EEAD22D4C3FD002F7F4F /* Iqaluit.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iqaluit.ics; sourceTree = "<group>"; };
+		B078EEAE22D4C3FD002F7F4F /* Grand_Turk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Grand_Turk.ics; sourceTree = "<group>"; };
+		B078EEAF22D4C3FD002F7F4F /* Santarem.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Santarem.ics; sourceTree = "<group>"; };
+		B078EEB022D4C3FD002F7F4F /* Dawson.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dawson.ics; sourceTree = "<group>"; };
+		B078EEB122D4C3FD002F7F4F /* Antigua.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Antigua.ics; sourceTree = "<group>"; };
+		B078EEB222D4C3FD002F7F4F /* Cambridge_Bay.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cambridge_Bay.ics; sourceTree = "<group>"; };
+		B078EEB322D4C3FD002F7F4F /* Panama.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Panama.ics; sourceTree = "<group>"; };
+		B078EEB422D4C3FD002F7F4F /* St_Barthelemy.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Barthelemy.ics; sourceTree = "<group>"; };
+		B078EEB522D4C3FD002F7F4F /* Montserrat.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Montserrat.ics; sourceTree = "<group>"; };
+		B078EEB622D4C3FD002F7F4F /* Rio_Branco.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rio_Branco.ics; sourceTree = "<group>"; };
+		B078EEB722D4C3FD002F7F4F /* Grenada.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Grenada.ics; sourceTree = "<group>"; };
+		B078EEB822D4C3FD002F7F4F /* Porto_Velho.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Porto_Velho.ics; sourceTree = "<group>"; };
+		B078EEB922D4C3FD002F7F4F /* St_Johns.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = St_Johns.ics; sourceTree = "<group>"; };
+		B078EEBA22D4C3FD002F7F4F /* Rankin_Inlet.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rankin_Inlet.ics; sourceTree = "<group>"; };
+		B078EEBB22D4C3FD002F7F4F /* Chihuahua.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chihuahua.ics; sourceTree = "<group>"; };
+		B078EEBC22D4C3FD002F7F4F /* Yakutat.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yakutat.ics; sourceTree = "<group>"; };
+		B078EEBD22D4C3FD002F7F4F /* Sao_Paulo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sao_Paulo.ics; sourceTree = "<group>"; };
+		B078EEBF22D4C3FD002F7F4F /* Sydney.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sydney.ics; sourceTree = "<group>"; };
+		B078EEC022D4C3FD002F7F4F /* Broken_Hill.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Broken_Hill.ics; sourceTree = "<group>"; };
+		B078EEC122D4C3FD002F7F4F /* Hobart.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hobart.ics; sourceTree = "<group>"; };
+		B078EEC222D4C3FD002F7F4F /* Darwin.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Darwin.ics; sourceTree = "<group>"; };
+		B078EEC322D4C3FD002F7F4F /* Perth.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Perth.ics; sourceTree = "<group>"; };
+		B078EEC422D4C3FD002F7F4F /* Adelaide.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adelaide.ics; sourceTree = "<group>"; };
+		B078EEC522D4C3FD002F7F4F /* Currie.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Currie.ics; sourceTree = "<group>"; };
+		B078EEC622D4C3FD002F7F4F /* Lindeman.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lindeman.ics; sourceTree = "<group>"; };
+		B078EEC722D4C3FD002F7F4F /* Lord_Howe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lord_Howe.ics; sourceTree = "<group>"; };
+		B078EEC822D4C3FD002F7F4F /* Brisbane.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brisbane.ics; sourceTree = "<group>"; };
+		B078EEC922D4C3FD002F7F4F /* Eucla.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eucla.ics; sourceTree = "<group>"; };
+		B078EECA22D4C3FD002F7F4F /* Melbourne.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Melbourne.ics; sourceTree = "<group>"; };
+		B078EECC22D4C3FD002F7F4F /* Tokyo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tokyo.ics; sourceTree = "<group>"; };
+		B078EECD22D4C3FD002F7F4F /* Qatar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Qatar.ics; sourceTree = "<group>"; };
+		B078EECE22D4C3FD002F7F4F /* Ashgabat.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ashgabat.ics; sourceTree = "<group>"; };
+		B078EECF22D4C3FD002F7F4F /* Colombo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colombo.ics; sourceTree = "<group>"; };
+		B078EED022D4C3FD002F7F4F /* Dili.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dili.ics; sourceTree = "<group>"; };
+		B078EED122D4C3FD002F7F4F /* Novosibirsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Novosibirsk.ics; sourceTree = "<group>"; };
+		B078EED222D4C3FD002F7F4F /* Choibalsan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Choibalsan.ics; sourceTree = "<group>"; };
+		B078EED322D4C3FD002F7F4F /* Hovd.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hovd.ics; sourceTree = "<group>"; };
+		B078EED422D4C3FD002F7F4F /* Magadan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Magadan.ics; sourceTree = "<group>"; };
+		B078EED522D4C3FD002F7F4F /* Kuwait.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kuwait.ics; sourceTree = "<group>"; };
+		B078EED622D4C3FD002F7F4F /* Vientiane.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vientiane.ics; sourceTree = "<group>"; };
+		B078EED722D4C3FD002F7F4F /* Bahrain.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bahrain.ics; sourceTree = "<group>"; };
+		B078EED822D4C3FD002F7F4F /* Damascus.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Damascus.ics; sourceTree = "<group>"; };
+		B078EED922D4C3FD002F7F4F /* Vladivostok.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vladivostok.ics; sourceTree = "<group>"; };
+		B078EEDA22D4C3FD002F7F4F /* Tbilisi.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tbilisi.ics; sourceTree = "<group>"; };
+		B078EEDB22D4C3FD002F7F4F /* Amman.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Amman.ics; sourceTree = "<group>"; };
+		B078EEDC22D4C3FD002F7F4F /* Ho_Chi_Minh.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ho_Chi_Minh.ics; sourceTree = "<group>"; };
+		B078EEDD22D4C3FD002F7F4F /* Pyongyang.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pyongyang.ics; sourceTree = "<group>"; };
+		B078EEDE22D4C3FD002F7F4F /* Baku.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Baku.ics; sourceTree = "<group>"; };
+		B078EEDF22D4C3FD002F7F4F /* Tashkent.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tashkent.ics; sourceTree = "<group>"; };
+		B078EEE022D4C3FD002F7F4F /* Yerevan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yerevan.ics; sourceTree = "<group>"; };
+		B078EEE122D4C3FD002F7F4F /* Kamchatka.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kamchatka.ics; sourceTree = "<group>"; };
+		B078EEE222D4C3FD002F7F4F /* Sakhalin.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sakhalin.ics; sourceTree = "<group>"; };
+		B078EEE322D4C3FD002F7F4F /* Rangoon.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rangoon.ics; sourceTree = "<group>"; };
+		B078EEE422D4C3FD002F7F4F /* Singapore.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Singapore.ics; sourceTree = "<group>"; };
+		B078EEE522D4C3FD002F7F4F /* Gaza.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gaza.ics; sourceTree = "<group>"; };
+		B078EEE622D4C3FD002F7F4F /* Beirut.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Beirut.ics; sourceTree = "<group>"; };
+		B078EEE722D4C3FD002F7F4F /* Yakutsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yakutsk.ics; sourceTree = "<group>"; };
+		B078EEE822D4C3FD002F7F4F /* Dubai.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dubai.ics; sourceTree = "<group>"; };
+		B078EEE922D4C3FD002F7F4F /* Srednekolymsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Srednekolymsk.ics; sourceTree = "<group>"; };
+		B078EEEA22D4C3FD002F7F4F /* Kathmandu.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kathmandu.ics; sourceTree = "<group>"; };
+		B078EEEB22D4C3FD002F7F4F /* Kashgar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kashgar.ics; sourceTree = "<group>"; };
+		B078EEEC22D4C3FD002F7F4F /* Brunei.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brunei.ics; sourceTree = "<group>"; };
+		B078EEED22D4C3FD002F7F4F /* Anadyr.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Anadyr.ics; sourceTree = "<group>"; };
+		B078EEEE22D4C3FD002F7F4F /* Dushanbe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dushanbe.ics; sourceTree = "<group>"; };
+		B078EEEF22D4C3FD002F7F4F /* Taipei.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Taipei.ics; sourceTree = "<group>"; };
+		B078EEF022D4C3FD002F7F4F /* Kolkata.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kolkata.ics; sourceTree = "<group>"; };
+		B078EEF122D4C3FD002F7F4F /* Makassar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makassar.ics; sourceTree = "<group>"; };
+		B078EEF222D4C3FD002F7F4F /* Jerusalem.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jerusalem.ics; sourceTree = "<group>"; };
+		B078EEF322D4C3FD002F7F4F /* Dhaka.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dhaka.ics; sourceTree = "<group>"; };
+		B078EEF422D4C3FD002F7F4F /* Istanbul.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Istanbul.ics; sourceTree = "<group>"; };
+		B078EEF522D4C3FD002F7F4F /* Chita.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chita.ics; sourceTree = "<group>"; };
+		B078EEF622D4C3FD002F7F4F /* Calcutta.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Calcutta.ics; sourceTree = "<group>"; };
+		B078EEF722D4C3FD002F7F4F /* Shanghai.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shanghai.ics; sourceTree = "<group>"; };
+		B078EEF822D4C3FD002F7F4F /* Katmandu.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Katmandu.ics; sourceTree = "<group>"; };
+		B078EEF922D4C3FD002F7F4F /* Kuching.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kuching.ics; sourceTree = "<group>"; };
+		B078EEFA22D4C3FD002F7F4F /* Hebron.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hebron.ics; sourceTree = "<group>"; };
+		B078EEFB22D4C3FD002F7F4F /* Saigon.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Saigon.ics; sourceTree = "<group>"; };
+		B078EEFC22D4C3FD002F7F4F /* Krasnoyarsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Krasnoyarsk.ics; sourceTree = "<group>"; };
+		B078EEFD22D4C3FD002F7F4F /* Tehran.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tehran.ics; sourceTree = "<group>"; };
+		B078EEFE22D4C3FD002F7F4F /* Pontianak.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pontianak.ics; sourceTree = "<group>"; };
+		B078EEFF22D4C3FD002F7F4F /* Samarkand.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Samarkand.ics; sourceTree = "<group>"; };
+		B078EF0022D4C3FD002F7F4F /* Ulaanbaatar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ulaanbaatar.ics; sourceTree = "<group>"; };
+		B078EF0122D4C3FD002F7F4F /* Almaty.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Almaty.ics; sourceTree = "<group>"; };
+		B078EF0222D4C3FD002F7F4F /* Baghdad.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Baghdad.ics; sourceTree = "<group>"; };
+		B078EF0322D4C3FD002F7F4F /* Hong_Kong.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hong_Kong.ics; sourceTree = "<group>"; };
+		B078EF0422D4C3FD002F7F4F /* Manila.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manila.ics; sourceTree = "<group>"; };
+		B078EF0522D4C3FD002F7F4F /* Thimphu.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thimphu.ics; sourceTree = "<group>"; };
+		B078EF0622D4C3FD002F7F4F /* Bangkok.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bangkok.ics; sourceTree = "<group>"; };
+		B078EF0722D4C3FD002F7F4F /* Riyadh.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Riyadh.ics; sourceTree = "<group>"; };
+		B078EF0822D4C3FD002F7F4F /* Phnom_Penh.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phnom_Penh.ics; sourceTree = "<group>"; };
+		B078EF0922D4C3FD002F7F4F /* Khandyga.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Khandyga.ics; sourceTree = "<group>"; };
+		B078EF0A22D4C3FD002F7F4F /* Aqtau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aqtau.ics; sourceTree = "<group>"; };
+		B078EF0B22D4C3FD002F7F4F /* Urumqi.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Urumqi.ics; sourceTree = "<group>"; };
+		B078EF0C22D4C3FD002F7F4F /* Omsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Omsk.ics; sourceTree = "<group>"; };
+		B078EF0D22D4C3FD002F7F4F /* Muscat.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Muscat.ics; sourceTree = "<group>"; };
+		B078EF0E22D4C3FD002F7F4F /* Jayapura.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jayapura.ics; sourceTree = "<group>"; };
+		B078EF0F22D4C3FD002F7F4F /* Ust-Nera.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ust-Nera.ics"; sourceTree = "<group>"; };
+		B078EF1022D4C3FD002F7F4F /* Macau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Macau.ics; sourceTree = "<group>"; };
+		B078EF1122D4C3FD002F7F4F /* Bishkek.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bishkek.ics; sourceTree = "<group>"; };
+		B078EF1222D4C3FD002F7F4F /* Novokuznetsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Novokuznetsk.ics; sourceTree = "<group>"; };
+		B078EF1322D4C3FD002F7F4F /* Oral.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Oral.ics; sourceTree = "<group>"; };
+		B078EF1422D4C3FD002F7F4F /* Yekaterinburg.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yekaterinburg.ics; sourceTree = "<group>"; };
+		B078EF1522D4C3FD002F7F4F /* Aden.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aden.ics; sourceTree = "<group>"; };
+		B078EF1622D4C3FD002F7F4F /* Harbin.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Harbin.ics; sourceTree = "<group>"; };
+		B078EF1722D4C3FD002F7F4F /* Jakarta.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jakarta.ics; sourceTree = "<group>"; };
+		B078EF1822D4C3FD002F7F4F /* Karachi.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Karachi.ics; sourceTree = "<group>"; };
+		B078EF1922D4C3FD002F7F4F /* Kabul.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kabul.ics; sourceTree = "<group>"; };
+		B078EF1A22D4C3FD002F7F4F /* Chongqing.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chongqing.ics; sourceTree = "<group>"; };
+		B078EF1B22D4C3FD002F7F4F /* Aqtobe.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aqtobe.ics; sourceTree = "<group>"; };
+		B078EF1C22D4C3FD002F7F4F /* Kuala_Lumpur.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kuala_Lumpur.ics; sourceTree = "<group>"; };
+		B078EF1D22D4C3FD002F7F4F /* Irkutsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Irkutsk.ics; sourceTree = "<group>"; };
+		B078EF1E22D4C3FD002F7F4F /* Seoul.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Seoul.ics; sourceTree = "<group>"; };
+		B078EF1F22D4C3FD002F7F4F /* Qyzylorda.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Qyzylorda.ics; sourceTree = "<group>"; };
+		B078EF2122D4C3FD002F7F4F /* Vostok.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vostok.ics; sourceTree = "<group>"; };
+		B078EF2222D4C3FD002F7F4F /* Rothera.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rothera.ics; sourceTree = "<group>"; };
+		B078EF2322D4C3FD002F7F4F /* Mawson.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mawson.ics; sourceTree = "<group>"; };
+		B078EF2422D4C3FD002F7F4F /* DumontDUrville.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DumontDUrville.ics; sourceTree = "<group>"; };
+		B078EF2522D4C3FD002F7F4F /* Macquarie.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Macquarie.ics; sourceTree = "<group>"; };
+		B078EF2622D4C3FD002F7F4F /* Palmer.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Palmer.ics; sourceTree = "<group>"; };
+		B078EF2722D4C3FD002F7F4F /* Davis.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Davis.ics; sourceTree = "<group>"; };
+		B078EF2822D4C3FD002F7F4F /* Casey.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Casey.ics; sourceTree = "<group>"; };
+		B078EF2922D4C3FD002F7F4F /* Syowa.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Syowa.ics; sourceTree = "<group>"; };
+		B078EF2A22D4C3FD002F7F4F /* McMurdo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = McMurdo.ics; sourceTree = "<group>"; };
+		B078EF2B22D4C3FD002F7F4F /* Troll.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Troll.ics; sourceTree = "<group>"; };
+		B078EF2D22D4C3FD002F7F4F /* Busingen.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Busingen.ics; sourceTree = "<group>"; };
+		B078EF2E22D4C3FD002F7F4F /* Bratislava.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bratislava.ics; sourceTree = "<group>"; };
+		B078EF2F22D4C3FD002F7F4F /* Kaliningrad.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kaliningrad.ics; sourceTree = "<group>"; };
+		B078EF3022D4C3FD002F7F4F /* Skopje.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Skopje.ics; sourceTree = "<group>"; };
+		B078EF3122D4C3FD002F7F4F /* Mariehamn.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mariehamn.ics; sourceTree = "<group>"; };
+		B078EF3222D4C3FD002F7F4F /* Amsterdam.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Amsterdam.ics; sourceTree = "<group>"; };
+		B078EF3322D4C3FD002F7F4F /* Sarajevo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sarajevo.ics; sourceTree = "<group>"; };
+		B078EF3422D4C3FD002F7F4F /* Dublin.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dublin.ics; sourceTree = "<group>"; };
+		B078EF3522D4C3FD002F7F4F /* Nicosia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nicosia.ics; sourceTree = "<group>"; };
+		B078EF3622D4C3FD002F7F4F /* Ljubljana.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ljubljana.ics; sourceTree = "<group>"; };
+		B078EF3722D4C3FD002F7F4F /* Simferopol.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Simferopol.ics; sourceTree = "<group>"; };
+		B078EF3822D4C3FD002F7F4F /* Vienna.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vienna.ics; sourceTree = "<group>"; };
+		B078EF3922D4C3FD002F7F4F /* San_Marino.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = San_Marino.ics; sourceTree = "<group>"; };
+		B078EF3A22D4C3FD002F7F4F /* Luxembourg.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Luxembourg.ics; sourceTree = "<group>"; };
+		B078EF3B22D4C3FD002F7F4F /* Brussels.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brussels.ics; sourceTree = "<group>"; };
+		B078EF3C22D4C3FD002F7F4F /* Chisinau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chisinau.ics; sourceTree = "<group>"; };
+		B078EF3D22D4C3FD002F7F4F /* Zaporozhye.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Zaporozhye.ics; sourceTree = "<group>"; };
+		B078EF3E22D4C3FD002F7F4F /* Vatican.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vatican.ics; sourceTree = "<group>"; };
+		B078EF3F22D4C3FD002F7F4F /* Madrid.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Madrid.ics; sourceTree = "<group>"; };
+		B078EF4022D4C3FD002F7F4F /* Jersey.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jersey.ics; sourceTree = "<group>"; };
+		B078EF4122D4C3FD002F7F4F /* Zagreb.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Zagreb.ics; sourceTree = "<group>"; };
+		B078EF4222D4C3FD002F7F4F /* Warsaw.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Warsaw.ics; sourceTree = "<group>"; };
+		B078EF4322D4C3FD002F7F4F /* Malta.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Malta.ics; sourceTree = "<group>"; };
+		B078EF4422D4C3FD002F7F4F /* Volgograd.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Volgograd.ics; sourceTree = "<group>"; };
+		B078EF4522D4C3FD002F7F4F /* Sofia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sofia.ics; sourceTree = "<group>"; };
+		B078EF4622D4C3FD002F7F4F /* Zurich.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Zurich.ics; sourceTree = "<group>"; };
+		B078EF4722D4C3FD002F7F4F /* Paris.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Paris.ics; sourceTree = "<group>"; };
+		B078EF4822D4C3FD002F7F4F /* Guernsey.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guernsey.ics; sourceTree = "<group>"; };
+		B078EF4922D4C3FD002F7F4F /* Riga.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Riga.ics; sourceTree = "<group>"; };
+		B078EF4A22D4C3FD002F7F4F /* Uzhgorod.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Uzhgorod.ics; sourceTree = "<group>"; };
+		B078EF4B22D4C3FD002F7F4F /* Minsk.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Minsk.ics; sourceTree = "<group>"; };
+		B078EF4C22D4C3FD002F7F4F /* Podgorica.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podgorica.ics; sourceTree = "<group>"; };
+		B078EF4D22D4C3FD002F7F4F /* Oslo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Oslo.ics; sourceTree = "<group>"; };
+		B078EF4E22D4C3FD002F7F4F /* Isle_of_Man.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Isle_of_Man.ics; sourceTree = "<group>"; };
+		B078EF4F22D4C3FD002F7F4F /* Helsinki.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Helsinki.ics; sourceTree = "<group>"; };
+		B078EF5022D4C3FD002F7F4F /* London.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = London.ics; sourceTree = "<group>"; };
+		B078EF5122D4C3FD002F7F4F /* Tirane.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tirane.ics; sourceTree = "<group>"; };
+		B078EF5222D4C3FD002F7F4F /* Athens.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Athens.ics; sourceTree = "<group>"; };
+		B078EF5322D4C3FD002F7F4F /* Samara.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Samara.ics; sourceTree = "<group>"; };
+		B078EF5422D4C3FD002F7F4F /* Kiev.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kiev.ics; sourceTree = "<group>"; };
+		B078EF5522D4C3FD002F7F4F /* Rome.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rome.ics; sourceTree = "<group>"; };
+		B078EF5622D4C3FD002F7F4F /* Andorra.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Andorra.ics; sourceTree = "<group>"; };
+		B078EF5722D4C3FD002F7F4F /* Vilnius.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vilnius.ics; sourceTree = "<group>"; };
+		B078EF5822D4C3FD002F7F4F /* Bucharest.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bucharest.ics; sourceTree = "<group>"; };
+		B078EF5922D4C3FD002F7F4F /* Moscow.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Moscow.ics; sourceTree = "<group>"; };
+		B078EF5A22D4C3FD002F7F4F /* Stockholm.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stockholm.ics; sourceTree = "<group>"; };
+		B078EF5B22D4C3FD002F7F4F /* Prague.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Prague.ics; sourceTree = "<group>"; };
+		B078EF5C22D4C3FD002F7F4F /* Gibraltar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gibraltar.ics; sourceTree = "<group>"; };
+		B078EF5D22D4C3FD002F7F4F /* Berlin.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Berlin.ics; sourceTree = "<group>"; };
+		B078EF5E22D4C3FD002F7F4F /* Tallinn.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tallinn.ics; sourceTree = "<group>"; };
+		B078EF5F22D4C3FD002F7F4F /* Monaco.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monaco.ics; sourceTree = "<group>"; };
+		B078EF6022D4C3FD002F7F4F /* Lisbon.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lisbon.ics; sourceTree = "<group>"; };
+		B078EF6122D4C3FD002F7F4F /* Vaduz.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vaduz.ics; sourceTree = "<group>"; };
+		B078EF6222D4C3FD002F7F4F /* Budapest.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Budapest.ics; sourceTree = "<group>"; };
+		B078EF6322D4C3FD002F7F4F /* Belgrade.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Belgrade.ics; sourceTree = "<group>"; };
+		B078EF6422D4C3FD002F7F4F /* Copenhagen.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Copenhagen.ics; sourceTree = "<group>"; };
+		B078EF6622D4C3FD002F7F4F /* Kampala.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kampala.ics; sourceTree = "<group>"; };
+		B078EF6722D4C3FD002F7F4F /* Freetown.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Freetown.ics; sourceTree = "<group>"; };
+		B078EF6822D4C3FD002F7F4F /* Kigali.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kigali.ics; sourceTree = "<group>"; };
+		B078EF6922D4C3FD002F7F4F /* Tunis.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tunis.ics; sourceTree = "<group>"; };
+		B078EF6A22D4C3FD002F7F4F /* Mogadishu.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mogadishu.ics; sourceTree = "<group>"; };
+		B078EF6B22D4C3FD002F7F4F /* Gaborone.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gaborone.ics; sourceTree = "<group>"; };
+		B078EF6C22D4C3FD002F7F4F /* Cairo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cairo.ics; sourceTree = "<group>"; };
+		B078EF6D22D4C3FD002F7F4F /* Lagos.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lagos.ics; sourceTree = "<group>"; };
+		B078EF6E22D4C3FD002F7F4F /* Dakar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dakar.ics; sourceTree = "<group>"; };
+		B078EF6F22D4C3FD002F7F4F /* Juba.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Juba.ics; sourceTree = "<group>"; };
+		B078EF7022D4C3FD002F7F4F /* Lubumbashi.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lubumbashi.ics; sourceTree = "<group>"; };
+		B078EF7122D4C3FD002F7F4F /* Ndjamena.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ndjamena.ics; sourceTree = "<group>"; };
+		B078EF7222D4C3FD002F7F4F /* Accra.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Accra.ics; sourceTree = "<group>"; };
+		B078EF7322D4C3FD002F7F4F /* Addis_Ababa.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Addis_Ababa.ics; sourceTree = "<group>"; };
+		B078EF7422D4C3FD002F7F4F /* Malabo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Malabo.ics; sourceTree = "<group>"; };
+		B078EF7522D4C3FD002F7F4F /* Abidjan.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Abidjan.ics; sourceTree = "<group>"; };
+		B078EF7622D4C3FE002F7F4F /* Bangui.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bangui.ics; sourceTree = "<group>"; };
+		B078EF7722D4C3FE002F7F4F /* Asmara.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Asmara.ics; sourceTree = "<group>"; };
+		B078EF7822D4C3FE002F7F4F /* Kinshasa.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kinshasa.ics; sourceTree = "<group>"; };
+		B078EF7922D4C3FE002F7F4F /* Porto-Novo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Porto-Novo.ics"; sourceTree = "<group>"; };
+		B078EF7A22D4C3FE002F7F4F /* Maputo.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maputo.ics; sourceTree = "<group>"; };
+		B078EF7B22D4C3FE002F7F4F /* Monrovia.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monrovia.ics; sourceTree = "<group>"; };
+		B078EF7C22D4C3FE002F7F4F /* Windhoek.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Windhoek.ics; sourceTree = "<group>"; };
+		B078EF7D22D4C3FE002F7F4F /* Djibouti.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Djibouti.ics; sourceTree = "<group>"; };
+		B078EF7E22D4C3FE002F7F4F /* Ceuta.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ceuta.ics; sourceTree = "<group>"; };
+		B078EF7F22D4C3FE002F7F4F /* Lome.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lome.ics; sourceTree = "<group>"; };
+		B078EF8022D4C3FE002F7F4F /* Sao_Tome.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sao_Tome.ics; sourceTree = "<group>"; };
+		B078EF8122D4C3FE002F7F4F /* Harare.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Harare.ics; sourceTree = "<group>"; };
+		B078EF8222D4C3FE002F7F4F /* Bamako.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bamako.ics; sourceTree = "<group>"; };
+		B078EF8322D4C3FE002F7F4F /* Ouagadougou.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ouagadougou.ics; sourceTree = "<group>"; };
+		B078EF8422D4C3FE002F7F4F /* Algiers.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Algiers.ics; sourceTree = "<group>"; };
+		B078EF8522D4C3FE002F7F4F /* Conakry.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Conakry.ics; sourceTree = "<group>"; };
+		B078EF8622D4C3FE002F7F4F /* Blantyre.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Blantyre.ics; sourceTree = "<group>"; };
+		B078EF8722D4C3FE002F7F4F /* Mbabane.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mbabane.ics; sourceTree = "<group>"; };
+		B078EF8822D4C3FE002F7F4F /* Niamey.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Niamey.ics; sourceTree = "<group>"; };
+		B078EF8922D4C3FE002F7F4F /* Casablanca.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Casablanca.ics; sourceTree = "<group>"; };
+		B078EF8A22D4C3FE002F7F4F /* Brazzaville.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brazzaville.ics; sourceTree = "<group>"; };
+		B078EF8B22D4C3FE002F7F4F /* Tripoli.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tripoli.ics; sourceTree = "<group>"; };
+		B078EF8C22D4C3FE002F7F4F /* Douala.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Douala.ics; sourceTree = "<group>"; };
+		B078EF8D22D4C3FE002F7F4F /* Bujumbura.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bujumbura.ics; sourceTree = "<group>"; };
+		B078EF8E22D4C3FE002F7F4F /* El_Aaiun.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = El_Aaiun.ics; sourceTree = "<group>"; };
+		B078EF8F22D4C3FE002F7F4F /* Dar_es_Salaam.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dar_es_Salaam.ics; sourceTree = "<group>"; };
+		B078EF9022D4C3FE002F7F4F /* Johannesburg.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Johannesburg.ics; sourceTree = "<group>"; };
+		B078EF9122D4C3FE002F7F4F /* Nouakchott.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nouakchott.ics; sourceTree = "<group>"; };
+		B078EF9222D4C3FE002F7F4F /* Bissau.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bissau.ics; sourceTree = "<group>"; };
+		B078EF9322D4C3FE002F7F4F /* Banjul.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Banjul.ics; sourceTree = "<group>"; };
+		B078EF9422D4C3FE002F7F4F /* Nairobi.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nairobi.ics; sourceTree = "<group>"; };
+		B078EF9522D4C3FE002F7F4F /* Lusaka.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lusaka.ics; sourceTree = "<group>"; };
+		B078EF9622D4C3FE002F7F4F /* Maseru.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maseru.ics; sourceTree = "<group>"; };
+		B078EF9722D4C3FE002F7F4F /* Luanda.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Luanda.ics; sourceTree = "<group>"; };
+		B078EF9822D4C3FE002F7F4F /* Libreville.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Libreville.ics; sourceTree = "<group>"; };
+		B078EF9922D4C3FE002F7F4F /* Khartoum.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Khartoum.ics; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B078EDB322D4C22F002F7F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B078EDD022D4C36B002F7F4F /* iCalendarKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B078EDAD22D4C22F002F7F4F = {
+			isa = PBXGroup;
+			children = (
+				B078EDB822D4C22F002F7F4F /* Demo */,
+				B078EDB722D4C22F002F7F4F /* Products */,
+				B078EDCF22D4C36B002F7F4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B078EDB722D4C22F002F7F4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDB622D4C22F002F7F4F /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B078EDB822D4C22F002F7F4F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDD422D4C383002F7F4F /* ics files */,
+				B078EDB922D4C22F002F7F4F /* AppDelegate.swift */,
+				B078EDBB22D4C22F002F7F4F /* ViewController.swift */,
+				B078EDBD22D4C22F002F7F4F /* Main.storyboard */,
+				B078EDC022D4C231002F7F4F /* Assets.xcassets */,
+				B078EDC222D4C231002F7F4F /* LaunchScreen.storyboard */,
+				B078EDC522D4C231002F7F4F /* Info.plist */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		B078EDCF22D4C36B002F7F4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B078EDD422D4C383002F7F4F /* ics files */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDDF22D4C3FC002F7F4F /* zoneinfo */,
+				B078EDD622D4C3D8002F7F4F /* basic.ics */,
+				B078EDD522D4C3D8002F7F4F /* calendar.ics */,
+				B078EDD822D4C3D8002F7F4F /* totalTimeZone.ics */,
+				B078EDD722D4C3D8002F7F4F /* university-formatted.ics */,
+				B078EDD922D4C3D8002F7F4F /* university.ics */,
+			);
+			path = "ics files";
+			sourceTree = "<group>";
+		};
+		B078EDDF22D4C3FC002F7F4F /* zoneinfo */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDE022D4C3FC002F7F4F /* Indian */,
+				B078EDEC22D4C3FC002F7F4F /* Atlantic */,
+				B078EDF822D4C3FC002F7F4F /* zones.tab */,
+				B078EDF922D4C3FC002F7F4F /* Pacific */,
+				B078EE2322D4C3FC002F7F4F /* Arctic */,
+				B078EE2522D4C3FC002F7F4F /* America */,
+				B078EEBE22D4C3FD002F7F4F /* Australia */,
+				B078EECB22D4C3FD002F7F4F /* Asia */,
+				B078EF2022D4C3FD002F7F4F /* Antarctica */,
+				B078EF2C22D4C3FD002F7F4F /* Europe */,
+				B078EF6522D4C3FD002F7F4F /* Africa */,
+			);
+			path = zoneinfo;
+			sourceTree = "<group>";
+		};
+		B078EDE022D4C3FC002F7F4F /* Indian */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDE122D4C3FC002F7F4F /* Mauritius.ics */,
+				B078EDE222D4C3FC002F7F4F /* Maldives.ics */,
+				B078EDE322D4C3FC002F7F4F /* Mayotte.ics */,
+				B078EDE422D4C3FC002F7F4F /* Kerguelen.ics */,
+				B078EDE522D4C3FC002F7F4F /* Mahe.ics */,
+				B078EDE622D4C3FC002F7F4F /* Christmas.ics */,
+				B078EDE722D4C3FC002F7F4F /* Cocos.ics */,
+				B078EDE822D4C3FC002F7F4F /* Chagos.ics */,
+				B078EDE922D4C3FC002F7F4F /* Comoro.ics */,
+				B078EDEA22D4C3FC002F7F4F /* Reunion.ics */,
+				B078EDEB22D4C3FC002F7F4F /* Antananarivo.ics */,
+			);
+			path = Indian;
+			sourceTree = "<group>";
+		};
+		B078EDEC22D4C3FC002F7F4F /* Atlantic */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDED22D4C3FC002F7F4F /* Madeira.ics */,
+				B078EDEE22D4C3FC002F7F4F /* Canary.ics */,
+				B078EDEF22D4C3FC002F7F4F /* Reykjavik.ics */,
+				B078EDF022D4C3FC002F7F4F /* South_Georgia.ics */,
+				B078EDF122D4C3FC002F7F4F /* Stanley.ics */,
+				B078EDF222D4C3FC002F7F4F /* Azores.ics */,
+				B078EDF322D4C3FC002F7F4F /* Jan_Mayen.ics */,
+				B078EDF422D4C3FC002F7F4F /* Faroe.ics */,
+				B078EDF522D4C3FC002F7F4F /* Cape_Verde.ics */,
+				B078EDF622D4C3FC002F7F4F /* St_Helena.ics */,
+				B078EDF722D4C3FC002F7F4F /* Bermuda.ics */,
+			);
+			path = Atlantic;
+			sourceTree = "<group>";
+		};
+		B078EDF922D4C3FC002F7F4F /* Pacific */ = {
+			isa = PBXGroup;
+			children = (
+				B078EDFA22D4C3FC002F7F4F /* Pohnpei.ics */,
+				B078EDFB22D4C3FC002F7F4F /* Tongatapu.ics */,
+				B078EDFC22D4C3FC002F7F4F /* Efate.ics */,
+				B078EDFD22D4C3FC002F7F4F /* Guadalcanal.ics */,
+				B078EDFE22D4C3FC002F7F4F /* Majuro.ics */,
+				B078EDFF22D4C3FC002F7F4F /* Fakaofo.ics */,
+				B078EE0022D4C3FC002F7F4F /* Galapagos.ics */,
+				B078EE0122D4C3FC002F7F4F /* Bougainville.ics */,
+				B078EE0222D4C3FC002F7F4F /* Honolulu.ics */,
+				B078EE0322D4C3FC002F7F4F /* Midway.ics */,
+				B078EE0422D4C3FC002F7F4F /* Palau.ics */,
+				B078EE0522D4C3FC002F7F4F /* Gambier.ics */,
+				B078EE0622D4C3FC002F7F4F /* Nauru.ics */,
+				B078EE0722D4C3FC002F7F4F /* Rarotonga.ics */,
+				B078EE0822D4C3FC002F7F4F /* Easter.ics */,
+				B078EE0922D4C3FC002F7F4F /* Kiritimati.ics */,
+				B078EE0A22D4C3FC002F7F4F /* Truk.ics */,
+				B078EE0B22D4C3FC002F7F4F /* Fiji.ics */,
+				B078EE0C22D4C3FC002F7F4F /* Tahiti.ics */,
+				B078EE0D22D4C3FC002F7F4F /* Norfolk.ics */,
+				B078EE0E22D4C3FC002F7F4F /* Funafuti.ics */,
+				B078EE0F22D4C3FC002F7F4F /* Marquesas.ics */,
+				B078EE1022D4C3FC002F7F4F /* Wake.ics */,
+				B078EE1122D4C3FC002F7F4F /* Chatham.ics */,
+				B078EE1222D4C3FC002F7F4F /* Noumea.ics */,
+				B078EE1322D4C3FC002F7F4F /* Apia.ics */,
+				B078EE1422D4C3FC002F7F4F /* Enderbury.ics */,
+				B078EE1522D4C3FC002F7F4F /* Kosrae.ics */,
+				B078EE1622D4C3FC002F7F4F /* Niue.ics */,
+				B078EE1722D4C3FC002F7F4F /* Pitcairn.ics */,
+				B078EE1822D4C3FC002F7F4F /* Tarawa.ics */,
+				B078EE1922D4C3FC002F7F4F /* Pago_Pago.ics */,
+				B078EE1A22D4C3FC002F7F4F /* Saipan.ics */,
+				B078EE1B22D4C3FC002F7F4F /* Johnston.ics */,
+				B078EE1C22D4C3FC002F7F4F /* Wallis.ics */,
+				B078EE1D22D4C3FC002F7F4F /* Port_Moresby.ics */,
+				B078EE1E22D4C3FC002F7F4F /* Auckland.ics */,
+				B078EE1F22D4C3FC002F7F4F /* Guam.ics */,
+				B078EE2022D4C3FC002F7F4F /* Ponape.ics */,
+				B078EE2122D4C3FC002F7F4F /* Chuuk.ics */,
+				B078EE2222D4C3FC002F7F4F /* Kwajalein.ics */,
+			);
+			path = Pacific;
+			sourceTree = "<group>";
+		};
+		B078EE2322D4C3FC002F7F4F /* Arctic */ = {
+			isa = PBXGroup;
+			children = (
+				B078EE2422D4C3FC002F7F4F /* Longyearbyen.ics */,
+			);
+			path = Arctic;
+			sourceTree = "<group>";
+		};
+		B078EE2522D4C3FC002F7F4F /* America */ = {
+			isa = PBXGroup;
+			children = (
+				B078EE2622D4C3FC002F7F4F /* Asuncion.ics */,
+				B078EE2722D4C3FC002F7F4F /* Metlakatla.ics */,
+				B078EE2822D4C3FC002F7F4F /* Cayenne.ics */,
+				B078EE2922D4C3FC002F7F4F /* Pangnirtung.ics */,
+				B078EE2A22D4C3FC002F7F4F /* Menominee.ics */,
+				B078EE2B22D4C3FC002F7F4F /* St_Thomas.ics */,
+				B078EE2C22D4C3FC002F7F4F /* Juneau.ics */,
+				B078EE2D22D4C3FC002F7F4F /* Cayman.ics */,
+				B078EE2E22D4C3FC002F7F4F /* Blanc-Sablon.ics */,
+				B078EE2F22D4C3FC002F7F4F /* Fortaleza.ics */,
+				B078EE3022D4C3FC002F7F4F /* St_Kitts.ics */,
+				B078EE3122D4C3FC002F7F4F /* Guyana.ics */,
+				B078EE3222D4C3FC002F7F4F /* Goose_Bay.ics */,
+				B078EE3322D4C3FC002F7F4F /* Araguaina.ics */,
+				B078EE3422D4C3FC002F7F4F /* Dawson_Creek.ics */,
+				B078EE3522D4C3FC002F7F4F /* Anguilla.ics */,
+				B078EE3622D4C3FC002F7F4F /* Boa_Vista.ics */,
+				B078EE3722D4C3FC002F7F4F /* Eirunepe.ics */,
+				B078EE3822D4C3FC002F7F4F /* Inuvik.ics */,
+				B078EE3922D4C3FC002F7F4F /* Marigot.ics */,
+				B078EE3A22D4C3FC002F7F4F /* Anchorage.ics */,
+				B078EE3B22D4C3FC002F7F4F /* Dominica.ics */,
+				B078EE3C22D4C3FC002F7F4F /* Bogota.ics */,
+				B078EE3D22D4C3FC002F7F4F /* Danmarkshavn.ics */,
+				B078EE3E22D4C3FC002F7F4F /* Rainy_River.ics */,
+				B078EE3F22D4C3FC002F7F4F /* Vancouver.ics */,
+				B078EE4022D4C3FC002F7F4F /* Lower_Princes.ics */,
+				B078EE4122D4C3FC002F7F4F /* Kralendijk.ics */,
+				B078EE4222D4C3FC002F7F4F /* Martinique.ics */,
+				B078EE4322D4C3FC002F7F4F /* Mexico_City.ics */,
+				B078EE4422D4C3FC002F7F4F /* Bahia_Banderas.ics */,
+				B078EE4522D4C3FC002F7F4F /* Ojinaga.ics */,
+				B078EE4622D4C3FC002F7F4F /* Denver.ics */,
+				B078EE4722D4C3FC002F7F4F /* Miquelon.ics */,
+				B078EE4822D4C3FC002F7F4F /* Havana.ics */,
+				B078EE4922D4C3FC002F7F4F /* Puerto_Rico.ics */,
+				B078EE4A22D4C3FC002F7F4F /* Barbados.ics */,
+				B078EE4B22D4C3FC002F7F4F /* Toronto.ics */,
+				B078EE4C22D4C3FC002F7F4F /* Regina.ics */,
+				B078EE4D22D4C3FC002F7F4F /* Godthab.ics */,
+				B078EE4E22D4C3FC002F7F4F /* Resolute.ics */,
+				B078EE4F22D4C3FC002F7F4F /* Santa_Isabel.ics */,
+				B078EE5022D4C3FC002F7F4F /* Santo_Domingo.ics */,
+				B078EE5122D4C3FD002F7F4F /* Caracas.ics */,
+				B078EE5222D4C3FD002F7F4F /* Paramaribo.ics */,
+				B078EE5322D4C3FD002F7F4F /* Indiana */,
+				B078EE5C22D4C3FD002F7F4F /* Port_of_Spain.ics */,
+				B078EE5D22D4C3FD002F7F4F /* Tijuana.ics */,
+				B078EE5E22D4C3FD002F7F4F /* Belize.ics */,
+				B078EE5F22D4C3FD002F7F4F /* Tortola.ics */,
+				B078EE6022D4C3FD002F7F4F /* Argentina */,
+				B078EE6D22D4C3FD002F7F4F /* Bahia.ics */,
+				B078EE6E22D4C3FD002F7F4F /* Shiprock.ics */,
+				B078EE6F22D4C3FD002F7F4F /* Phoenix.ics */,
+				B078EE7022D4C3FD002F7F4F /* Thule.ics */,
+				B078EE7122D4C3FD002F7F4F /* Sitka.ics */,
+				B078EE7222D4C3FD002F7F4F /* Manaus.ics */,
+				B078EE7322D4C3FD002F7F4F /* Whitehorse.ics */,
+				B078EE7422D4C3FD002F7F4F /* Adak.ics */,
+				B078EE7522D4C3FD002F7F4F /* Costa_Rica.ics */,
+				B078EE7622D4C3FD002F7F4F /* Cancun.ics */,
+				B078EE7722D4C3FD002F7F4F /* Port-au-Prince.ics */,
+				B078EE7822D4C3FD002F7F4F /* Lima.ics */,
+				B078EE7922D4C3FD002F7F4F /* Jamaica.ics */,
+				B078EE7A22D4C3FD002F7F4F /* Recife.ics */,
+				B078EE7B22D4C3FD002F7F4F /* Noronha.ics */,
+				B078EE7C22D4C3FD002F7F4F /* Moncton.ics */,
+				B078EE7D22D4C3FD002F7F4F /* Santiago.ics */,
+				B078EE7E22D4C3FD002F7F4F /* Winnipeg.ics */,
+				B078EE7F22D4C3FD002F7F4F /* Guatemala.ics */,
+				B078EE8022D4C3FD002F7F4F /* Montreal.ics */,
+				B078EE8122D4C3FD002F7F4F /* Swift_Current.ics */,
+				B078EE8222D4C3FD002F7F4F /* El_Salvador.ics */,
+				B078EE8322D4C3FD002F7F4F /* Montevideo.ics */,
+				B078EE8422D4C3FD002F7F4F /* Nome.ics */,
+				B078EE8522D4C3FD002F7F4F /* Tegucigalpa.ics */,
+				B078EE8622D4C3FD002F7F4F /* Matamoros.ics */,
+				B078EE8722D4C3FD002F7F4F /* Managua.ics */,
+				B078EE8822D4C3FD002F7F4F /* Hermosillo.ics */,
+				B078EE8922D4C3FD002F7F4F /* Guayaquil.ics */,
+				B078EE8A22D4C3FD002F7F4F /* Curacao.ics */,
+				B078EE8B22D4C3FD002F7F4F /* Aruba.ics */,
+				B078EE8C22D4C3FD002F7F4F /* Monterrey.ics */,
+				B078EE8D22D4C3FD002F7F4F /* Maceio.ics */,
+				B078EE8E22D4C3FD002F7F4F /* New_York.ics */,
+				B078EE8F22D4C3FD002F7F4F /* Scoresbysund.ics */,
+				B078EE9022D4C3FD002F7F4F /* Guadeloupe.ics */,
+				B078EE9122D4C3FD002F7F4F /* Kentucky */,
+				B078EE9422D4C3FD002F7F4F /* North_Dakota */,
+				B078EE9822D4C3FD002F7F4F /* Cuiaba.ics */,
+				B078EE9922D4C3FD002F7F4F /* St_Vincent.ics */,
+				B078EE9A22D4C3FD002F7F4F /* Campo_Grande.ics */,
+				B078EE9B22D4C3FD002F7F4F /* Merida.ics */,
+				B078EE9C22D4C3FD002F7F4F /* Mazatlan.ics */,
+				B078EE9D22D4C3FD002F7F4F /* St_Lucia.ics */,
+				B078EE9E22D4C3FD002F7F4F /* Nassau.ics */,
+				B078EE9F22D4C3FD002F7F4F /* Edmonton.ics */,
+				B078EEA022D4C3FD002F7F4F /* Yellowknife.ics */,
+				B078EEA122D4C3FD002F7F4F /* Halifax.ics */,
+				B078EEA222D4C3FD002F7F4F /* Nipigon.ics */,
+				B078EEA322D4C3FD002F7F4F /* Creston.ics */,
+				B078EEA422D4C3FD002F7F4F /* Chicago.ics */,
+				B078EEA522D4C3FD002F7F4F /* Los_Angeles.ics */,
+				B078EEA622D4C3FD002F7F4F /* Thunder_Bay.ics */,
+				B078EEA722D4C3FD002F7F4F /* Glace_Bay.ics */,
+				B078EEA822D4C3FD002F7F4F /* Detroit.ics */,
+				B078EEA922D4C3FD002F7F4F /* Atikokan.ics */,
+				B078EEAA22D4C3FD002F7F4F /* Belem.ics */,
+				B078EEAB22D4C3FD002F7F4F /* Boise.ics */,
+				B078EEAC22D4C3FD002F7F4F /* La_Paz.ics */,
+				B078EEAD22D4C3FD002F7F4F /* Iqaluit.ics */,
+				B078EEAE22D4C3FD002F7F4F /* Grand_Turk.ics */,
+				B078EEAF22D4C3FD002F7F4F /* Santarem.ics */,
+				B078EEB022D4C3FD002F7F4F /* Dawson.ics */,
+				B078EEB122D4C3FD002F7F4F /* Antigua.ics */,
+				B078EEB222D4C3FD002F7F4F /* Cambridge_Bay.ics */,
+				B078EEB322D4C3FD002F7F4F /* Panama.ics */,
+				B078EEB422D4C3FD002F7F4F /* St_Barthelemy.ics */,
+				B078EEB522D4C3FD002F7F4F /* Montserrat.ics */,
+				B078EEB622D4C3FD002F7F4F /* Rio_Branco.ics */,
+				B078EEB722D4C3FD002F7F4F /* Grenada.ics */,
+				B078EEB822D4C3FD002F7F4F /* Porto_Velho.ics */,
+				B078EEB922D4C3FD002F7F4F /* St_Johns.ics */,
+				B078EEBA22D4C3FD002F7F4F /* Rankin_Inlet.ics */,
+				B078EEBB22D4C3FD002F7F4F /* Chihuahua.ics */,
+				B078EEBC22D4C3FD002F7F4F /* Yakutat.ics */,
+				B078EEBD22D4C3FD002F7F4F /* Sao_Paulo.ics */,
+			);
+			path = America;
+			sourceTree = "<group>";
+		};
+		B078EE5322D4C3FD002F7F4F /* Indiana */ = {
+			isa = PBXGroup;
+			children = (
+				B078EE5422D4C3FD002F7F4F /* Knox.ics */,
+				B078EE5522D4C3FD002F7F4F /* Indianapolis.ics */,
+				B078EE5622D4C3FD002F7F4F /* Vevay.ics */,
+				B078EE5722D4C3FD002F7F4F /* Winamac.ics */,
+				B078EE5822D4C3FD002F7F4F /* Tell_City.ics */,
+				B078EE5922D4C3FD002F7F4F /* Petersburg.ics */,
+				B078EE5A22D4C3FD002F7F4F /* Vincennes.ics */,
+				B078EE5B22D4C3FD002F7F4F /* Marengo.ics */,
+			);
+			path = Indiana;
+			sourceTree = "<group>";
+		};
+		B078EE6022D4C3FD002F7F4F /* Argentina */ = {
+			isa = PBXGroup;
+			children = (
+				B078EE6122D4C3FD002F7F4F /* La_Rioja.ics */,
+				B078EE6222D4C3FD002F7F4F /* Tucuman.ics */,
+				B078EE6322D4C3FD002F7F4F /* Jujuy.ics */,
+				B078EE6422D4C3FD002F7F4F /* Salta.ics */,
+				B078EE6522D4C3FD002F7F4F /* Buenos_Aires.ics */,
+				B078EE6622D4C3FD002F7F4F /* Cordoba.ics */,
+				B078EE6722D4C3FD002F7F4F /* Catamarca.ics */,
+				B078EE6822D4C3FD002F7F4F /* San_Juan.ics */,
+				B078EE6922D4C3FD002F7F4F /* San_Luis.ics */,
+				B078EE6A22D4C3FD002F7F4F /* Mendoza.ics */,
+				B078EE6B22D4C3FD002F7F4F /* Rio_Gallegos.ics */,
+				B078EE6C22D4C3FD002F7F4F /* Ushuaia.ics */,
+			);
+			path = Argentina;
+			sourceTree = "<group>";
+		};
+		B078EE9122D4C3FD002F7F4F /* Kentucky */ = {
+			isa = PBXGroup;
+			children = (
+				B078EE9222D4C3FD002F7F4F /* Louisville.ics */,
+				B078EE9322D4C3FD002F7F4F /* Monticello.ics */,
+			);
+			path = Kentucky;
+			sourceTree = "<group>";
+		};
+		B078EE9422D4C3FD002F7F4F /* North_Dakota */ = {
+			isa = PBXGroup;
+			children = (
+				B078EE9522D4C3FD002F7F4F /* Center.ics */,
+				B078EE9622D4C3FD002F7F4F /* New_Salem.ics */,
+				B078EE9722D4C3FD002F7F4F /* Beulah.ics */,
+			);
+			path = North_Dakota;
+			sourceTree = "<group>";
+		};
+		B078EEBE22D4C3FD002F7F4F /* Australia */ = {
+			isa = PBXGroup;
+			children = (
+				B078EEBF22D4C3FD002F7F4F /* Sydney.ics */,
+				B078EEC022D4C3FD002F7F4F /* Broken_Hill.ics */,
+				B078EEC122D4C3FD002F7F4F /* Hobart.ics */,
+				B078EEC222D4C3FD002F7F4F /* Darwin.ics */,
+				B078EEC322D4C3FD002F7F4F /* Perth.ics */,
+				B078EEC422D4C3FD002F7F4F /* Adelaide.ics */,
+				B078EEC522D4C3FD002F7F4F /* Currie.ics */,
+				B078EEC622D4C3FD002F7F4F /* Lindeman.ics */,
+				B078EEC722D4C3FD002F7F4F /* Lord_Howe.ics */,
+				B078EEC822D4C3FD002F7F4F /* Brisbane.ics */,
+				B078EEC922D4C3FD002F7F4F /* Eucla.ics */,
+				B078EECA22D4C3FD002F7F4F /* Melbourne.ics */,
+			);
+			path = Australia;
+			sourceTree = "<group>";
+		};
+		B078EECB22D4C3FD002F7F4F /* Asia */ = {
+			isa = PBXGroup;
+			children = (
+				B078EECC22D4C3FD002F7F4F /* Tokyo.ics */,
+				B078EECD22D4C3FD002F7F4F /* Qatar.ics */,
+				B078EECE22D4C3FD002F7F4F /* Ashgabat.ics */,
+				B078EECF22D4C3FD002F7F4F /* Colombo.ics */,
+				B078EED022D4C3FD002F7F4F /* Dili.ics */,
+				B078EED122D4C3FD002F7F4F /* Novosibirsk.ics */,
+				B078EED222D4C3FD002F7F4F /* Choibalsan.ics */,
+				B078EED322D4C3FD002F7F4F /* Hovd.ics */,
+				B078EED422D4C3FD002F7F4F /* Magadan.ics */,
+				B078EED522D4C3FD002F7F4F /* Kuwait.ics */,
+				B078EED622D4C3FD002F7F4F /* Vientiane.ics */,
+				B078EED722D4C3FD002F7F4F /* Bahrain.ics */,
+				B078EED822D4C3FD002F7F4F /* Damascus.ics */,
+				B078EED922D4C3FD002F7F4F /* Vladivostok.ics */,
+				B078EEDA22D4C3FD002F7F4F /* Tbilisi.ics */,
+				B078EEDB22D4C3FD002F7F4F /* Amman.ics */,
+				B078EEDC22D4C3FD002F7F4F /* Ho_Chi_Minh.ics */,
+				B078EEDD22D4C3FD002F7F4F /* Pyongyang.ics */,
+				B078EEDE22D4C3FD002F7F4F /* Baku.ics */,
+				B078EEDF22D4C3FD002F7F4F /* Tashkent.ics */,
+				B078EEE022D4C3FD002F7F4F /* Yerevan.ics */,
+				B078EEE122D4C3FD002F7F4F /* Kamchatka.ics */,
+				B078EEE222D4C3FD002F7F4F /* Sakhalin.ics */,
+				B078EEE322D4C3FD002F7F4F /* Rangoon.ics */,
+				B078EEE422D4C3FD002F7F4F /* Singapore.ics */,
+				B078EEE522D4C3FD002F7F4F /* Gaza.ics */,
+				B078EEE622D4C3FD002F7F4F /* Beirut.ics */,
+				B078EEE722D4C3FD002F7F4F /* Yakutsk.ics */,
+				B078EEE822D4C3FD002F7F4F /* Dubai.ics */,
+				B078EEE922D4C3FD002F7F4F /* Srednekolymsk.ics */,
+				B078EEEA22D4C3FD002F7F4F /* Kathmandu.ics */,
+				B078EEEB22D4C3FD002F7F4F /* Kashgar.ics */,
+				B078EEEC22D4C3FD002F7F4F /* Brunei.ics */,
+				B078EEED22D4C3FD002F7F4F /* Anadyr.ics */,
+				B078EEEE22D4C3FD002F7F4F /* Dushanbe.ics */,
+				B078EEEF22D4C3FD002F7F4F /* Taipei.ics */,
+				B078EEF022D4C3FD002F7F4F /* Kolkata.ics */,
+				B078EEF122D4C3FD002F7F4F /* Makassar.ics */,
+				B078EEF222D4C3FD002F7F4F /* Jerusalem.ics */,
+				B078EEF322D4C3FD002F7F4F /* Dhaka.ics */,
+				B078EEF422D4C3FD002F7F4F /* Istanbul.ics */,
+				B078EEF522D4C3FD002F7F4F /* Chita.ics */,
+				B078EEF622D4C3FD002F7F4F /* Calcutta.ics */,
+				B078EEF722D4C3FD002F7F4F /* Shanghai.ics */,
+				B078EEF822D4C3FD002F7F4F /* Katmandu.ics */,
+				B078EEF922D4C3FD002F7F4F /* Kuching.ics */,
+				B078EEFA22D4C3FD002F7F4F /* Hebron.ics */,
+				B078EEFB22D4C3FD002F7F4F /* Saigon.ics */,
+				B078EEFC22D4C3FD002F7F4F /* Krasnoyarsk.ics */,
+				B078EEFD22D4C3FD002F7F4F /* Tehran.ics */,
+				B078EEFE22D4C3FD002F7F4F /* Pontianak.ics */,
+				B078EEFF22D4C3FD002F7F4F /* Samarkand.ics */,
+				B078EF0022D4C3FD002F7F4F /* Ulaanbaatar.ics */,
+				B078EF0122D4C3FD002F7F4F /* Almaty.ics */,
+				B078EF0222D4C3FD002F7F4F /* Baghdad.ics */,
+				B078EF0322D4C3FD002F7F4F /* Hong_Kong.ics */,
+				B078EF0422D4C3FD002F7F4F /* Manila.ics */,
+				B078EF0522D4C3FD002F7F4F /* Thimphu.ics */,
+				B078EF0622D4C3FD002F7F4F /* Bangkok.ics */,
+				B078EF0722D4C3FD002F7F4F /* Riyadh.ics */,
+				B078EF0822D4C3FD002F7F4F /* Phnom_Penh.ics */,
+				B078EF0922D4C3FD002F7F4F /* Khandyga.ics */,
+				B078EF0A22D4C3FD002F7F4F /* Aqtau.ics */,
+				B078EF0B22D4C3FD002F7F4F /* Urumqi.ics */,
+				B078EF0C22D4C3FD002F7F4F /* Omsk.ics */,
+				B078EF0D22D4C3FD002F7F4F /* Muscat.ics */,
+				B078EF0E22D4C3FD002F7F4F /* Jayapura.ics */,
+				B078EF0F22D4C3FD002F7F4F /* Ust-Nera.ics */,
+				B078EF1022D4C3FD002F7F4F /* Macau.ics */,
+				B078EF1122D4C3FD002F7F4F /* Bishkek.ics */,
+				B078EF1222D4C3FD002F7F4F /* Novokuznetsk.ics */,
+				B078EF1322D4C3FD002F7F4F /* Oral.ics */,
+				B078EF1422D4C3FD002F7F4F /* Yekaterinburg.ics */,
+				B078EF1522D4C3FD002F7F4F /* Aden.ics */,
+				B078EF1622D4C3FD002F7F4F /* Harbin.ics */,
+				B078EF1722D4C3FD002F7F4F /* Jakarta.ics */,
+				B078EF1822D4C3FD002F7F4F /* Karachi.ics */,
+				B078EF1922D4C3FD002F7F4F /* Kabul.ics */,
+				B078EF1A22D4C3FD002F7F4F /* Chongqing.ics */,
+				B078EF1B22D4C3FD002F7F4F /* Aqtobe.ics */,
+				B078EF1C22D4C3FD002F7F4F /* Kuala_Lumpur.ics */,
+				B078EF1D22D4C3FD002F7F4F /* Irkutsk.ics */,
+				B078EF1E22D4C3FD002F7F4F /* Seoul.ics */,
+				B078EF1F22D4C3FD002F7F4F /* Qyzylorda.ics */,
+			);
+			path = Asia;
+			sourceTree = "<group>";
+		};
+		B078EF2022D4C3FD002F7F4F /* Antarctica */ = {
+			isa = PBXGroup;
+			children = (
+				B078EF2122D4C3FD002F7F4F /* Vostok.ics */,
+				B078EF2222D4C3FD002F7F4F /* Rothera.ics */,
+				B078EF2322D4C3FD002F7F4F /* Mawson.ics */,
+				B078EF2422D4C3FD002F7F4F /* DumontDUrville.ics */,
+				B078EF2522D4C3FD002F7F4F /* Macquarie.ics */,
+				B078EF2622D4C3FD002F7F4F /* Palmer.ics */,
+				B078EF2722D4C3FD002F7F4F /* Davis.ics */,
+				B078EF2822D4C3FD002F7F4F /* Casey.ics */,
+				B078EF2922D4C3FD002F7F4F /* Syowa.ics */,
+				B078EF2A22D4C3FD002F7F4F /* McMurdo.ics */,
+				B078EF2B22D4C3FD002F7F4F /* Troll.ics */,
+			);
+			path = Antarctica;
+			sourceTree = "<group>";
+		};
+		B078EF2C22D4C3FD002F7F4F /* Europe */ = {
+			isa = PBXGroup;
+			children = (
+				B078EF2D22D4C3FD002F7F4F /* Busingen.ics */,
+				B078EF2E22D4C3FD002F7F4F /* Bratislava.ics */,
+				B078EF2F22D4C3FD002F7F4F /* Kaliningrad.ics */,
+				B078EF3022D4C3FD002F7F4F /* Skopje.ics */,
+				B078EF3122D4C3FD002F7F4F /* Mariehamn.ics */,
+				B078EF3222D4C3FD002F7F4F /* Amsterdam.ics */,
+				B078EF3322D4C3FD002F7F4F /* Sarajevo.ics */,
+				B078EF3422D4C3FD002F7F4F /* Dublin.ics */,
+				B078EF3522D4C3FD002F7F4F /* Nicosia.ics */,
+				B078EF3622D4C3FD002F7F4F /* Ljubljana.ics */,
+				B078EF3722D4C3FD002F7F4F /* Simferopol.ics */,
+				B078EF3822D4C3FD002F7F4F /* Vienna.ics */,
+				B078EF3922D4C3FD002F7F4F /* San_Marino.ics */,
+				B078EF3A22D4C3FD002F7F4F /* Luxembourg.ics */,
+				B078EF3B22D4C3FD002F7F4F /* Brussels.ics */,
+				B078EF3C22D4C3FD002F7F4F /* Chisinau.ics */,
+				B078EF3D22D4C3FD002F7F4F /* Zaporozhye.ics */,
+				B078EF3E22D4C3FD002F7F4F /* Vatican.ics */,
+				B078EF3F22D4C3FD002F7F4F /* Madrid.ics */,
+				B078EF4022D4C3FD002F7F4F /* Jersey.ics */,
+				B078EF4122D4C3FD002F7F4F /* Zagreb.ics */,
+				B078EF4222D4C3FD002F7F4F /* Warsaw.ics */,
+				B078EF4322D4C3FD002F7F4F /* Malta.ics */,
+				B078EF4422D4C3FD002F7F4F /* Volgograd.ics */,
+				B078EF4522D4C3FD002F7F4F /* Sofia.ics */,
+				B078EF4622D4C3FD002F7F4F /* Zurich.ics */,
+				B078EF4722D4C3FD002F7F4F /* Paris.ics */,
+				B078EF4822D4C3FD002F7F4F /* Guernsey.ics */,
+				B078EF4922D4C3FD002F7F4F /* Riga.ics */,
+				B078EF4A22D4C3FD002F7F4F /* Uzhgorod.ics */,
+				B078EF4B22D4C3FD002F7F4F /* Minsk.ics */,
+				B078EF4C22D4C3FD002F7F4F /* Podgorica.ics */,
+				B078EF4D22D4C3FD002F7F4F /* Oslo.ics */,
+				B078EF4E22D4C3FD002F7F4F /* Isle_of_Man.ics */,
+				B078EF4F22D4C3FD002F7F4F /* Helsinki.ics */,
+				B078EF5022D4C3FD002F7F4F /* London.ics */,
+				B078EF5122D4C3FD002F7F4F /* Tirane.ics */,
+				B078EF5222D4C3FD002F7F4F /* Athens.ics */,
+				B078EF5322D4C3FD002F7F4F /* Samara.ics */,
+				B078EF5422D4C3FD002F7F4F /* Kiev.ics */,
+				B078EF5522D4C3FD002F7F4F /* Rome.ics */,
+				B078EF5622D4C3FD002F7F4F /* Andorra.ics */,
+				B078EF5722D4C3FD002F7F4F /* Vilnius.ics */,
+				B078EF5822D4C3FD002F7F4F /* Bucharest.ics */,
+				B078EF5922D4C3FD002F7F4F /* Moscow.ics */,
+				B078EF5A22D4C3FD002F7F4F /* Stockholm.ics */,
+				B078EF5B22D4C3FD002F7F4F /* Prague.ics */,
+				B078EF5C22D4C3FD002F7F4F /* Gibraltar.ics */,
+				B078EF5D22D4C3FD002F7F4F /* Berlin.ics */,
+				B078EF5E22D4C3FD002F7F4F /* Tallinn.ics */,
+				B078EF5F22D4C3FD002F7F4F /* Monaco.ics */,
+				B078EF6022D4C3FD002F7F4F /* Lisbon.ics */,
+				B078EF6122D4C3FD002F7F4F /* Vaduz.ics */,
+				B078EF6222D4C3FD002F7F4F /* Budapest.ics */,
+				B078EF6322D4C3FD002F7F4F /* Belgrade.ics */,
+				B078EF6422D4C3FD002F7F4F /* Copenhagen.ics */,
+			);
+			path = Europe;
+			sourceTree = "<group>";
+		};
+		B078EF6522D4C3FD002F7F4F /* Africa */ = {
+			isa = PBXGroup;
+			children = (
+				B078EF6622D4C3FD002F7F4F /* Kampala.ics */,
+				B078EF6722D4C3FD002F7F4F /* Freetown.ics */,
+				B078EF6822D4C3FD002F7F4F /* Kigali.ics */,
+				B078EF6922D4C3FD002F7F4F /* Tunis.ics */,
+				B078EF6A22D4C3FD002F7F4F /* Mogadishu.ics */,
+				B078EF6B22D4C3FD002F7F4F /* Gaborone.ics */,
+				B078EF6C22D4C3FD002F7F4F /* Cairo.ics */,
+				B078EF6D22D4C3FD002F7F4F /* Lagos.ics */,
+				B078EF6E22D4C3FD002F7F4F /* Dakar.ics */,
+				B078EF6F22D4C3FD002F7F4F /* Juba.ics */,
+				B078EF7022D4C3FD002F7F4F /* Lubumbashi.ics */,
+				B078EF7122D4C3FD002F7F4F /* Ndjamena.ics */,
+				B078EF7222D4C3FD002F7F4F /* Accra.ics */,
+				B078EF7322D4C3FD002F7F4F /* Addis_Ababa.ics */,
+				B078EF7422D4C3FD002F7F4F /* Malabo.ics */,
+				B078EF7522D4C3FD002F7F4F /* Abidjan.ics */,
+				B078EF7622D4C3FE002F7F4F /* Bangui.ics */,
+				B078EF7722D4C3FE002F7F4F /* Asmara.ics */,
+				B078EF7822D4C3FE002F7F4F /* Kinshasa.ics */,
+				B078EF7922D4C3FE002F7F4F /* Porto-Novo.ics */,
+				B078EF7A22D4C3FE002F7F4F /* Maputo.ics */,
+				B078EF7B22D4C3FE002F7F4F /* Monrovia.ics */,
+				B078EF7C22D4C3FE002F7F4F /* Windhoek.ics */,
+				B078EF7D22D4C3FE002F7F4F /* Djibouti.ics */,
+				B078EF7E22D4C3FE002F7F4F /* Ceuta.ics */,
+				B078EF7F22D4C3FE002F7F4F /* Lome.ics */,
+				B078EF8022D4C3FE002F7F4F /* Sao_Tome.ics */,
+				B078EF8122D4C3FE002F7F4F /* Harare.ics */,
+				B078EF8222D4C3FE002F7F4F /* Bamako.ics */,
+				B078EF8322D4C3FE002F7F4F /* Ouagadougou.ics */,
+				B078EF8422D4C3FE002F7F4F /* Algiers.ics */,
+				B078EF8522D4C3FE002F7F4F /* Conakry.ics */,
+				B078EF8622D4C3FE002F7F4F /* Blantyre.ics */,
+				B078EF8722D4C3FE002F7F4F /* Mbabane.ics */,
+				B078EF8822D4C3FE002F7F4F /* Niamey.ics */,
+				B078EF8922D4C3FE002F7F4F /* Casablanca.ics */,
+				B078EF8A22D4C3FE002F7F4F /* Brazzaville.ics */,
+				B078EF8B22D4C3FE002F7F4F /* Tripoli.ics */,
+				B078EF8C22D4C3FE002F7F4F /* Douala.ics */,
+				B078EF8D22D4C3FE002F7F4F /* Bujumbura.ics */,
+				B078EF8E22D4C3FE002F7F4F /* El_Aaiun.ics */,
+				B078EF8F22D4C3FE002F7F4F /* Dar_es_Salaam.ics */,
+				B078EF9022D4C3FE002F7F4F /* Johannesburg.ics */,
+				B078EF9122D4C3FE002F7F4F /* Nouakchott.ics */,
+				B078EF9222D4C3FE002F7F4F /* Bissau.ics */,
+				B078EF9322D4C3FE002F7F4F /* Banjul.ics */,
+				B078EF9422D4C3FE002F7F4F /* Nairobi.ics */,
+				B078EF9522D4C3FE002F7F4F /* Lusaka.ics */,
+				B078EF9622D4C3FE002F7F4F /* Maseru.ics */,
+				B078EF9722D4C3FE002F7F4F /* Luanda.ics */,
+				B078EF9822D4C3FE002F7F4F /* Libreville.ics */,
+				B078EF9922D4C3FE002F7F4F /* Khartoum.ics */,
+			);
+			path = Africa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B078EDB522D4C22F002F7F4F /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B078EDC822D4C231002F7F4F /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				B078EDB222D4C22F002F7F4F /* Sources */,
+				B078EDB322D4C22F002F7F4F /* Frameworks */,
+				B078EDB422D4C22F002F7F4F /* Resources */,
+				B078EDD322D4C379002F7F4F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = B078EDB622D4C22F002F7F4F /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B078EDAE22D4C22F002F7F4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = xiaoman;
+				TargetAttributes = {
+					B078EDB522D4C22F002F7F4F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B078EDB122D4C22F002F7F4F /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B078EDAD22D4C22F002F7F4F;
+			productRefGroup = B078EDB722D4C22F002F7F4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B078EDB522D4C22F002F7F4F /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B078EDB422D4C22F002F7F4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B078EFD222D4C3FE002F7F4F /* Johnston.ics in Resources */,
+				B078EFF422D4C3FE002F7F4F /* Vancouver.ics in Resources */,
+				B078F0A122D4C3FE002F7F4F /* Jerusalem.ics in Resources */,
+				B078F0E022D4C3FE002F7F4F /* Sarajevo.ics in Resources */,
+				B078F0FC22D4C3FE002F7F4F /* Helsinki.ics in Resources */,
+				B078EFFD22D4C3FE002F7F4F /* Havana.ics in Resources */,
+				B078F06122D4C3FE002F7F4F /* Dawson.ics in Resources */,
+				B078EF9D22D4C3FE002F7F4F /* Kerguelen.ics in Resources */,
+				B078F09222D4C3FE002F7F4F /* Rangoon.ics in Resources */,
+				B078F0AA22D4C3FE002F7F4F /* Saigon.ics in Resources */,
+				B078F12022D4C3FE002F7F4F /* Malabo.ics in Resources */,
+				B078F11722D4C3FE002F7F4F /* Gaborone.ics in Resources */,
+				B078EFE522D4C3FE002F7F4F /* St_Kitts.ics in Resources */,
+				B078F07622D4C3FE002F7F4F /* Lindeman.ics in Resources */,
+				B078F0A422D4C3FE002F7F4F /* Chita.ics in Resources */,
+				B078F11822D4C3FE002F7F4F /* Cairo.ics in Resources */,
+				B078F0BA22D4C3FE002F7F4F /* Urumqi.ics in Resources */,
+				B078F01722D4C3FE002F7F4F /* Salta.ics in Resources */,
+				B078EFE422D4C3FE002F7F4F /* Fortaleza.ics in Resources */,
+				B078EFF322D4C3FE002F7F4F /* Rainy_River.ics in Resources */,
+				B078F03222D4C3FE002F7F4F /* Guatemala.ics in Resources */,
+				B078F10D22D4C3FE002F7F4F /* Lisbon.ics in Resources */,
+				B078EFE722D4C3FE002F7F4F /* Goose_Bay.ics in Resources */,
+				B078F13922D4C3FE002F7F4F /* Bujumbura.ics in Resources */,
+				B078F0AB22D4C3FE002F7F4F /* Krasnoyarsk.ics in Resources */,
+				B078EFBA22D4C3FE002F7F4F /* Midway.ics in Resources */,
+				B078F13422D4C3FE002F7F4F /* Niamey.ics in Resources */,
+				B078EFDF22D4C3FE002F7F4F /* Menominee.ics in Resources */,
+				B078F0F222D4C3FE002F7F4F /* Sofia.ics in Resources */,
+				B078EFB322D4C3FE002F7F4F /* Efate.ics in Resources */,
+				B078F13C22D4C3FE002F7F4F /* Johannesburg.ics in Resources */,
+				B078F13622D4C3FE002F7F4F /* Brazzaville.ics in Resources */,
+				B078F0BF22D4C3FE002F7F4F /* Macau.ics in Resources */,
+				B078F07F22D4C3FE002F7F4F /* Dili.ics in Resources */,
+				B078EFD822D4C3FE002F7F4F /* Chuuk.ics in Resources */,
+				B078F09B22D4C3FE002F7F4F /* Brunei.ics in Resources */,
+				B078F11B22D4C3FE002F7F4F /* Juba.ics in Resources */,
+				B078F02E22D4C3FE002F7F4F /* Noronha.ics in Resources */,
+				B078F00322D4C3FE002F7F4F /* Resolute.ics in Resources */,
+				B078F0D922D4C3FE002F7F4F /* Troll.ics in Resources */,
+				B078EDDD22D4C3D8002F7F4F /* totalTimeZone.ics in Resources */,
+				B078EFBE22D4C3FE002F7F4F /* Rarotonga.ics in Resources */,
+				B078EFB722D4C3FE002F7F4F /* Galapagos.ics in Resources */,
+				B078F04A22D4C3FE002F7F4F /* St_Vincent.ics in Resources */,
+				B078F00C22D4C3FE002F7F4F /* Tell_City.ics in Resources */,
+				B078F12822D4C3FE002F7F4F /* Windhoek.ics in Resources */,
+				B078F01B22D4C3FE002F7F4F /* San_Juan.ics in Resources */,
+				B078F12422D4C3FE002F7F4F /* Kinshasa.ics in Resources */,
+				B078F01E22D4C3FE002F7F4F /* Rio_Gallegos.ics in Resources */,
+				B078F04322D4C3FE002F7F4F /* Guadeloupe.ics in Resources */,
+				B078F07A22D4C3FE002F7F4F /* Melbourne.ics in Resources */,
+				B078F12722D4C3FE002F7F4F /* Monrovia.ics in Resources */,
+				B078EFD422D4C3FE002F7F4F /* Port_Moresby.ics in Resources */,
+				B078EFA222D4C3FE002F7F4F /* Comoro.ics in Resources */,
+				B078EF9A22D4C3FE002F7F4F /* Mauritius.ics in Resources */,
+				B078F0BD22D4C3FE002F7F4F /* Jayapura.ics in Resources */,
+				B078F04822D4C3FE002F7F4F /* Beulah.ics in Resources */,
+				B078F02922D4C3FE002F7F4F /* Cancun.ics in Resources */,
+				B078EFFB22D4C3FE002F7F4F /* Denver.ics in Resources */,
+				B078F0FB22D4C3FE002F7F4F /* Isle_of_Man.ics in Resources */,
+				B078F03122D4C3FE002F7F4F /* Winnipeg.ics in Resources */,
+				B078F0D122D4C3FE002F7F4F /* Mawson.ics in Resources */,
+				B078EF9C22D4C3FE002F7F4F /* Mayotte.ics in Resources */,
+				B078F12922D4C3FE002F7F4F /* Djibouti.ics in Resources */,
+				B078F09722D4C3FE002F7F4F /* Dubai.ics in Resources */,
+				B078F00422D4C3FE002F7F4F /* Santa_Isabel.ics in Resources */,
+				B078F0FD22D4C3FE002F7F4F /* London.ics in Resources */,
+				B078F0A522D4C3FE002F7F4F /* Calcutta.ics in Resources */,
+				B078EDDC22D4C3D8002F7F4F /* university-formatted.ics in Resources */,
+				B078F12522D4C3FE002F7F4F /* Porto-Novo.ics in Resources */,
+				B078EFA722D4C3FE002F7F4F /* Reykjavik.ics in Resources */,
+				B078F08E22D4C3FE002F7F4F /* Tashkent.ics in Resources */,
+				B078EFC122D4C3FE002F7F4F /* Truk.ics in Resources */,
+				B078EFF122D4C3FE002F7F4F /* Bogota.ics in Resources */,
+				B078EFDD22D4C3FE002F7F4F /* Cayenne.ics in Resources */,
+				B078F00722D4C3FE002F7F4F /* Paramaribo.ics in Resources */,
+				B078F03622D4C3FE002F7F4F /* Montevideo.ics in Resources */,
+				B078F03422D4C3FE002F7F4F /* Swift_Current.ics in Resources */,
+				B078F05222D4C3FE002F7F4F /* Halifax.ics in Resources */,
+				B078F01522D4C3FE002F7F4F /* Tucuman.ics in Resources */,
+				B078EDC422D4C231002F7F4F /* LaunchScreen.storyboard in Resources */,
+				B078EFCF22D4C3FE002F7F4F /* Tarawa.ics in Resources */,
+				B078F00B22D4C3FE002F7F4F /* Winamac.ics in Resources */,
+				B078F0AE22D4C3FE002F7F4F /* Samarkand.ics in Resources */,
+				B078F0E622D4C3FE002F7F4F /* San_Marino.ics in Resources */,
+				B078F12322D4C3FE002F7F4F /* Asmara.ics in Resources */,
+				B078EFD522D4C3FE002F7F4F /* Auckland.ics in Resources */,
+				B078F05822D4C3FE002F7F4F /* Glace_Bay.ics in Resources */,
+				B078F09C22D4C3FE002F7F4F /* Anadyr.ics in Resources */,
+				B078F10722D4C3FE002F7F4F /* Stockholm.ics in Resources */,
+				B078EFCE22D4C3FE002F7F4F /* Pitcairn.ics in Resources */,
+				B078EFAF22D4C3FE002F7F4F /* Bermuda.ics in Resources */,
+				B078F14522D4C3FE002F7F4F /* Khartoum.ics in Resources */,
+				B078F0BC22D4C3FE002F7F4F /* Muscat.ics in Resources */,
+				B078F0E522D4C3FE002F7F4F /* Vienna.ics in Resources */,
+				B078F0F522D4C3FE002F7F4F /* Guernsey.ics in Resources */,
+				B078EFDE22D4C3FE002F7F4F /* Pangnirtung.ics in Resources */,
+				B078F11E22D4C3FE002F7F4F /* Accra.ics in Resources */,
+				B078F00622D4C3FE002F7F4F /* Caracas.ics in Resources */,
+				B078F06922D4C3FE002F7F4F /* Porto_Velho.ics in Resources */,
+				B078EFC022D4C3FE002F7F4F /* Kiritimati.ics in Resources */,
+				B078F0B322D4C3FE002F7F4F /* Manila.ics in Resources */,
+				B078F13722D4C3FE002F7F4F /* Tripoli.ics in Resources */,
+				B078F12A22D4C3FE002F7F4F /* Ceuta.ics in Resources */,
+				B078F07122D4C3FE002F7F4F /* Hobart.ics in Resources */,
+				B078F00D22D4C3FE002F7F4F /* Petersburg.ics in Resources */,
+				B078F07422D4C3FE002F7F4F /* Adelaide.ics in Resources */,
+				B078F06022D4C3FE002F7F4F /* Santarem.ics in Resources */,
+				B078EFF822D4C3FE002F7F4F /* Mexico_City.ics in Resources */,
+				B078F04422D4C3FE002F7F4F /* Louisville.ics in Resources */,
+				B078F0E822D4C3FE002F7F4F /* Brussels.ics in Resources */,
+				B078EFB222D4C3FE002F7F4F /* Tongatapu.ics in Resources */,
+				B078F08B22D4C3FE002F7F4F /* Ho_Chi_Minh.ics in Resources */,
+				B078F03C22D4C3FE002F7F4F /* Guayaquil.ics in Resources */,
+				B078F01C22D4C3FE002F7F4F /* San_Luis.ics in Resources */,
+				B078EFEF22D4C3FE002F7F4F /* Anchorage.ics in Resources */,
+				B078F0FE22D4C3FE002F7F4F /* Tirane.ics in Resources */,
+				B078F0AC22D4C3FE002F7F4F /* Tehran.ics in Resources */,
+				B078F03B22D4C3FE002F7F4F /* Hermosillo.ics in Resources */,
+				B078F0CF22D4C3FE002F7F4F /* Vostok.ics in Resources */,
+				B078F0D022D4C3FE002F7F4F /* Rothera.ics in Resources */,
+				B078F06A22D4C3FE002F7F4F /* St_Johns.ics in Resources */,
+				B078EFA922D4C3FE002F7F4F /* Stanley.ics in Resources */,
+				B078F0AD22D4C3FE002F7F4F /* Pontianak.ics in Resources */,
+				B078F09322D4C3FE002F7F4F /* Singapore.ics in Resources */,
+				B078F0EE22D4C3FE002F7F4F /* Zagreb.ics in Resources */,
+				B078F02222D4C3FE002F7F4F /* Phoenix.ics in Resources */,
+				B078F11222D4C3FE002F7F4F /* Kampala.ics in Resources */,
+				B078F06322D4C3FE002F7F4F /* Cambridge_Bay.ics in Resources */,
+				B078F08322D4C3FE002F7F4F /* Magadan.ics in Resources */,
+				B078F0FA22D4C3FE002F7F4F /* Oslo.ics in Resources */,
+				B078F05B22D4C3FE002F7F4F /* Belem.ics in Resources */,
+				B078EFD122D4C3FE002F7F4F /* Saipan.ics in Resources */,
+				B078F0C922D4C3FE002F7F4F /* Chongqing.ics in Resources */,
+				B078F0C222D4C3FE002F7F4F /* Oral.ics in Resources */,
+				B078F01022D4C3FE002F7F4F /* Port_of_Spain.ics in Resources */,
+				B078EFF922D4C3FE002F7F4F /* Bahia_Banderas.ics in Resources */,
+				B078EFAE22D4C3FE002F7F4F /* St_Helena.ics in Resources */,
+				B078EFB122D4C3FE002F7F4F /* Pohnpei.ics in Resources */,
+				B078F04C22D4C3FE002F7F4F /* Merida.ics in Resources */,
+				B078EF9F22D4C3FE002F7F4F /* Christmas.ics in Resources */,
+				B078EFD622D4C3FE002F7F4F /* Guam.ics in Resources */,
+				B078F04D22D4C3FE002F7F4F /* Mazatlan.ics in Resources */,
+				B078F11622D4C3FE002F7F4F /* Mogadishu.ics in Resources */,
+				B078EFC422D4C3FE002F7F4F /* Norfolk.ics in Resources */,
+				B078F0B622D4C3FE002F7F4F /* Riyadh.ics in Resources */,
+				B078F02022D4C3FE002F7F4F /* Bahia.ics in Resources */,
+				B078F00222D4C3FE002F7F4F /* Godthab.ics in Resources */,
+				B078F04522D4C3FE002F7F4F /* Monticello.ics in Resources */,
+				B078F00922D4C3FE002F7F4F /* Indianapolis.ics in Resources */,
+				B078F11A22D4C3FE002F7F4F /* Dakar.ics in Resources */,
+				B078F07522D4C3FE002F7F4F /* Currie.ics in Resources */,
+				B078EFBD22D4C3FE002F7F4F /* Nauru.ics in Resources */,
+				B078EFAC22D4C3FE002F7F4F /* Faroe.ics in Resources */,
+				B078F09622D4C3FE002F7F4F /* Yakutsk.ics in Resources */,
+				B078F0B522D4C3FE002F7F4F /* Bangkok.ics in Resources */,
+				B078F00122D4C3FE002F7F4F /* Regina.ics in Resources */,
+				B078F0F122D4C3FE002F7F4F /* Volgograd.ics in Resources */,
+				B078EFA322D4C3FE002F7F4F /* Reunion.ics in Resources */,
+				B078F02D22D4C3FE002F7F4F /* Recife.ics in Resources */,
+				B078EFE222D4C3FE002F7F4F /* Cayman.ics in Resources */,
+				B078F08822D4C3FE002F7F4F /* Vladivostok.ics in Resources */,
+				B078EFC222D4C3FE002F7F4F /* Fiji.ics in Resources */,
+				B078F03322D4C3FE002F7F4F /* Montreal.ics in Resources */,
+				B078F12622D4C3FE002F7F4F /* Maputo.ics in Resources */,
+				B078F08722D4C3FE002F7F4F /* Damascus.ics in Resources */,
+				B078EF9B22D4C3FE002F7F4F /* Maldives.ics in Resources */,
+				B078F07022D4C3FE002F7F4F /* Broken_Hill.ics in Resources */,
+				B078F08A22D4C3FE002F7F4F /* Amman.ics in Resources */,
+				B078F0C122D4C3FE002F7F4F /* Novokuznetsk.ics in Resources */,
+				B078F04F22D4C3FE002F7F4F /* Nassau.ics in Resources */,
+				B078F09A22D4C3FE002F7F4F /* Kashgar.ics in Resources */,
+				B078F0C322D4C3FE002F7F4F /* Yekaterinburg.ics in Resources */,
+				B078F06222D4C3FE002F7F4F /* Antigua.ics in Resources */,
+				B078F14422D4C3FE002F7F4F /* Libreville.ics in Resources */,
+				B078F14222D4C3FE002F7F4F /* Maseru.ics in Resources */,
+				B078F0EA22D4C3FE002F7F4F /* Zaporozhye.ics in Resources */,
+				B078EFEA22D4C3FE002F7F4F /* Anguilla.ics in Resources */,
+				B078F03722D4C3FE002F7F4F /* Nome.ics in Resources */,
+				B078EFDA22D4C3FE002F7F4F /* Longyearbyen.ics in Resources */,
+				B078F0F622D4C3FE002F7F4F /* Riga.ics in Resources */,
+				B078F04B22D4C3FE002F7F4F /* Campo_Grande.ics in Resources */,
+				B078F04922D4C3FE002F7F4F /* Cuiaba.ics in Resources */,
+				B078F13522D4C3FE002F7F4F /* Casablanca.ics in Resources */,
+				B078EFFC22D4C3FE002F7F4F /* Miquelon.ics in Resources */,
+				B078F06822D4C3FE002F7F4F /* Grenada.ics in Resources */,
+				B078EFCD22D4C3FE002F7F4F /* Niue.ics in Resources */,
+				B078F02622D4C3FE002F7F4F /* Whitehorse.ics in Resources */,
+				B078F0D722D4C3FE002F7F4F /* Syowa.ics in Resources */,
+				B078EFFF22D4C3FE002F7F4F /* Barbados.ics in Resources */,
+				B078EFD722D4C3FE002F7F4F /* Ponape.ics in Resources */,
+				B078EFD022D4C3FE002F7F4F /* Pago_Pago.ics in Resources */,
+				B078F01A22D4C3FE002F7F4F /* Catamarca.ics in Resources */,
+				B078F03922D4C3FE002F7F4F /* Matamoros.ics in Resources */,
+				B078F0ED22D4C3FE002F7F4F /* Jersey.ics in Resources */,
+				B078EFFA22D4C3FE002F7F4F /* Ojinaga.ics in Resources */,
+				B078F10922D4C3FE002F7F4F /* Gibraltar.ics in Resources */,
+				B078F0DA22D4C3FE002F7F4F /* Busingen.ics in Resources */,
+				B078F03F22D4C3FE002F7F4F /* Monterrey.ics in Resources */,
+				B078F01122D4C3FE002F7F4F /* Tijuana.ics in Resources */,
+				B078EFE022D4C3FE002F7F4F /* St_Thomas.ics in Resources */,
+				B078F01F22D4C3FE002F7F4F /* Ushuaia.ics in Resources */,
+				B078F13B22D4C3FE002F7F4F /* Dar_es_Salaam.ics in Resources */,
+				B078F01222D4C3FE002F7F4F /* Belize.ics in Resources */,
+				B078F08C22D4C3FE002F7F4F /* Pyongyang.ics in Resources */,
+				B078F0DF22D4C3FE002F7F4F /* Amsterdam.ics in Resources */,
+				B078EFA822D4C3FE002F7F4F /* South_Georgia.ics in Resources */,
+				B078F05922D4C3FE002F7F4F /* Detroit.ics in Resources */,
+				B078F0A622D4C3FE002F7F4F /* Shanghai.ics in Resources */,
+				B078F10122D4C3FE002F7F4F /* Kiev.ics in Resources */,
+				B078EFC522D4C3FE002F7F4F /* Funafuti.ics in Resources */,
+				B078F12122D4C3FE002F7F4F /* Abidjan.ics in Resources */,
+				B078EFED22D4C3FE002F7F4F /* Inuvik.ics in Resources */,
+				B078F01622D4C3FE002F7F4F /* Jujuy.ics in Resources */,
+				B078F13022D4C3FE002F7F4F /* Algiers.ics in Resources */,
+				B078EFF622D4C3FE002F7F4F /* Kralendijk.ics in Resources */,
+				B078F02A22D4C3FE002F7F4F /* Port-au-Prince.ics in Resources */,
+				B078F13122D4C3FE002F7F4F /* Conakry.ics in Resources */,
+				B078F02722D4C3FE002F7F4F /* Adak.ics in Resources */,
+				B078F05022D4C3FE002F7F4F /* Edmonton.ics in Resources */,
+				B078F06422D4C3FE002F7F4F /* Panama.ics in Resources */,
+				B078F11922D4C3FE002F7F4F /* Lagos.ics in Resources */,
+				B078F02C22D4C3FE002F7F4F /* Jamaica.ics in Resources */,
+				B078F05322D4C3FE002F7F4F /* Nipigon.ics in Resources */,
+				B078F12C22D4C3FE002F7F4F /* Sao_Tome.ics in Resources */,
+				B078F0F722D4C3FE002F7F4F /* Uzhgorod.ics in Resources */,
+				B078F0F922D4C3FE002F7F4F /* Podgorica.ics in Resources */,
+				B078F12E22D4C3FE002F7F4F /* Bamako.ics in Resources */,
+				B078EFC822D4C3FE002F7F4F /* Chatham.ics in Resources */,
+				B078F10622D4C3FE002F7F4F /* Moscow.ics in Resources */,
+				B078F0D422D4C3FE002F7F4F /* Palmer.ics in Resources */,
+				B078F09E22D4C3FE002F7F4F /* Taipei.ics in Resources */,
+				B078F00F22D4C3FE002F7F4F /* Marengo.ics in Resources */,
+				B078F00022D4C3FE002F7F4F /* Toronto.ics in Resources */,
+				B078F07222D4C3FE002F7F4F /* Darwin.ics in Resources */,
+				B078F10422D4C3FE002F7F4F /* Vilnius.ics in Resources */,
+				B078F08622D4C3FE002F7F4F /* Bahrain.ics in Resources */,
+				B078F02322D4C3FE002F7F4F /* Thule.ics in Resources */,
+				B078EFCA22D4C3FE002F7F4F /* Apia.ics in Resources */,
+				B078EFEC22D4C3FE002F7F4F /* Eirunepe.ics in Resources */,
+				B078F13322D4C3FE002F7F4F /* Mbabane.ics in Resources */,
+				B078F08F22D4C3FE002F7F4F /* Yerevan.ics in Resources */,
+				B078F0DE22D4C3FE002F7F4F /* Mariehamn.ics in Resources */,
+				B078F02F22D4C3FE002F7F4F /* Moncton.ics in Resources */,
+				B078F0D822D4C3FE002F7F4F /* McMurdo.ics in Resources */,
+				B078F0B922D4C3FE002F7F4F /* Aqtau.ics in Resources */,
+				B078EFBF22D4C3FE002F7F4F /* Easter.ics in Resources */,
+				B078F0C522D4C3FE002F7F4F /* Harbin.ics in Resources */,
+				B078F10E22D4C3FE002F7F4F /* Vaduz.ics in Resources */,
+				B078F01322D4C3FE002F7F4F /* Tortola.ics in Resources */,
+				B078F06D22D4C3FE002F7F4F /* Yakutat.ics in Resources */,
+				B078F0DD22D4C3FE002F7F4F /* Skopje.ics in Resources */,
+				B078EFA422D4C3FE002F7F4F /* Antananarivo.ics in Resources */,
+				B078F07722D4C3FE002F7F4F /* Lord_Howe.ics in Resources */,
+				B078F0F822D4C3FE002F7F4F /* Minsk.ics in Resources */,
+				B078EFE822D4C3FE002F7F4F /* Araguaina.ics in Resources */,
+				B078EFC322D4C3FE002F7F4F /* Tahiti.ics in Resources */,
+				B078F02822D4C3FE002F7F4F /* Costa_Rica.ics in Resources */,
+				B078F06622D4C3FE002F7F4F /* Montserrat.ics in Resources */,
+				B078F01422D4C3FE002F7F4F /* La_Rioja.ics in Resources */,
+				B078F08022D4C3FE002F7F4F /* Novosibirsk.ics in Resources */,
+				B078F07322D4C3FE002F7F4F /* Perth.ics in Resources */,
+				B078F0F422D4C3FE002F7F4F /* Paris.ics in Resources */,
+				B078F0B122D4C3FE002F7F4F /* Baghdad.ics in Resources */,
+				B078EFA522D4C3FE002F7F4F /* Madeira.ics in Resources */,
+				B078F01922D4C3FE002F7F4F /* Cordoba.ics in Resources */,
+				B078F09122D4C3FE002F7F4F /* Sakhalin.ics in Resources */,
+				B078F03522D4C3FE002F7F4F /* El_Salvador.ics in Resources */,
+				B078F05622D4C3FE002F7F4F /* Los_Angeles.ics in Resources */,
+				B078EFB522D4C3FE002F7F4F /* Majuro.ics in Resources */,
+				B078F10A22D4C3FE002F7F4F /* Berlin.ics in Resources */,
+				B078F11422D4C3FE002F7F4F /* Kigali.ics in Resources */,
+				B078F04622D4C3FE002F7F4F /* Center.ics in Resources */,
+				B078F0C622D4C3FE002F7F4F /* Jakarta.ics in Resources */,
+				B078F0E122D4C3FE002F7F4F /* Dublin.ics in Resources */,
+				B078EFB922D4C3FE002F7F4F /* Honolulu.ics in Resources */,
+				B078F05122D4C3FE002F7F4F /* Yellowknife.ics in Resources */,
+				B078F02422D4C3FE002F7F4F /* Sitka.ics in Resources */,
+				B078F0E222D4C3FE002F7F4F /* Nicosia.ics in Resources */,
+				B078F10822D4C3FE002F7F4F /* Prague.ics in Resources */,
+				B078F13F22D4C3FE002F7F4F /* Banjul.ics in Resources */,
+				B078F05E22D4C3FE002F7F4F /* Iqaluit.ics in Resources */,
+				B078F11D22D4C3FE002F7F4F /* Ndjamena.ics in Resources */,
+				B078F0C422D4C3FE002F7F4F /* Aden.ics in Resources */,
+				B078F0CD22D4C3FE002F7F4F /* Seoul.ics in Resources */,
+				B078F09F22D4C3FE002F7F4F /* Kolkata.ics in Resources */,
+				B078F10222D4C3FE002F7F4F /* Rome.ics in Resources */,
+				B078F09822D4C3FE002F7F4F /* Srednekolymsk.ics in Resources */,
+				B078F13E22D4C3FE002F7F4F /* Bissau.ics in Resources */,
+				B078F0E722D4C3FE002F7F4F /* Luxembourg.ics in Resources */,
+				B078F12D22D4C3FE002F7F4F /* Harare.ics in Resources */,
+				B078EDC122D4C231002F7F4F /* Assets.xcassets in Resources */,
+				B078F0BB22D4C3FE002F7F4F /* Omsk.ics in Resources */,
+				B078F0F022D4C3FE002F7F4F /* Malta.ics in Resources */,
+				B078EFF722D4C3FE002F7F4F /* Martinique.ics in Resources */,
+				B078F01D22D4C3FE002F7F4F /* Mendoza.ics in Resources */,
+				B078EFC622D4C3FE002F7F4F /* Marquesas.ics in Resources */,
+				B078F0CA22D4C3FE002F7F4F /* Aqtobe.ics in Resources */,
+				B078EFB622D4C3FE002F7F4F /* Fakaofo.ics in Resources */,
+				B078F0F322D4C3FE002F7F4F /* Zurich.ics in Resources */,
+				B078F01822D4C3FE002F7F4F /* Buenos_Aires.ics in Resources */,
+				B078F11522D4C3FE002F7F4F /* Tunis.ics in Resources */,
+				B078F0D522D4C3FE002F7F4F /* Davis.ics in Resources */,
+				B078EFB822D4C3FE002F7F4F /* Bougainville.ics in Resources */,
+				B078F07B22D4C3FE002F7F4F /* Tokyo.ics in Resources */,
+				B078EDDB22D4C3D8002F7F4F /* basic.ics in Resources */,
+				B078F07922D4C3FE002F7F4F /* Eucla.ics in Resources */,
+				B078F07E22D4C3FE002F7F4F /* Colombo.ics in Resources */,
+				B078F0CB22D4C3FE002F7F4F /* Kuala_Lumpur.ics in Resources */,
+				B078F03822D4C3FE002F7F4F /* Tegucigalpa.ics in Resources */,
+				B078F08122D4C3FE002F7F4F /* Choibalsan.ics in Resources */,
+				B078F0BE22D4C3FE002F7F4F /* Ust-Nera.ics in Resources */,
+				B078F10322D4C3FE002F7F4F /* Andorra.ics in Resources */,
+				B078F05422D4C3FE002F7F4F /* Creston.ics in Resources */,
+				B078F12B22D4C3FE002F7F4F /* Lome.ics in Resources */,
+				B078EFBC22D4C3FE002F7F4F /* Gambier.ics in Resources */,
+				B078F02122D4C3FE002F7F4F /* Shiprock.ics in Resources */,
+				B078F03A22D4C3FE002F7F4F /* Managua.ics in Resources */,
+				B078F08522D4C3FE002F7F4F /* Vientiane.ics in Resources */,
+				B078F05522D4C3FE002F7F4F /* Chicago.ics in Resources */,
+				B078EDDE22D4C3D8002F7F4F /* university.ics in Resources */,
+				B078F0C722D4C3FE002F7F4F /* Karachi.ics in Resources */,
+				B078F0EF22D4C3FE002F7F4F /* Warsaw.ics in Resources */,
+				B078F0A022D4C3FE002F7F4F /* Makassar.ics in Resources */,
+				B078F08222D4C3FE002F7F4F /* Hovd.ics in Resources */,
+				B078F04222D4C3FE002F7F4F /* Scoresbysund.ics in Resources */,
+				B078F03D22D4C3FE002F7F4F /* Curacao.ics in Resources */,
+				B078F05D22D4C3FE002F7F4F /* La_Paz.ics in Resources */,
+				B078EFB422D4C3FE002F7F4F /* Guadalcanal.ics in Resources */,
+				B078F09422D4C3FE002F7F4F /* Gaza.ics in Resources */,
+				B078F11F22D4C3FE002F7F4F /* Addis_Ababa.ics in Resources */,
+				B078F11C22D4C3FE002F7F4F /* Lubumbashi.ics in Resources */,
+				B078F06F22D4C3FE002F7F4F /* Sydney.ics in Resources */,
+				B078F0E322D4C3FE002F7F4F /* Ljubljana.ics in Resources */,
+				B078F0D622D4C3FE002F7F4F /* Casey.ics in Resources */,
+				B078EFAB22D4C3FE002F7F4F /* Jan_Mayen.ics in Resources */,
+				B078EFD922D4C3FE002F7F4F /* Kwajalein.ics in Resources */,
+				B078F0C022D4C3FE002F7F4F /* Bishkek.ics in Resources */,
+				B078F09922D4C3FE002F7F4F /* Kathmandu.ics in Resources */,
+				B078EFF522D4C3FE002F7F4F /* Lower_Princes.ics in Resources */,
+				B078F13D22D4C3FE002F7F4F /* Nouakchott.ics in Resources */,
+				B078EFAA22D4C3FE002F7F4F /* Azores.ics in Resources */,
+				B078F0DB22D4C3FE002F7F4F /* Bratislava.ics in Resources */,
+				B078EFE122D4C3FE002F7F4F /* Juneau.ics in Resources */,
+				B078F0A922D4C3FE002F7F4F /* Hebron.ics in Resources */,
+				B078F03E22D4C3FE002F7F4F /* Aruba.ics in Resources */,
+				B078F00522D4C3FE002F7F4F /* Santo_Domingo.ics in Resources */,
+				B078EFCB22D4C3FE002F7F4F /* Enderbury.ics in Resources */,
+				B078F0DC22D4C3FE002F7F4F /* Kaliningrad.ics in Resources */,
+				B078EFE622D4C3FE002F7F4F /* Guyana.ics in Resources */,
+				B078EFBB22D4C3FE002F7F4F /* Palau.ics in Resources */,
+				B078F08422D4C3FE002F7F4F /* Kuwait.ics in Resources */,
+				B078EFF222D4C3FE002F7F4F /* Danmarkshavn.ics in Resources */,
+				B078F03022D4C3FE002F7F4F /* Santiago.ics in Resources */,
+				B078F05A22D4C3FE002F7F4F /* Atikokan.ics in Resources */,
+				B078F0A822D4C3FE002F7F4F /* Kuching.ics in Resources */,
+				B078F0B022D4C3FE002F7F4F /* Almaty.ics in Resources */,
+				B078F0D322D4C3FE002F7F4F /* Macquarie.ics in Resources */,
+				B078EFE322D4C3FE002F7F4F /* Blanc-Sablon.ics in Resources */,
+				B078F14022D4C3FE002F7F4F /* Nairobi.ics in Resources */,
+				B078F08922D4C3FE002F7F4F /* Tbilisi.ics in Resources */,
+				B078F06C22D4C3FE002F7F4F /* Chihuahua.ics in Resources */,
+				B078F06722D4C3FE002F7F4F /* Rio_Branco.ics in Resources */,
+				B078F0CC22D4C3FE002F7F4F /* Irkutsk.ics in Resources */,
+				B078F0A722D4C3FE002F7F4F /* Katmandu.ics in Resources */,
+				B078F0AF22D4C3FE002F7F4F /* Ulaanbaatar.ics in Resources */,
+				B078EFEB22D4C3FE002F7F4F /* Boa_Vista.ics in Resources */,
+				B078F0E922D4C3FE002F7F4F /* Chisinau.ics in Resources */,
+				B078EFAD22D4C3FE002F7F4F /* Cape_Verde.ics in Resources */,
+				B078F0EB22D4C3FE002F7F4F /* Vatican.ics in Resources */,
+				B078F09522D4C3FE002F7F4F /* Beirut.ics in Resources */,
+				B078EFA622D4C3FE002F7F4F /* Canary.ics in Resources */,
+				B078F13222D4C3FE002F7F4F /* Blantyre.ics in Resources */,
+				B078F02522D4C3FE002F7F4F /* Manaus.ics in Resources */,
+				B078EFB022D4C3FE002F7F4F /* zones.tab in Resources */,
+				B078F10522D4C3FE002F7F4F /* Bucharest.ics in Resources */,
+				B078F10F22D4C3FE002F7F4F /* Budapest.ics in Resources */,
+				B078F09022D4C3FE002F7F4F /* Kamchatka.ics in Resources */,
+				B078F0E422D4C3FE002F7F4F /* Simferopol.ics in Resources */,
+				B078F05F22D4C3FE002F7F4F /* Grand_Turk.ics in Resources */,
+				B078F10B22D4C3FE002F7F4F /* Tallinn.ics in Resources */,
+				B078F00822D4C3FE002F7F4F /* Knox.ics in Resources */,
+				B078F07C22D4C3FE002F7F4F /* Qatar.ics in Resources */,
+				B078F0C822D4C3FE002F7F4F /* Kabul.ics in Resources */,
+				B078F0B422D4C3FE002F7F4F /* Thimphu.ics in Resources */,
+				B078EFD322D4C3FE002F7F4F /* Wallis.ics in Resources */,
+				B078F07822D4C3FE002F7F4F /* Brisbane.ics in Resources */,
+				B078F0CE22D4C3FE002F7F4F /* Qyzylorda.ics in Resources */,
+				B078F08D22D4C3FE002F7F4F /* Baku.ics in Resources */,
+				B078F10C22D4C3FE002F7F4F /* Monaco.ics in Resources */,
+				B078EFDB22D4C3FE002F7F4F /* Asuncion.ics in Resources */,
+				B078F06522D4C3FE002F7F4F /* St_Barthelemy.ics in Resources */,
+				B078EFEE22D4C3FE002F7F4F /* Marigot.ics in Resources */,
+				B078EFF022D4C3FE002F7F4F /* Dominica.ics in Resources */,
+				B078EDBF22D4C22F002F7F4F /* Main.storyboard in Resources */,
+				B078F14122D4C3FE002F7F4F /* Lusaka.ics in Resources */,
+				B078EFA122D4C3FE002F7F4F /* Chagos.ics in Resources */,
+				B078F11022D4C3FE002F7F4F /* Belgrade.ics in Resources */,
+				B078F14322D4C3FE002F7F4F /* Luanda.ics in Resources */,
+				B078F00A22D4C3FE002F7F4F /* Vevay.ics in Resources */,
+				B078F05C22D4C3FE002F7F4F /* Boise.ics in Resources */,
+				B078EFDC22D4C3FE002F7F4F /* Metlakatla.ics in Resources */,
+				B078EF9E22D4C3FE002F7F4F /* Mahe.ics in Resources */,
+				B078EFE922D4C3FE002F7F4F /* Dawson_Creek.ics in Resources */,
+				B078F12F22D4C3FE002F7F4F /* Ouagadougou.ics in Resources */,
+				B078F12222D4C3FE002F7F4F /* Bangui.ics in Resources */,
+				B078F0A322D4C3FE002F7F4F /* Istanbul.ics in Resources */,
+				B078F04722D4C3FE002F7F4F /* New_Salem.ics in Resources */,
+				B078F0B722D4C3FE002F7F4F /* Phnom_Penh.ics in Resources */,
+				B078F02B22D4C3FE002F7F4F /* Lima.ics in Resources */,
+				B078F0EC22D4C3FE002F7F4F /* Madrid.ics in Resources */,
+				B078F04122D4C3FE002F7F4F /* New_York.ics in Resources */,
+				B078F0D222D4C3FE002F7F4F /* DumontDUrville.ics in Resources */,
+				B078EFC922D4C3FE002F7F4F /* Noumea.ics in Resources */,
+				B078F07D22D4C3FE002F7F4F /* Ashgabat.ics in Resources */,
+				B078F0B222D4C3FE002F7F4F /* Hong_Kong.ics in Resources */,
+				B078EFA022D4C3FE002F7F4F /* Cocos.ics in Resources */,
+				B078F06B22D4C3FE002F7F4F /* Rankin_Inlet.ics in Resources */,
+				B078F10022D4C3FE002F7F4F /* Samara.ics in Resources */,
+				B078F11322D4C3FE002F7F4F /* Freetown.ics in Resources */,
+				B078F0B822D4C3FE002F7F4F /* Khandyga.ics in Resources */,
+				B078F11122D4C3FE002F7F4F /* Copenhagen.ics in Resources */,
+				B078F13822D4C3FE002F7F4F /* Douala.ics in Resources */,
+				B078EDDA22D4C3D8002F7F4F /* calendar.ics in Resources */,
+				B078F0A222D4C3FE002F7F4F /* Dhaka.ics in Resources */,
+				B078F13A22D4C3FE002F7F4F /* El_Aaiun.ics in Resources */,
+				B078F0FF22D4C3FE002F7F4F /* Athens.ics in Resources */,
+				B078F06E22D4C3FE002F7F4F /* Sao_Paulo.ics in Resources */,
+				B078F04022D4C3FE002F7F4F /* Maceio.ics in Resources */,
+				B078EFCC22D4C3FE002F7F4F /* Kosrae.ics in Resources */,
+				B078EFFE22D4C3FE002F7F4F /* Puerto_Rico.ics in Resources */,
+				B078F00E22D4C3FE002F7F4F /* Vincennes.ics in Resources */,
+				B078F04E22D4C3FE002F7F4F /* St_Lucia.ics in Resources */,
+				B078EFC722D4C3FE002F7F4F /* Wake.ics in Resources */,
+				B078F05722D4C3FE002F7F4F /* Thunder_Bay.ics in Resources */,
+				B078F09D22D4C3FE002F7F4F /* Dushanbe.ics in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B078EDB222D4C22F002F7F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B078EDBC22D4C22F002F7F4F /* ViewController.swift in Sources */,
+				B078EDBA22D4C22F002F7F4F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B078EDBD22D4C22F002F7F4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B078EDBE22D4C22F002F7F4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B078EDC222D4C231002F7F4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B078EDC322D4C231002F7F4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B078EDC622D4C231002F7F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B078EDC722D4C231002F7F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B078EDC922D4C231002F7F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLDMS4HSVA;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoman.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B078EDCA22D4C231002F7F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HLDMS4HSVA;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoman.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B078EDB122D4C22F002F7F4F /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B078EDC622D4C231002F7F4F /* Debug */,
+				B078EDC722D4C231002F7F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B078EDC822D4C231002F7F4F /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B078EDC922D4C231002F7F4F /* Debug */,
+				B078EDCA22D4C231002F7F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B078EDAE22D4C22F002F7F4F /* Project object */;
+}
