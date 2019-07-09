@@ -3,51 +3,64 @@
 //  Demo iOS
 //
 //  Created by roy on 2019/7/9.
-//  Copyright © 2019 xianman. All rights reserved.
+//  Copyright © 2019 xiaoman. All rights reserved.
 //
 
 import Foundation
 
 public struct BridgeValueType: Codable {
-    var kind: ValueKind
-    var value: String
+    public private(set) var kind: ValueKind
+    public private(set) var value: String
     
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case kind = "icalvalue_kind"
         case value
     }
 }
 
 public struct BridgeParameterType: Codable {
-    var kind: ParameterKind
-    var value: String
+    public private(set) var kind: ParameterKind
+    public private(set) var value: String
     
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case kind = "icalparameter_kind"
         case value
+    }
+    
+    var description: String {
+        return "--> \(kind): \(value)"
     }
 }
 
 public struct BridgePropertyType: Codable {
-    var kind: PropertyKind
-    var valueInfo: BridgeValueType
-    var parameters: [BridgeParameterType]?
+    public private(set) var kind: PropertyKind
+    public private(set) var valueInfo: BridgeValueType
+    public private(set) var parameters: [BridgeParameterType]?
     
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case kind = "icalproperty_kind"
         case valueInfo
         case parameters
     }
     
-    var description: String {
-        return "=> \(kind): \(valueInfo.value)"
+    func description(_ step: Int = 0, _ perStep: String = "    " ) -> String {
+        let totalStep = (0...step + 1).reduce("", { (r, _)  in r + perStep })
+        
+        var result = "\n" + totalStep + "=> \(kind): \(valueInfo.value)"
+        
+        if let parameters = parameters {
+            result += parameters.reduce("\n" + totalStep + "parameters:" + "\n", {
+                $0 + (totalStep + perStep) + $1.description + "\n"
+            })
+        }
+        return result
     }
 }
 
-public class BridgeComponentType: Codable {
-    var kind: ComponentKind = .no
-    var properties: [BridgePropertyType] = []
-    var subComponents: [BridgeComponentType]?
+public final class BridgeComponentType: Codable {
+    public private(set) var kind: ComponentKind = .no
+    public private(set) var properties: [BridgePropertyType] = []
+    public private(set) var subComponents: [BridgeComponentType]?
     
     enum CodingKeys: String, CodingKey {
         case kind = "icalcomponent_kind"

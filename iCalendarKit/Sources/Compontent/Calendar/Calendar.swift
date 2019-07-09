@@ -1,13 +1,14 @@
 //
-//  XiCalendar.swift
+//  Calendar.swift
 //  iCalendarKit
 //
-//  Created by roy on 2019/7/3.
+//  Created by roy on 2019/7/9.
+//  Copyright © 2019 xiaoman. All rights reserved.
 //
 
 import Foundation
 
-public final class XiCalendar: ComponentProtocol {
+public final class Calendar: ComponentProtocol {
     public var component: BridgeComponentType
     public var parent: ComponentProtocol?
     public var firstChild: ComponentProtocol?
@@ -29,7 +30,7 @@ public final class XiCalendar: ComponentProtocol {
         guard let calender = try ComponentBridgeManager.parse(formatedContent) else {
             throw InitialError.parseFailure
         }
-
+        
         self.init(calender)
         configure()
     }
@@ -50,7 +51,7 @@ public final class XiCalendar: ComponentProtocol {
     }
 }
 
-extension XiCalendar {
+extension Calendar {
     public enum InitialError: Error {
         case incorrectPath
         case incorrectUrl

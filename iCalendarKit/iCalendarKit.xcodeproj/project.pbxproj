@@ -17,7 +17,6 @@
 		B078ED9322D4C123002F7F4F /* ComponentBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B078ED8F22D4C123002F7F4F /* ComponentBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B078ED9422D4C123002F7F4F /* ComponentBridgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078ED9022D4C123002F7F4F /* ComponentBridgeManager.swift */; };
 		B078ED9522D4C123002F7F4F /* ComponentBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B078ED9122D4C123002F7F4F /* ComponentBridge.m */; };
-		B078EDA422D4C16F002F7F4F /* XiCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078ED9822D4C16E002F7F4F /* XiCalendar.swift */; };
 		B078EDA522D4C16F002F7F4F /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078ED9A22D4C16E002F7F4F /* TimeZone.swift */; };
 		B078EDA622D4C16F002F7F4F /* ComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078ED9B22D4C16E002F7F4F /* ComponentProtocol.swift */; };
 		B078EDA722D4C16F002F7F4F /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078ED9C22D4C16E002F7F4F /* Component.swift */; };
@@ -26,6 +25,7 @@
 		B078EDAA22D4C16F002F7F4F /* ValueKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDA122D4C16F002F7F4F /* ValueKind.swift */; };
 		B078EDAB22D4C16F002F7F4F /* ParameterKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDA222D4C16F002F7F4F /* ParameterKind.swift */; };
 		B078EDAC22D4C16F002F7F4F /* ComponentKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDA322D4C16F002F7F4F /* ComponentKind.swift */; };
+		B0F91C7322D4C68300F3EDFD /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F91C7222D4C68300F3EDFD /* Calendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		B078ED8F22D4C123002F7F4F /* ComponentBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentBridge.h; sourceTree = "<group>"; };
 		B078ED9022D4C123002F7F4F /* ComponentBridgeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentBridgeManager.swift; sourceTree = "<group>"; };
 		B078ED9122D4C123002F7F4F /* ComponentBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentBridge.m; sourceTree = "<group>"; };
-		B078ED9822D4C16E002F7F4F /* XiCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XiCalendar.swift; sourceTree = "<group>"; };
 		B078ED9A22D4C16E002F7F4F /* TimeZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
 		B078ED9B22D4C16E002F7F4F /* ComponentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentProtocol.swift; sourceTree = "<group>"; };
 		B078ED9C22D4C16E002F7F4F /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		B078EDA122D4C16F002F7F4F /* ValueKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueKind.swift; sourceTree = "<group>"; };
 		B078EDA222D4C16F002F7F4F /* ParameterKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterKind.swift; sourceTree = "<group>"; };
 		B078EDA322D4C16F002F7F4F /* ComponentKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentKind.swift; sourceTree = "<group>"; };
+		B0F91C7222D4C68300F3EDFD /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +155,10 @@
 		B078ED9622D4C16E002F7F4F /* Compontent */ = {
 			isa = PBXGroup;
 			children = (
-				B078ED9722D4C16E002F7F4F /* Calendar */,
-				B078ED9922D4C16E002F7F4F /* TimeZone */,
 				B078ED9B22D4C16E002F7F4F /* ComponentProtocol.swift */,
 				B078ED9C22D4C16E002F7F4F /* Component.swift */,
+				B078ED9722D4C16E002F7F4F /* Calendar */,
+				B078ED9922D4C16E002F7F4F /* TimeZone */,
 				B078ED9D22D4C16F002F7F4F /* Event */,
 			);
 			path = Compontent;
@@ -167,7 +167,7 @@
 		B078ED9722D4C16E002F7F4F /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				B078ED9822D4C16E002F7F4F /* XiCalendar.swift */,
+				B0F91C7222D4C68300F3EDFD /* Calendar.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -319,9 +319,9 @@
 				B078EDA522D4C16F002F7F4F /* TimeZone.swift in Sources */,
 				B078EDAC22D4C16F002F7F4F /* ComponentKind.swift in Sources */,
 				B078EDA622D4C16F002F7F4F /* ComponentProtocol.swift in Sources */,
-				B078EDA422D4C16F002F7F4F /* XiCalendar.swift in Sources */,
 				B078ED9222D4C123002F7F4F /* BridgeSwiftDefine.swift in Sources */,
 				B078EDA922D4C16F002F7F4F /* PropertyKind.swift in Sources */,
+				B0F91C7322D4C68300F3EDFD /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,7 +3,7 @@
 //  Demo iOS
 //
 //  Created by roy on 2019/7/5.
-//  Copyright © 2019 xianman. All rights reserved.
+//  Copyright © 2019 xiaoman. All rights reserved.
 //
 
 import Foundation
@@ -22,21 +22,25 @@ public protocol ComponentProtocol: class {
 }
 
 extension ComponentProtocol {
-    public func addChild<N>(_ node: N) where N: ComponentProtocol {
+    public func addChild(_ node: ComponentProtocol) {
         node.parent = self
         
-        guard nil != lastChild else {
+        guard hasChildren else {
             firstChild = node
             lastChild = node
             return
         }
         
-        lastChild?.rightBtother = node
         node.leftBrother = lastChild
+        lastChild?.rightBtother = node
         lastChild = node
     }
     
-    public func removeChild<N>(_ node: N) where N: ComponentProtocol {
+    public var hasChildren: Bool {
+        return nil != firstChild
+    }
+    
+    public func removeChild(_ node: ComponentProtocol) {
         node.leftBrother?.rightBtother = node.rightBtother
         node.rightBtother?.leftBrother = node.leftBrother
     }
@@ -62,26 +66,12 @@ extension ComponentProtocol {
     
     public func configureNodeChain() {
         guard let `subCompontents` = subCompontents else { return }
-        
-        var child: ComponentProtocol?
 
         subCompontents.forEach { subCompontent in
             let component = getComponent(for: subCompontent)
-            
-            component.parent = self
-
-            if nil == child {
-                self.firstChild = component
-            }
-
-            component.leftBrother = child
-            child?.rightBtother = component
-            child = component
-
+            self.addChild(component)
             component.configure()
         }
-
-        lastChild = child
     }
 
     func getComponent(for base: BridgeComponentType) -> ComponentProtocol {
@@ -109,27 +99,29 @@ extension ComponentProtocol {
         return rightBtother
     }
     
-    public func componentDescription(_ step: Int = 0) -> String {
+    public func description(_ step: Int = 0, _ perStep: String = "    ") -> String {
+        // components
         var childrenDescription = ""
         var currentChild = firstChild
         
         while let child = currentChild {
-            childrenDescription += child.componentDescription(step + 1)
+            childrenDescription += child.description(step + 1)
             currentChild = currentChild?.next
         }
         
-        let stepString = (0...step).reduce("") { (result, _) in result + "    " }
+        let totalStep = (0...step).reduce("") { (r, _) in r + perStep }
         
-        let propertyStep = stepString + "    "
+        // property
+        let propertyStep = totalStep + perStep
         let propertiesDescription = properties.reduce("") {
-            propertyStep + $0 + "\n" + propertyStep + $1.description
+            propertyStep + $0 + $1.description(step, perStep)
         }
         
         return #"""
-
-        \#(stepString)-------- component: \#(kind)
-        \#(stepString)properties: \#(propertiesDescription)
-        \#(stepString)subComponents: \#(childrenDescription.isEmpty ? "none" : childrenDescription)
+        \#(totalStep)-- -- -- -- -- --
+        \#(totalStep)component: \#(kind)
+        \#(totalStep)properties: \#(propertiesDescription)
+        \#(totalStep)subComponents: \#(childrenDescription.isEmpty ? "none" : ("\n" + childrenDescription))
         
         """#
     }

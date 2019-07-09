@@ -26,11 +26,11 @@ class ViewController: UIViewController {
             let filePath = Bundle.main.path(forResource: $0, ofType: "ics")!
             
             do {
-                let calendar = try XiCalendar(filePath: filePath)
+                let calendar = try iCalendarKit.Calendar(filePath: filePath)
                 
                 print(calendar)
-                print(calendar.componentDescription())
-            } catch let error as XiCalendar.InitialError {
+                print(calendar.description())
+            } catch let error as iCalendarKit.Calendar.InitialError {
                 print(error)
             } catch {
                 print(" some thing error")
