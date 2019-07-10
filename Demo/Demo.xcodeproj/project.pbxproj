@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B02C8C9E22D5892500749EE5 /* calendar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9D22D5892500749EE5 /* calendar.ics */; };
 		B078EDBA22D4C22F002F7F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDB922D4C22F002F7F4F /* AppDelegate.swift */; };
 		B078EDBC22D4C22F002F7F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDBB22D4C22F002F7F4F /* ViewController.swift */; };
 		B078EDBF22D4C22F002F7F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078EDBD22D4C22F002F7F4F /* Main.storyboard */; };
@@ -14,9 +15,8 @@
 		B078EDC422D4C231002F7F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078EDC222D4C231002F7F4F /* LaunchScreen.storyboard */; };
 		B078EDD022D4C36B002F7F4F /* iCalendarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */; };
 		B078EDD222D4C379002F7F4F /* iCalendarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B078EDDA22D4C3D8002F7F4F /* calendar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD522D4C3D8002F7F4F /* calendar.ics */; };
 		B078EDDB22D4C3D8002F7F4F /* basic.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD622D4C3D8002F7F4F /* basic.ics */; };
-		B078EDDC22D4C3D8002F7F4F /* university-formatted.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD722D4C3D8002F7F4F /* university-formatted.ics */; };
+		B078EDDC22D4C3D8002F7F4F /* universityFormatted.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD722D4C3D8002F7F4F /* universityFormatted.ics */; };
 		B078EDDD22D4C3D8002F7F4F /* totalTimeZone.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD822D4C3D8002F7F4F /* totalTimeZone.ics */; };
 		B078EDDE22D4C3D8002F7F4F /* university.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDD922D4C3D8002F7F4F /* university.ics */; };
 		B078EF9A22D4C3FE002F7F4F /* Mauritius.ics in Resources */ = {isa = PBXBuildFile; fileRef = B078EDE122D4C3FC002F7F4F /* Mauritius.ics */; };
@@ -464,6 +464,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B02C8C9D22D5892500749EE5 /* calendar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.ics; sourceTree = "<group>"; };
 		B078EDB622D4C22F002F7F4F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078EDB922D4C22F002F7F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B078EDBB22D4C22F002F7F4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -472,9 +473,8 @@
 		B078EDC322D4C231002F7F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B078EDC522D4C231002F7F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B078EDCB22D4C2B4002F7F4F /* iCalendarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iCalendarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B078EDD522D4C3D8002F7F4F /* calendar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.ics; sourceTree = "<group>"; };
 		B078EDD622D4C3D8002F7F4F /* basic.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.ics; sourceTree = "<group>"; };
-		B078EDD722D4C3D8002F7F4F /* university-formatted.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "university-formatted.ics"; sourceTree = "<group>"; };
+		B078EDD722D4C3D8002F7F4F /* universityFormatted.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = universityFormatted.ics; sourceTree = "<group>"; };
 		B078EDD822D4C3D8002F7F4F /* totalTimeZone.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = totalTimeZone.ics; sourceTree = "<group>"; };
 		B078EDD922D4C3D8002F7F4F /* university.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = university.ics; sourceTree = "<group>"; };
 		B078EDE122D4C3FC002F7F4F /* Mauritius.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mauritius.ics; sourceTree = "<group>"; };
@@ -961,12 +961,12 @@
 		B078EDD422D4C383002F7F4F /* ics files */ = {
 			isa = PBXGroup;
 			children = (
-				B078EDDF22D4C3FC002F7F4F /* zoneinfo */,
+				B02C8C9D22D5892500749EE5 /* calendar.ics */,
 				B078EDD622D4C3D8002F7F4F /* basic.ics */,
-				B078EDD522D4C3D8002F7F4F /* calendar.ics */,
 				B078EDD822D4C3D8002F7F4F /* totalTimeZone.ics */,
-				B078EDD722D4C3D8002F7F4F /* university-formatted.ics */,
+				B078EDD722D4C3D8002F7F4F /* universityFormatted.ics */,
 				B078EDD922D4C3D8002F7F4F /* university.ics */,
+				B078EDDF22D4C3FC002F7F4F /* zoneinfo */,
 			);
 			path = "ics files";
 			sourceTree = "<group>";
@@ -1645,7 +1645,7 @@
 				B078F00422D4C3FE002F7F4F /* Santa_Isabel.ics in Resources */,
 				B078F0FD22D4C3FE002F7F4F /* London.ics in Resources */,
 				B078F0A522D4C3FE002F7F4F /* Calcutta.ics in Resources */,
-				B078EDDC22D4C3D8002F7F4F /* university-formatted.ics in Resources */,
+				B078EDDC22D4C3D8002F7F4F /* universityFormatted.ics in Resources */,
 				B078F12522D4C3FE002F7F4F /* Porto-Novo.ics in Resources */,
 				B078EFA722D4C3FE002F7F4F /* Reykjavik.ics in Resources */,
 				B078F08E22D4C3FE002F7F4F /* Tashkent.ics in Resources */,
@@ -1972,6 +1972,7 @@
 				B078EFEE22D4C3FE002F7F4F /* Marigot.ics in Resources */,
 				B078EFF022D4C3FE002F7F4F /* Dominica.ics in Resources */,
 				B078EDBF22D4C22F002F7F4F /* Main.storyboard in Resources */,
+				B02C8C9E22D5892500749EE5 /* calendar.ics in Resources */,
 				B078F14122D4C3FE002F7F4F /* Lusaka.ics in Resources */,
 				B078EFA122D4C3FE002F7F4F /* Chagos.ics in Resources */,
 				B078F11022D4C3FE002F7F4F /* Belgrade.ics in Resources */,
@@ -2000,7 +2001,6 @@
 				B078F0B822D4C3FE002F7F4F /* Khandyga.ics in Resources */,
 				B078F11122D4C3FE002F7F4F /* Copenhagen.ics in Resources */,
 				B078F13822D4C3FE002F7F4F /* Douala.ics in Resources */,
-				B078EDDA22D4C3D8002F7F4F /* calendar.ics in Resources */,
 				B078F0A222D4C3FE002F7F4F /* Dhaka.ics in Resources */,
 				B078F13A22D4C3FE002F7F4F /* El_Aaiun.ics in Resources */,
 				B078F0FF22D4C3FE002F7F4F /* Athens.ics in Resources */,

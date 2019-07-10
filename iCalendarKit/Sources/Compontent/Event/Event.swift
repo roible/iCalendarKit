@@ -34,7 +34,7 @@ public final class Event: ComponentProtocol {
     lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.timeZone = Foundation.TimeZone(secondsFromGMT: 0)
-        formatter.dateFormat = "yyyyMMdd"
+        formatter.dateFormat = "yyyyMMdd'T'HHmmss'Z'"
         return formatter
     }()
     
@@ -82,5 +82,29 @@ public final class Event: ComponentProtocol {
                 return
             }
         }
+    }
+    
+    public func specialPropertyDescription(step: Int = 0, perStep: String = "    ") -> String {
+        let totalStep = (0...step + 1).reduce("", { (r, _)  in r + perStep })
+        
+        let result = #"""
+        
+        \#(totalStep)startDate ==> \#(startDate ?? Date())
+        \#(totalStep)endDate ==> \#(endDate ?? Date())
+        \#(totalStep)stampDate ==> \#(stampDate ?? Date())
+        \#(totalStep)createdDate ==> \#(createdDate ?? Date())
+        \#(totalStep)lastModifiedDate ==> \#(lastModifiedDate ?? Date())
+        \#(totalStep)sequences ==> \#(sequences ?? -10000)
+        \#(totalStep)userID ==> \#(userID ?? "")
+        \#(totalStep)location ==> \#(location ?? "")
+        \#(totalStep)summary ==> \#(summary ?? "")
+        \#(totalStep)status ==> \#(status ?? "")
+        \#(totalStep)description ==> \#(description ?? "")
+        \#(totalStep)organizer ==> \#(organizer?.description(step + 1, perStep) ?? "")
+        \#(totalStep)attendees ==> \#(attendees?.description(step + 1, perStep) ?? "")
+        \#(totalStep)priority ==> \#(priority ?? -10000)
+        """#
+        
+        return result
     }
 }

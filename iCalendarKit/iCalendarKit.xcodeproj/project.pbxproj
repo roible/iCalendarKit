@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B02C8C9822D57DE100749EE5 /* totalTimeZone.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9322D57DE100749EE5 /* totalTimeZone.ics */; };
+		B02C8C9922D57DE100749EE5 /* basic.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9422D57DE100749EE5 /* basic.ics */; };
+		B02C8C9A22D57DE100749EE5 /* universityFormatted.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9522D57DE100749EE5 /* universityFormatted.ics */; };
+		B02C8C9B22D57DE100749EE5 /* university.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9622D57DE100749EE5 /* university.ics */; };
+		B02C8C9C22D57DE100749EE5 /* calendar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9722D57DE100749EE5 /* calendar.ics */; };
 		B078ED7422D4C03A002F7F4F /* iCalendarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078ED6A22D4C039002F7F4F /* iCalendarKit.framework */; };
 		B078ED7922D4C03A002F7F4F /* iCalendarKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078ED7822D4C03A002F7F4F /* iCalendarKitTests.swift */; };
 		B078ED7B22D4C03A002F7F4F /* iCalendarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B078ED6D22D4C039002F7F4F /* iCalendarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B02C8C9322D57DE100749EE5 /* totalTimeZone.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = totalTimeZone.ics; sourceTree = "<group>"; };
+		B02C8C9422D57DE100749EE5 /* basic.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.ics; sourceTree = "<group>"; };
+		B02C8C9522D57DE100749EE5 /* universityFormatted.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = universityFormatted.ics; sourceTree = "<group>"; };
+		B02C8C9622D57DE100749EE5 /* university.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = university.ics; sourceTree = "<group>"; };
+		B02C8C9722D57DE100749EE5 /* calendar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.ics; sourceTree = "<group>"; };
 		B078ED6A22D4C039002F7F4F /* iCalendarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCalendarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078ED6D22D4C039002F7F4F /* iCalendarKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCalendarKit.h; sourceTree = "<group>"; };
 		B078ED6E22D4C039002F7F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +93,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B02C8C8822D57C1500749EE5 /* ics files */ = {
+			isa = PBXGroup;
+			children = (
+				B02C8C9422D57DE100749EE5 /* basic.ics */,
+				B02C8C9722D57DE100749EE5 /* calendar.ics */,
+				B02C8C9322D57DE100749EE5 /* totalTimeZone.ics */,
+				B02C8C9522D57DE100749EE5 /* universityFormatted.ics */,
+				B02C8C9622D57DE100749EE5 /* university.ics */,
+			);
+			path = "ics files";
+			sourceTree = "<group>";
+		};
 		B078ED6022D4C039002F7F4F = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +142,7 @@
 			children = (
 				B078ED7822D4C03A002F7F4F /* iCalendarKitTests.swift */,
 				B078ED7A22D4C03A002F7F4F /* Info.plist */,
+				B02C8C8822D57C1500749EE5 /* ics files */,
 			);
 			path = iCalendarKitTests;
 			sourceTree = "<group>";
@@ -300,6 +323,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02C8C9A22D57DE100749EE5 /* universityFormatted.ics in Resources */,
+				B02C8C9C22D57DE100749EE5 /* calendar.ics in Resources */,
+				B02C8C9B22D57DE100749EE5 /* university.ics in Resources */,
+				B02C8C9922D57DE100749EE5 /* basic.ics in Resources */,
+				B02C8C9822D57DE100749EE5 /* totalTimeZone.ics in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

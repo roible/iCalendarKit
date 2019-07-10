@@ -28,7 +28,7 @@ public final class Calendar: ComponentProtocol {
         }
         
         guard let calender = try ComponentBridgeManager.parse(formatedContent) else {
-            throw InitialError.parseFailure
+            throw InitialError.invalidatedFormatt
         }
         
         self.init(calender)
@@ -36,14 +36,25 @@ public final class Calendar: ComponentProtocol {
     }
     
     public convenience init(url: URL) throws {
-        guard let content = try? String(contentsOf: url, encoding: .utf8) else { throw InitialError.incorrectUrl }
+        guard
+            let content = try? String(contentsOf: url, encoding: .utf8)
+        else {
+            throw InitialError.incorrectUrl
+        }
         
         try self.init(withContent: content)
     }
     
     public convenience init(filePath path: String) throws {
         let url = URL(fileURLWithPath: path)
-        try self.init(url: url)
+        
+        do {
+            try self.init(url: url)
+        } catch let error as InitialError {
+            throw error
+        } catch {
+            throw InitialError.incorrectPath
+        }
     }
     
     public func configureProperties() {
@@ -56,6 +67,6 @@ extension Calendar {
         case incorrectPath
         case incorrectUrl
         case emptyContent
-        case parseFailure
+        case invalidatedFormatt
     }
 }

@@ -19,6 +19,7 @@ public protocol ComponentProtocol: class {
     init(_ component: BridgeComponentType)
     
     func configureProperties()
+    func specialPropertyDescription(step: Int, perStep: String) -> String
 }
 
 extension ComponentProtocol {
@@ -117,12 +118,17 @@ extension ComponentProtocol {
             propertyStep + $0 + $1.description(step, perStep)
         }
         
+        let extraDescription = specialPropertyDescription(step: step, perStep: perStep)
+        
         return #"""
         \#(totalStep)-- -- -- -- -- --
         \#(totalStep)component: \#(kind)
         \#(totalStep)properties: \#(propertiesDescription)
+        \#(totalStep)extraDescription: \#(extraDescription)
         \#(totalStep)subComponents: \#(childrenDescription.isEmpty ? "none" : ("\n" + childrenDescription))
         
         """#
     }
+    
+    public func specialPropertyDescription(step: Int, perStep: String) -> String { return "" }
 }
