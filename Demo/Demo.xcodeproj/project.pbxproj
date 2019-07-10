@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B02C8C9E22D5892500749EE5 /* calendar.ics in Resources */ = {isa = PBXBuildFile; fileRef = B02C8C9D22D5892500749EE5 /* calendar.ics */; };
+		B02C8D1122D5C50D00749EE5 /* Pareser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C8D1022D5C50D00749EE5 /* Pareser.swift */; };
+		B02C8D1322D5C9E000749EE5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C8D1222D5C9E000749EE5 /* Stack.swift */; };
+		B02C8D1522D5D4F300749EE5 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C8D1422D5D4F300749EE5 /* Mark.swift */; };
 		B078EDBA22D4C22F002F7F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDB922D4C22F002F7F4F /* AppDelegate.swift */; };
 		B078EDBC22D4C22F002F7F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078EDBB22D4C22F002F7F4F /* ViewController.swift */; };
 		B078EDBF22D4C22F002F7F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078EDBD22D4C22F002F7F4F /* Main.storyboard */; };
@@ -465,6 +468,9 @@
 
 /* Begin PBXFileReference section */
 		B02C8C9D22D5892500749EE5 /* calendar.ics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.ics; sourceTree = "<group>"; };
+		B02C8D1022D5C50D00749EE5 /* Pareser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pareser.swift; sourceTree = "<group>"; };
+		B02C8D1222D5C9E000749EE5 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		B02C8D1422D5D4F300749EE5 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 		B078EDB622D4C22F002F7F4F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078EDB922D4C22F002F7F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B078EDBB22D4C22F002F7F4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -919,6 +925,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B02C8D0F22D5C4EC00749EE5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B02C8D1022D5C50D00749EE5 /* Pareser.swift */,
+				B02C8D1222D5C9E000749EE5 /* Stack.swift */,
+				B02C8D1422D5D4F300749EE5 /* Mark.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		B078EDAD22D4C22F002F7F4F = {
 			isa = PBXGroup;
 			children = (
@@ -939,6 +955,7 @@
 		B078EDB822D4C22F002F7F4F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				B02C8D0F22D5C4EC00749EE5 /* Sources */,
 				B078EDD422D4C383002F7F4F /* ics files */,
 				B078EDB922D4C22F002F7F4F /* AppDelegate.swift */,
 				B078EDBB22D4C22F002F7F4F /* ViewController.swift */,
@@ -1551,6 +1568,7 @@
 				TargetAttributes = {
 					B078EDB522D4C22F002F7F4F = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -2023,8 +2041,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02C8D1322D5C9E000749EE5 /* Stack.swift in Sources */,
 				B078EDBC22D4C22F002F7F4F /* ViewController.swift in Sources */,
+				B02C8D1122D5C50D00749EE5 /* Pareser.swift in Sources */,
 				B078EDBA22D4C22F002F7F4F /* AppDelegate.swift in Sources */,
+				B02C8D1522D5D4F300749EE5 /* Mark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2170,6 +2191,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLDMS4HSVA;
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -2179,6 +2201,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoman.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2188,6 +2211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HLDMS4HSVA;
 				INFOPLIST_FILE = Demo/Info.plist;
